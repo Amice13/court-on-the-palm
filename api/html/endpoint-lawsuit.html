@@ -1,0 +1,888 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="uk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="uk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="Точка входу &quot;Судове рішення&quot; для API проекту &quot;Суд на долоні&quot;" name="desctription" />
+<meta content="index, follow" name="robots" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="uk" name="language" />
+<meta content="Суд на долоні, API, судове рішення" name="keywords" />
+<meta content="Кирило Захаров" name="author" />
+<meta content="Суд на долоні" name="copyright" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Точка входу &#34;Судове рішення&#34; для API проекту &#34;Суд на долоні&#34; &mdash; Суд на долоні alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="index" title="Індекс" href="genindex.html" />
+    <link rel="search" title="Пошук" href="search.html" />
+    <link rel="next" title="Адвокат" href="endpoint-attorney.html" />
+    <link rel="prev" title="Авторизація користувача" href="endpoint-login.html" /> 
+
+  
+  <script src="static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Суд на долоні
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Зміст:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Огляд</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="endpoints.html">Точки входу</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="endpoint-general.html">Загальні правила</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-login.html">Авторизація користувача</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Судове рішення</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Загальна інформація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Кількість судових рішень</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Отримання вмісту судового рішення</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Пошук судових рішень</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Фільтри</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Сортування</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Агрегація</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-attorney.html">Адвокат</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-arbitrage.html">Арбітражний керуючий</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-notary.html">Нотаріус</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-organization.html">Організація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-prosecutor.html">Прокурор</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-court.html">Суд</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-judge.html">Суддя</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-courtexpert.html">Судовий експерт</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data-model.html">Стандарт даних</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contacts.html">Контакти</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Суд на долоні</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="endpoints.html">Точки входу</a> &raquo;</li>
+        
+      <li>Точка входу &quot;Судове рішення&quot; для API проекту &quot;Суд на долоні&quot;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="sources/endpoint-lawsuit.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Судове рішення<a class="headerlink" href="#id1" title="Постійне посилання на цей заголовок">¶</a></h1>
+<p>Точка входу «Судове рішення» повертає інформацію стосовно судових рішень.</p>
+<div class="section" id="id2">
+<h2>Загальна інформація<a class="headerlink" href="#id2" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>Інформація про судове рішення з даних Державної судової адміністрації, опублікованих на <a class="reference external" href="https://court.gov.ua/opendata/">відповідному порталі відкритих даних</a>.</p>
+<p>Оновлюється один раз на 1-2 дні.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="id4">
+<h2>Кількість судових рішень<a class="headerlink" href="#id4" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>GET-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/lawsuit</span></code> повертає загальну кількість судових рішень в системі</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">GET</span> <span class="nn">/lawsuit</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{ &quot;message&quot;: 4742455 }
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id5">
+<h2>Отримання вмісту судового рішення<a class="headerlink" href="#id5" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>GET-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/lawsuit/:id</span></code> повертає вміст судового рішення за <a class="reference external" href="lawsuit.html">відповідною схемою даних</a> <cite>. Де ``id`</cite> - це ідентифікатор судового рішення з бази даних Державної судової адміністрації.</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">GET</span> <span class="nn">/lawsuit/73989195</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{
+  &quot;id&quot;: &quot;73989195&quot;,
+  &quot;courtCode&quot;: &quot;5019&quot;,
+  &quot;causeKind&quot;: &quot;Господарське&quot;,
+  &quot;causeCategories&quot;: [
+    {
+      &quot;causeCode&quot;: 4058,
+      &quot;causeTitle&quot;: &quot;Орендні правовідносини&quot;
+    }
+  ],
+  &quot;causeForm&quot;: &quot;Судовий наказ&quot;,
+  &quot;lawsuitNumber&quot;: &quot;918/800/17&quot;,
+  &quot;lawsuitDate&quot;: &quot;2018-05-15T21:00:00.000Z&quot;,
+  &quot;url&quot;: &quot;http://od.reyestr.court.gov.ua/files/36/42c33c4404eacc29f2345787b1129f88.rtf&quot;,
+  &quot;publishedDate&quot;: &quot;2018-05-17T21:00:00.000Z&quot;,
+  &quot;outcome&quot;: &quot;Процесуальне&quot;,
+  &quot;outcomeFull&quot;: [
+    &quot;Накладено стягнення&quot;
+  ],
+  &quot;judge&quot;: [
+    {
+      &quot;person&quot;: {
+        &quot;source&quot;: &quot;Марач Віктор Васильович&quot;,
+        &quot;idName&quot;: &quot;Марач В. В.&quot;,
+        &quot;fullName&quot;: &quot;Марач Віктор Васильович&quot;,
+        &quot;familyName&quot;: &quot;Марач&quot;,
+        &quot;givenName&quot;: &quot;Віктор&quot;,
+        &quot;additionalName&quot;: &quot;Васильович&quot;,
+        &quot;sex&quot;: &quot;чоловік&quot;,
+        &quot;jobTitle&quot;: &quot;Суддя Господарського суду Рівненської області&quot;,
+        &quot;idNameRus&quot;: &quot;Марач В. В.&quot;,
+        &quot;fullNameRus&quot;: &quot;Марач Виктор В&quot;,
+        &quot;familyNameRus&quot;: &quot;Марач&quot;,
+        &quot;givenNameRus&quot;: &quot;Виктор&quot;,
+        &quot;additionalNameRus&quot;: &quot;В&quot;
+      },
+      &quot;courts&quot;: [
+        {
+          &quot;courtCode&quot;: &quot;5019&quot;,
+          &quot;courtRegion&quot;: &quot;Рівненська область&quot;,
+          &quot;instanceType&quot;: &quot;Перша&quot;,
+          &quot;courtName&quot;: &quot;Господарський суд Рівненської області&quot;,
+          &quot;address&quot;: {
+            &quot;source&quot;: &quot;33013, м. Рівне, вул. Набережна, 26-А&quot;,
+            &quot;countryName&quot;: &quot;Україна&quot;,
+            &quot;postalCode&quot;: &quot;33013&quot;,
+            &quot;locality&quot;: &quot;місто Рівне&quot;,
+            &quot;streetNumber&quot;: &quot;26-А&quot;,
+            &quot;streetAddress&quot;: &quot;вулиця Набережна, 26-А&quot;,
+            &quot;fullAddress&quot;: &quot;33013, Рівненська область, місто Рівне, вулиця Набережна, 26-А&quot;,
+            &quot;geo&quot;: {
+              &quot;lat&quot;: &quot;50.627047&quot;,
+              &quot;lon&quot;: &quot;26.246482&quot;
+            },
+            &quot;region&quot;: &quot;Рівненська область&quot;
+          },
+          &quot;url&quot;: &quot;http://rv.arbitr.gov.ua/sud5019/&quot;,
+          &quot;phone&quot;: [
+            &quot;(362) 62 31 15&quot;
+          ],
+          &quot;email&quot;: &quot;inbox@rv.arbitr.gov.ua&quot;,
+          &quot;openingHours&quot;: [
+            &quot;Пн-Чт з 09:00 до 18:00&quot;,
+            &quot;Пт з 09:00 до 16:45&quot;,
+            &quot;Перерва з 13:00 до 13:45&quot;
+          ],
+          &quot;organization&quot;: {
+            &quot;legalName&quot;: &quot;ГОСПОДАРСЬКИЙ СУД РІВНЕНСЬКОЇ ОБЛАСТІ&quot;,
+            &quot;identifier&quot;: {
+              &quot;scheme&quot;: &quot;UA-EDR&quot;,
+              &quot;id&quot;: &quot;03500111&quot;,
+              &quot;valid&quot;: true
+            },
+            &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+            &quot;kved&quot;: {
+              &quot;part&quot;: &quot;84&quot;,
+              &quot;group&quot;: &quot;23&quot;
+            },
+            &quot;full_kved&quot;: &quot;84.23 Діяльність у сфері юстиції та правосуддя&quot;,
+            &quot;address&quot;: {
+              &quot;source&quot;: &quot;33013, Рівненська обл., місто Рівне, ВУЛИЦЯ НАБЕРЕЖНА, будинок 26 А&quot;,
+              &quot;countryName&quot;: &quot;Україна&quot;,
+              &quot;postalCode&quot;: &quot;33013&quot;,
+              &quot;region&quot;: &quot;Рівненська область&quot;,
+              &quot;locality&quot;: &quot;місто Рівне&quot;,
+              &quot;streetNumber&quot;: &quot;26 А&quot;,
+              &quot;streetAddress&quot;: &quot;вулиця Набережна, 26 А&quot;,
+              &quot;fullAddress&quot;: &quot;33013, Рівненська область, місто Рівне, вулиця Набережна, 26 А&quot;
+            },
+            &quot;head&quot;: {
+              &quot;source&quot;: &quot;ВОЙТЮК  ВІТАЛІЙ РОМАНОВИЧ&quot;,
+              &quot;idName&quot;: &quot;Войтюк В. Р.&quot;,
+              &quot;fullName&quot;: &quot;Войтюк Віталій Романович&quot;,
+              &quot;familyName&quot;: &quot;Войтюк&quot;,
+              &quot;givenName&quot;: &quot;Віталій&quot;,
+              &quot;additionalName&quot;: &quot;Романович&quot;,
+              &quot;sex&quot;: &quot;чоловік&quot;,
+              &quot;jobTitle&quot;: &quot;Директор&quot;
+            },
+            &quot;updatedAt&quot;: &quot;2018-08-06T20:54:27.833Z&quot;
+          },
+          &quot;updatedAt&quot;: &quot;2018-08-10T13:15:42.915Z&quot;
+        }
+      ],
+      &quot;id&quot;: &quot;5019_marach_v__v_&quot;,
+      &quot;updatedAt&quot;: &quot;2018-08-14T04:13:42.927Z&quot;,
+      &quot;_id&quot;: &quot;5019_marach_v__v_&quot;,
+      &quot;type&quot;: &quot;Суддя&quot;,
+      &quot;strict&quot;: true
+    }
+  ],
+  &quot;person&quot;: [
+    {
+      &quot;fullName&quot;: &quot;Яганова Сергія Павловича&quot;,
+      &quot;type&quot;: &quot;Інші&quot;,
+      &quot;person&quot;: {
+        &quot;idName&quot;: &quot;Яганова С. П.&quot;,
+        &quot;source&quot;: &quot;Яганова С. П.&quot;,
+        &quot;jobTitle&quot;: &quot;Інші&quot;,
+        &quot;fullName&quot;: &quot;Яганова Сергія Павловича&quot;
+      },
+      &quot;strict&quot;: false
+    }
+  ],
+  &quot;organizations&quot;: [
+    {
+      &quot;type&quot;: &quot;ЄДРПОУ&quot;,
+      &quot;legalName&quot;: &quot;МАЛЕ ПРИВАТНЕ ПІДПРИЄМСТВО \&quot;МОРІОН\&quot;&quot;,
+      &quot;name&quot;: &quot;МПП \&quot;МОРІОН\&quot;&quot;,
+      &quot;identifier&quot;: {
+        &quot;scheme&quot;: &quot;UA-EDR&quot;,
+        &quot;id&quot;: &quot;13990091&quot;,
+        &quot;valid&quot;: true
+      },
+      &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+      &quot;kved&quot;: {
+        &quot;part&quot;: &quot;68&quot;,
+        &quot;group&quot;: &quot;20&quot;
+      },
+      &quot;full_kved&quot;: &quot;68.20 Надання в оренду й експлуатацію власного чи орендованого нерухомого майна&quot;,
+      &quot;address&quot;: {
+        &quot;source&quot;: &quot;33028, Рівненська обл., місто Рівне, ВУЛИЦЯ ШЕВЧЕНКА, будинок 7&quot;,
+        &quot;countryName&quot;: &quot;Україна&quot;,
+        &quot;postalCode&quot;: &quot;33028&quot;,
+        &quot;region&quot;: &quot;Рівненська область&quot;,
+        &quot;locality&quot;: &quot;місто Рівне&quot;,
+        &quot;streetNumber&quot;: &quot;7&quot;,
+        &quot;streetAddress&quot;: &quot;вулиця Шевченка, 7&quot;,
+        &quot;fullAddress&quot;: &quot;33028, Рівненська область, місто Рівне, вулиця Шевченка, 7&quot;
+      },
+      &quot;head&quot;: {
+        &quot;source&quot;: &quot;МАКОВЕЦЬКИЙ ПАВЛО ПАВЛОВИЧ&quot;,
+        &quot;idName&quot;: &quot;Маковецький П. П.&quot;,
+        &quot;fullName&quot;: &quot;Маковецький Павло Павлович&quot;,
+        &quot;familyName&quot;: &quot;Маковецький&quot;,
+        &quot;givenName&quot;: &quot;Павло&quot;,
+        &quot;additionalName&quot;: &quot;Павлович&quot;,
+        &quot;sex&quot;: &quot;чоловік&quot;,
+        &quot;jobTitle&quot;: &quot;Директор&quot;
+      },
+      &quot;founders&quot;: [
+        {
+          &quot;source&quot;: &quot;СВИСТУН ІГОР ЄВГЕНОВИЧ, розмір внеску до статутного фонду - 1000.00 грн.&quot;,
+          &quot;person&quot;: {
+            &quot;source&quot;: &quot;СВИСТУН ІГОР ЄВГЕНОВИЧ&quot;,
+            &quot;idName&quot;: &quot;Свистун І. Є.&quot;,
+            &quot;fullName&quot;: &quot;Свистун Ігор Євгенович&quot;,
+            &quot;familyName&quot;: &quot;Свистун&quot;,
+            &quot;givenName&quot;: &quot;Ігор&quot;,
+            &quot;additionalName&quot;: &quot;Євгенович&quot;,
+            &quot;sex&quot;: &quot;чоловік&quot;
+          },
+          &quot;amountOfFunds&quot;: 1000
+        },
+        {
+          &quot;source&quot;: &quot;СВИСТУН ОЛЕГ ЄВГЕНОВИЧ, розмір внеску до статутного фонду - 500.00 грн.&quot;,
+          &quot;person&quot;: {
+            &quot;source&quot;: &quot;СВИСТУН ОЛЕГ ЄВГЕНОВИЧ&quot;,
+            &quot;idName&quot;: &quot;Свистун О. Є.&quot;,
+            &quot;fullName&quot;: &quot;Свистун Олег Євгенович&quot;,
+            &quot;familyName&quot;: &quot;Свистун&quot;,
+            &quot;givenName&quot;: &quot;Олег&quot;,
+            &quot;additionalName&quot;: &quot;Євгенович&quot;,
+            &quot;sex&quot;: &quot;чоловік&quot;
+          },
+          &quot;amountOfFunds&quot;: 500
+        },
+        {
+          &quot;source&quot;: &quot;СВИСТУН ВОЛОДИМИР ЄВГЕНОВИЧ, розмір внеску до статутного фонду - 500.00 грн.&quot;,
+          &quot;person&quot;: {
+            &quot;source&quot;: &quot;СВИСТУН ВОЛОДИМИР ЄВГЕНОВИЧ&quot;,
+            &quot;idName&quot;: &quot;Свистун В. Є.&quot;,
+            &quot;fullName&quot;: &quot;Свистун Володимир Євгенович&quot;,
+            &quot;familyName&quot;: &quot;Свистун&quot;,
+            &quot;givenName&quot;: &quot;Володимир&quot;,
+            &quot;additionalName&quot;: &quot;Євгенович&quot;,
+            &quot;sex&quot;: &quot;чоловік&quot;
+          },
+          &quot;amountOfFunds&quot;: 500
+        }
+      ],
+      &quot;amountOfFunds&quot;: 2000,
+      &quot;numberOfFounders&quot;: 3,
+      &quot;updatedAt&quot;: &quot;2018-08-06T20:54:27.833Z&quot;,
+      &quot;strict&quot;: true
+    }
+  ],
+  &quot;money&quot;: [
+    {
+      &quot;id&quot;: 0,
+      &quot;amount&quot;: 6400,
+      &quot;currency&quot;: &quot;Гривня&quot;,
+      &quot;currencyCode&quot;: &quot;UAH&quot;,
+      &quot;equivalent&quot;: 6400
+    }
+  ],
+  &quot;lawsuitLinks&quot;: [
+    {
+      &quot;lawsuitNumber&quot;: &quot;918/800/17&quot;,
+      &quot;year&quot;: 2017
+    }
+  ],
+  &quot;court&quot;: {
+    &quot;courtCode&quot;: &quot;5019&quot;,
+    &quot;courtRegion&quot;: &quot;Рівненська область&quot;,
+    &quot;instanceType&quot;: &quot;Перша&quot;,
+    &quot;courtName&quot;: &quot;Господарський суд Рівненської області&quot;,
+    &quot;address&quot;: {
+      &quot;source&quot;: &quot;33013, м. Рівне, вул. Набережна, 26-А&quot;,
+      &quot;countryName&quot;: &quot;Україна&quot;,
+      &quot;postalCode&quot;: &quot;33013&quot;,
+      &quot;locality&quot;: &quot;місто Рівне&quot;,
+      &quot;streetNumber&quot;: &quot;26-А&quot;,
+      &quot;streetAddress&quot;: &quot;вулиця Набережна, 26-А&quot;,
+      &quot;fullAddress&quot;: &quot;33013, Рівненська область, місто Рівне, вулиця Набережна, 26-А&quot;,
+      &quot;geo&quot;: {
+        &quot;lat&quot;: &quot;50.627047&quot;,
+        &quot;lon&quot;: &quot;26.246482&quot;
+      },
+      &quot;region&quot;: &quot;Рівненська область&quot;
+    },
+    &quot;url&quot;: &quot;http://rv.arbitr.gov.ua/sud5019/&quot;,
+    &quot;phone&quot;: [
+      &quot;(362) 62 31 15&quot;
+    ],
+    &quot;email&quot;: &quot;inbox@rv.arbitr.gov.ua&quot;,
+    &quot;openingHours&quot;: [
+      &quot;Пн-Чт з 09:00 до 18:00&quot;,
+      &quot;Пт з 09:00 до 16:45&quot;,
+      &quot;Перерва з 13:00 до 13:45&quot;
+    ],
+    &quot;organization&quot;: {
+      &quot;legalName&quot;: &quot;ГОСПОДАРСЬКИЙ СУД РІВНЕНСЬКОЇ ОБЛАСТІ&quot;,
+      &quot;identifier&quot;: {
+        &quot;scheme&quot;: &quot;UA-EDR&quot;,
+        &quot;id&quot;: &quot;03500111&quot;,
+        &quot;valid&quot;: true
+      },
+      &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+      &quot;kved&quot;: {
+        &quot;part&quot;: &quot;84&quot;,
+        &quot;group&quot;: &quot;23&quot;
+      },
+      &quot;full_kved&quot;: &quot;84.23 Діяльність у сфері юстиції та правосуддя&quot;,
+      &quot;address&quot;: {
+        &quot;source&quot;: &quot;33013, Рівненська обл., місто Рівне, ВУЛИЦЯ НАБЕРЕЖНА, будинок 26 А&quot;,
+        &quot;countryName&quot;: &quot;Україна&quot;,
+        &quot;postalCode&quot;: &quot;33013&quot;,
+        &quot;region&quot;: &quot;Рівненська область&quot;,
+        &quot;locality&quot;: &quot;місто Рівне&quot;,
+        &quot;streetNumber&quot;: &quot;26 А&quot;,
+        &quot;streetAddress&quot;: &quot;вулиця Набережна, 26 А&quot;,
+        &quot;fullAddress&quot;: &quot;33013, Рівненська область, місто Рівне, вулиця Набережна, 26 А&quot;
+      },
+      &quot;head&quot;: {
+        &quot;source&quot;: &quot;ВОЙТЮК  ВІТАЛІЙ РОМАНОВИЧ&quot;,
+        &quot;idName&quot;: &quot;Войтюк В. Р.&quot;,
+        &quot;fullName&quot;: &quot;Войтюк Віталій Романович&quot;,
+        &quot;familyName&quot;: &quot;Войтюк&quot;,
+        &quot;givenName&quot;: &quot;Віталій&quot;,
+        &quot;additionalName&quot;: &quot;Романович&quot;,
+        &quot;sex&quot;: &quot;чоловік&quot;,
+        &quot;jobTitle&quot;: &quot;Директор&quot;
+      },
+      &quot;updatedAt&quot;: &quot;2018-08-06T20:54:27.833Z&quot;
+    },
+    &quot;updatedAt&quot;: &quot;2018-08-10T13:15:42.915Z&quot;
+  },
+  &quot;language&quot;: &quot;uk&quot;,
+  &quot;length&quot;: 633,
+  &quot;fullTextClean&quot;: &quot;ГОСПОДАРСЬКИЙ СУД РІВНЕНСЬКОЇ ОБЛАСТІ\n\nНАКАЗ\n\n\&quot;16\&quot; травня 2018 р. № 918/800/17\n\nПро примусове виконання рішення\n\nНа виконання рішення господарського суду від \&quot;26\&quot; березня 2018 р., яке набрало законної сили 08 травня 2018 року.\n\nСТЯГНУТИ: з фізичної особи-підприємця Яганова Сергія Павловича (реєстраційний номер облікової картки фізичної особи - платника податків НОМЕР_1, АДРЕСА_1\nгурт. ) на користь Малого приватного підприємства \&quot;Моріон\&quot; (м. Рівне,\nвул. Шевченка, буд.7, код ЄДРПОУ 13990091) судовий збір в розмірі 6 400,00 грн. .\n\nНаказ дійсний для пред&#39;явлення до виконання у строк до 09 травня 2021 року.\n\nМ.П. Суддя Марач В.В.&quot;,
+  &quot;numberOfJudges&quot;: 1,
+  &quot;fullText&quot;: &quot;ГОСПОДАРСЬКИЙ СУД РІВНЕНСЬКОЇ ОБЛАСТІ\n\nНАКАЗ\n\n\&quot;16\&quot; травня 2018 р. № &lt;span class=\&quot;info lawsuit-links strict\&quot; data-search=\&quot;%7B%22type%22:%22lawsuitLinks%22,%22lawsuitNumber%22:%22918/800/17%22%7D\&quot;&gt;918/800/17&lt;/span&gt;\n\nПро примусове виконання рішення\n\nНа виконання рішення господарського суду від \&quot;26\&quot; березня 2018 р., яке набрало законної сили 08 травня 2018 року.\n\nСТЯГНУТИ: з фізичної особи-підприємця &lt;span class=\&quot;info person\&quot; data-search=\&quot;%7B%22type%22:%22person%22,%22_id%22:%22%22,%22idName%22:%22%D0%AF%D0%B3%D0%B0%D0%BD%D0%BE%D0%B2%D0%B0%20%D0%A1.%20%D0%9F.%22%7D\&quot;&gt;Яганова Сергія Павловича&lt;/span&gt; (реєстраційний номер облікової картки фізичної особи - платника податків НОМЕР_1, АДРЕСА_1 гурт. ) на користь Малого &lt;span class=\&quot;info organization strict\&quot; data-search=\&quot;%7B%22type%22:%22organization%22,%22identifier.id%22:%2213990091%22%7D\&quot;&gt;приватного підприємства \&quot;Моріон\&quot;&lt;/span&gt; (м. Рівне, вул. Шевченка, буд.7, код ЄДРПОУ &lt;span class=\&quot;info organization strict\&quot; data-search=\&quot;%7B%22type%22:%22organization%22,%22identifier.id%22:%2213990091%22%7D\&quot;&gt;13990091&lt;/span&gt;) судовий збір в розмірі &lt;span class=\&quot;info money UAH strict\&quot; data-search=\&quot;%7B%22type%22:%22money%22,%22amount%22:6400,%22currencyCode%22:%22UAH%22%7D\&quot;&gt;6 400,00 грн.&lt;/span&gt; .\n\nНаказ дійсний для пред&#39;явлення до виконання у строк до 09 травня 2021 року.\n\nМ.П. Суддя &lt;span class=\&quot;info judge strict\&quot; data-search=\&quot;%7B%22type%22:%22judge%22,%22_id%22:%225019_marach_v__v_%22,%22idName%22:%22%D0%9C%D0%B0%D1%80%D0%B0%D1%87%20%D0%92.%20%D0%92.%22,%22courtCode%22:%225019%22%7D\&quot;&gt;Марач В.В.&lt;/span&gt;&quot;,
+  &quot;updatedAt&quot;: &quot;2018-09-10T08:43:29.571Z&quot;,
+  &quot;historyTotal&quot;: 10,
+  &quot;history&quot;: [
+    {
+      &quot;lawsuitDate&quot;: &quot;2018-08-05T21:00:00.000Z&quot;,
+      &quot;outcomeFull&quot;: [
+        &quot;Заяву повернено&quot;
+      ],
+      &quot;id&quot;: &quot;75693651&quot;,
+      &quot;causeForm&quot;: &quot;Ухвала&quot;,
+      &quot;lawsuitNumber&quot;: &quot;918/800/17&quot;,
+      &quot;outcome&quot;: &quot;Процесуальне&quot;
+    }
+  ]
+}
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id7">
+<h2>Пошук судових рішень<a class="headerlink" href="#id7" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>POST-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/lawsuit/search</span></code> дозволяє шукати судові рішення.</p>
+<p>POST-запит має містити JSON з наступними змінними</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">query:</th><td class="field-body"><p class="first">рядок</p>
+<p>Перелік термінів для повнотекстового пошуку.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">defaultOperator:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Приймає значення <code class="docutils literal notranslate"><span class="pre">or</span></code> або <code class="docutils literal notranslate"><span class="pre">and</span></code>, щоб шукати будь-який з термінів для повнотекстового пошуку або усі терміни.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">filter:</th><td class="field-body"><p class="first">об’єкт</p>
+<p>Об’єкт, який містить перелік усіх пошукових фільтрів, встановлених користувачем.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">sort:</th><td class="field-body"><p class="first">об’єкт</p>
+<p>Об’єкт, який визначає порядок сортування результатів.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">from:</th><td class="field-body"><p class="first">ціле число (integer)</p>
+<p>Кількість об’єктів, яку необхідно пропустити (використовується для пагінації).</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">aggregation:</th><td class="field-body"><p class="first">булеве значення</p>
+<p class="last">Якщо встановлено значення <code class="docutils literal notranslate"><span class="pre">false</span></code>, то в результаті буде отримано перелік рішень, які відповідають повнотекстовому запиту та фільтрам. Якщо встановлено значення <code class="docutils literal notranslate"><span class="pre">true</span></code>, то повертає перелік агрегацій для фасетного пошуку.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id8">
+<h3>Фільтри<a class="headerlink" href="#id8" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Кожен з фільтрів має бути об’єктом з певною назвою (поле, за яким відбувається фільтрація) та будуватися за схемою:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">list:</th><td class="field-body"><p class="first">масив рядків</p>
+<p>Перелік точних значень термінів для фільтрації результату.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">operator:</th><td class="field-body"><p class="first">рядок</p>
+<p class="last">Приймає значення <code class="docutils literal notranslate"><span class="pre">or</span></code> або <code class="docutils literal notranslate"><span class="pre">and</span></code>, щоб у результат попадали сутності з будь-яким зі значень фільтру або усі значення фільтру.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Судові рішення можна фільтрувати за точними значеннями таких змінних:</p>
+<ul class="simple">
+<li><strong>lawsuitNumber</strong> - Номер судового рішення</li>
+<li><strong>causeCategories</strong> - Категорія судової справи</li>
+<li><strong>instanceType</strong> - Інстанція суду</li>
+<li><strong>causeForm</strong> - Форма судового документу</li>
+<li><strong>causeKind</strong> - Форма судочинства</li>
+<li><strong>outcome</strong> - Тип результату рішення (матеріальне, процесуальне)</li>
+<li><strong>outcomeFull</strong> - Скорочене формулювання рішення</li>
+<li><strong>court</strong> - Код суду</li>
+<li><strong>lawsuitLinks</strong> - Посилання на судову справу в тексті рішення</li>
+<li><strong>proceedingLinks</strong> - Посилання на судове провадження, яке наявне в тексті рішення</li>
+<li><strong>proceedingLinks.caseType</strong> - Тип судового провадження, яке наявне в тексті рішення</li>
+<li><strong>proceedingLinks.year</strong> - Рік судового провадження, яке наявне в тексті рішення</li>
+<li><strong>criminalProceedingNumber</strong> - Посилання на кримінальне провадження, яке наявне в тексті рішення</li>
+<li><strong>criminalProceedingYear</strong> - Рік початку кримінального провадження, яке наявне в тексті рішення</li>
+<li><strong>criminalProceedingIssuer</strong> - Орган, що почав кримінальне провадження, яке наявне в тексті рішення</li>
+<li><strong>organization.identifier</strong> - Згадування в тексті рішення коду ЄДРПОУ організації</li>
+<li><strong>organization.name</strong> - Згадування в тексті рішення назви організації</li>
+<li><strong>complainant.name</strong> - Згадування в тексті рішення назви організації-позивача</li>
+<li><strong>defendant.name</strong> - Згадування в тексті рішення назви організації-відповідача</li>
+<li><strong>thirdParty.name</strong> - Згадування в тексті рішення назви організації-третьої сторони</li>
+<li><strong>judge.idName</strong> - Прізвище та ініціали судді, для більшої точності варто використовувати разом із фільтром по коду або назві суда</li>
+<li><strong>judgesMention.idName</strong> - Прізвище та ініціали судді, якого згадано в тексті судового рішення</li>
+<li><strong>person.idName</strong> - Прізвище та ініціали фізичної особи, яка згадана в тексті судового рішення</li>
+<li><strong>attorney.idName</strong> - Прізвище та ініціали адвоката, якого згадано в тексті судового рішення</li>
+<li><strong>courtExpert.idName</strong> - Прізвище та ініціали судового експерта, якого згадано в тексті судового рішення</li>
+<li><strong>arbitrage.idName</strong> - Прізвище та ініціали арбітражного керуючогоь, якого згадано в тексті судового рішення</li>
+<li><strong>notary.idName</strong> - Прізвище та ініціали нотаріуса, якого згадано в тексті судового рішення</li>
+<li><strong>prosecutor.idName</strong> - Прізвище та ініціали прокурора, якого згадано в тексті судового рішення</li>
+<li><strong>tender.id</strong> - ідентифікатор тендеру Prozorro, який наявний в тексті судового рішення</li>
+<li><strong>courtName</strong> - Назва суду</li>
+<li><strong>courtRegion</strong> - Регіон суду</li>
+<li><strong>legislationTitle</strong> - Назва законодавчого акту, посилання на який є в тексті рішення</li>
+<li><strong>echr.legislationTitle</strong> - Назва рішення ЄСПЛ, посилання на яке є в тексті рішення</li>
+<li><strong>election.precinctNum</strong> - Номер виборчої дільниці, яка вказана в тексті рішення</li>
+<li><strong>election.districtNum</strong> - Номер виборчого округу, який вказаний в тексті рішення</li>
+<li><strong>land.cadnum</strong> - Номер земельної ділянки, яка вказана в тексті рішення</li>
+<li><strong>land.purpose</strong> - Призначення земельної ділянки, яка вказана в тексті рішення</li>
+<li><strong>land.use</strong> - Актуальне використання земельної ділянки, яка вказана в тексті рішення</li>
+<li><strong>estate.estateNumber</strong> - Номер нерухомості з реєстру нерухомого майна, який вказано в тексті рішення</li>
+</ul>
+<p>Судові рішення можна фільтрувати за діапазонами значень таких змінних (для таких фільтрів вказується діапазон зі змінними <code class="docutils literal notranslate"><span class="pre">from</span></code> та <code class="docutils literal notranslate"><span class="pre">to</span></code>):</p>
+<ul class="simple">
+<li><strong>lawsuitDate</strong> - Дата прийняття рішення</li>
+<li><strong>publishedDate</strong> - Дата публікації рішення</li>
+<li><strong>money</strong> - Кількість грошей, які зазначені в тексті рішення (в гривневому еквіваленті)</li>
+<li><strong>land.area</strong> - Розмір земельної ділянки, яка зазначена в тексті рішення (в гектарах)</li>
+<li><strong>length</strong> - Довжина судового рішення</li>
+</ul>
+<p>Судові рішення можна фільтрувати за складними фільтрами:</p>
+<ul class="simple">
+<li><strong>compoundFilters</strong> - Складний фільтр для законодавства. Приклад застосування наведено нижче.</li>
+</ul>
+<p>Приклад використання фільтру - «(1) Тільки рішення, (2) в яких задоволено позов або накладено стягення, (3) сума грошей в тексті від 10 тисяч до 100 тисяч гривень, (4) прийняті з 1 січня 2017 року до 1 грудня 2018 року та (5) посилаються на статтю 264 Цивільного процесуального кодексу України»:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+&quot;filter&quot;: {
+  &quot;causeForm&quot;: {
+    &quot;list&quot;: [&quot;Рішення&quot;],
+    &quot;operator&quot;: &quot;or&quot;
+  },
+  &quot;outcomeFull&quot;: {
+    &quot;list&quot;: [&quot;Накладено стягнення&quot;, &quot;Позов задоволено&quot;],
+    &quot;operator&quot;: &quot;or&quot;
+  },
+  &quot;money&quot;: {
+    &quot;list&quot;: [{
+      &quot;from&quot;: 10000,
+      &quot;to&quot;: 100000
+    }],
+    &quot;operator&quot;: &quot;or&quot;
+  },
+  &quot;lawsuitDate&quot;: {
+    &quot;list&quot;: [{
+      &quot;from&quot;: &quot;2017-03-01T00:00:00.000Z&quot;,
+      &quot;to&quot;: &quot;2018-12-28T00:00:00.000Z&quot;
+    }],
+    &quot;operator&quot;: &quot;or&quot;
+  },
+  &quot;compoundFilters&quot;: {
+    &quot;list&quot;: [{
+      &quot;path&quot;: &quot;legislationReferences&quot;,
+      &quot;type&quot;: &quot;article&quot;,
+      &quot;filter&quot;: {
+        &quot;legislationTitle&quot;: &quot;Цивільний процесуальний кодекс України&quot;,
+        &quot;article&quot;: &quot;264&quot;
+      }
+    }],
+    &quot;operator&quot;: &quot;or&quot;
+  }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>Сортування<a class="headerlink" href="#id9" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Для судових рішень дозволено сортування за датою прийняття рішення. Якщо змінна <code class="docutils literal notranslate"><span class="pre">sort</span></code> у запиті має значення <code class="docutils literal notranslate"><span class="pre">{}</span></code>, то сортування відбуватиметься за релевантністю.</p>
+<p>Приклад сортування за датою прийняття рішення:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+&quot;sort&quot;: {
+  &quot;lawsuitDate&quot;: { &quot;order&quot;:&quot;desc&quot; }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>Агрегація<a class="headerlink" href="#id10" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Для судових рішень передбачено агрегацію за такими змінними:</p>
+<ul class="simple">
+<li>Дата публікації рішення</li>
+<li>Форма судочинства</li>
+<li>Форма судового документу</li>
+<li>Категорія судового рішення</li>
+<li>Номер судової справи</li>
+<li>Посилання на судові справи</li>
+<li>Посилання на судові провадження</li>
+<li>Тип судового провадження</li>
+<li>Рік початку судового провадження</li>
+<li>Номер кримінального провадження</li>
+<li>Орган, який почав кримінальне провадження</li>
+<li>Рік початку кримінального провадження</li>
+<li>Згадування юридичних осіб</li>
+<li>Юридична особа - позивач</li>
+<li>Юридична особа - відповідач</li>
+<li>Юридична особа - третя сторона</li>
+<li>Суддя</li>
+<li>Згадування суддів</li>
+<li>Фізичні особи</li>
+<li>Адвокати</li>
+<li>Судові експерти</li>
+<li>Арбітражні керуючі</li>
+<li>Нотаіруси</li>
+<li>Прокурори</li>
+<li>Торги Прозоро</li>
+<li>Виборчі дільниці</li>
+<li>Виборчі округи</li>
+<li>Номера земельних ділянок</li>
+<li>Призначення земельних ділянок</li>
+<li>Використання земельних ділянок</li>
+<li>Площа земельних ділянок</li>
+<li>Нерухоме майно</li>
+<li>Наявність відео судових засідань</li>
+<li>Довжина рішення</li>
+<li>Тип результату рішення</li>
+<li>Скорочене формулювання результату рішення</li>
+<li>Суд</li>
+<li>Регіон суду</li>
+<li>Інстанція суду</li>
+<li>Законодавство</li>
+<li>Статті на законодавства (якщо встановлений фільтр «Законодавство»)</li>
+<li>Рішення ЄСПЛ</li>
+<li>Гроші</li>
+</ul>
+<p>Агрегації розраховуються автоматично для усіх змінних, для яких встановлено фільтр. Якщо необхідно отримати агрегацію без фільтрації, то необхідно задати «пустий» фільтр таким чином:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+&quot;filter&quot;: {
+  &quot;causeForm&quot;: {
+    &quot;list&quot;: [],
+    &quot;operator&quot;: &quot;or&quot;
+  }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id11">
+<h3>Приклад повного запиту та відповіді<a class="headerlink" href="#id11" title="Постійне посилання на цей заголовок">¶</a></h3>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">POST</span> <span class="nn">/lawsuit/search</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{
+  &quot;query&quot;: &quot;&quot;,
+  &quot;defaultOperator&quot;: &quot;or&quot;,
+  &quot;filter&quot;: {
+    &quot;causeForm&quot;: {
+      &quot;list&quot;: [
+        &quot;Рішення&quot;
+      ],
+      &quot;operator&quot;: &quot;or&quot;,
+      &quot;type&quot;: &quot;object&quot;
+    },
+    &quot;outcomeFull&quot;: {
+      &quot;list&quot;: [
+        &quot;Накладено стягнення&quot;,
+        &quot;Позов задоволено&quot;
+      ],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;lawsuitDate&quot;: {
+      &quot;list&quot;: [
+        {
+          &quot;from&quot;: &quot;2017-01-01T00:00:00.000Z&quot;,
+          &quot;to&quot;: &quot;2018-11-28T00:00:00.000Z&quot;
+        }
+      ],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;money&quot;: {
+      &quot;list&quot;: [
+        {
+          &quot;from&quot;: 10000,
+          &quot;to&quot;: 100000
+        }
+      ],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;compoundFilters&quot;: {
+      &quot;list&quot;: [
+        {
+          &quot;path&quot;: &quot;legislationReferences&quot;,
+          &quot;type&quot;: &quot;article&quot;,
+          &quot;filter&quot;: {
+            &quot;legislationTitle&quot;: &quot;Цивільний процесуальний кодекс України&quot;,
+            &quot;article&quot;: &quot;141&quot;
+          }
+        }
+      ],
+      &quot;operator&quot;: &quot;or&quot;
+    }
+  },
+  &quot;sort&quot;: {},
+  &quot;searchIndex&quot;: &quot;lawsuit&quot;,
+  &quot;from&quot;: 10,
+  &quot;aggregation&quot;: false
+}
+
+{
+  &quot;total&quot;: 588,
+  &quot;items&quot;:[{
+    &quot;outcomeText&quot;: &quot;Позовні вимоги Публічного акціонерного &lt;span class=\&quot;info organization strict\&quot; data-search=\&quot;%7B%22type%22:%22organization%22,%22identifier.id%22:%2214360920%22%7D\&quot;&gt;товариства Комерційний банк \&quot;Правекс-Банк\&quot;&lt;/span&gt; до ОСОБА_1 про стягнення заборгованості за кредитним договором - задовольнити частково.\n\nСтягнути з ОСОБА_1, ІНФОРМАЦІЯ_1, ІПН НОМЕР_1, який зареєстрований за адресою: ІНФОРМАЦІЯ_2/52, кв.6, м. Маріуполь, на користь Публічного акціонерного &lt;span class=\&quot;info organization strict\&quot; data-search=\&quot;%7B%22type%22:%22organization%22,%22identifier.id%22:%2214360920%22%7D\&quot;&gt;товариства Комерційний банк \&quot;Правекс-Банк\&quot;&lt;/span&gt; (ЄДРПОУ &lt;span class=\&quot;info organization strict\&quot; data-search=\&quot;%7B%22type%22:%22organization%22,%22identifier.id%22:%2214360920%22%7D\&quot;&gt;14360920&lt;/span&gt;, ПАТ Комерційний банк \&quot;Правекс-банк\&quot; м. Київ, Київська область, Кловський узвіз, 9/2) заборгованість за кредитним договором №10126-032/03Р від 26.11.2003 року, за тілом кредиту у розмірі &lt;span class=\&quot;info money USD strict\&quot; data-search=\&quot;%7B%22type%22:%22money%22,%22amount%22:337,%22currencyCode%22:%22USD%22%7D\&quot;&gt;337,00 доларів США&lt;/span&gt;, заборгованості по процентам за користування кредитом у розмірі &lt;span class=\&quot;info money USD strict\&quot; data-search=\&quot;%7B%22type%22:%22money%22,%22amount%22:75.86,%22currencyCode%22:%22USD%22%7D\&quot;&gt;75,86 доларів США&lt;/span&gt; та судовий збір у розмірі &lt;span class=\&quot;info money UAH strict\&quot; data-search=\&quot;%7B%22type%22:%22money%22,%22amount%22:1600,%22currencyCode%22:%22UAH%22%7D\&quot;&gt;1600 грн.&lt;/span&gt;\n\nВ задоволенні іншої частини позовних вимог - відмовити.\n\nЗаочне рішення може бути переглянуте Жовтневим районним судом м. Маріуполя Донецької області за письмовою заявою відповідача, яку може бути подано протягом тридцяти днів з дня його проголошення.\n\nУчасник справи, якому повне заочне рішення суду не було вручене у день його проголошення, має право на поновлення пропущеного строку на подання заяви про його перегляд - якщо така заява подана протягом двадцяти днів з дня вручення йому повного заочного рішення суду.\n\nАпеляційна скарга на рішення суду подається позивачем до суду апеляційної інстанції через Жовтневий районний суд м. Маріуполя протягом тридцяти днів з дня його проголошення.\n\nЗаочне рішення набирає законної сили, якщо протягом встановлених строків, не подані заява про перегляд заочного рішення або апеляційна скарга, або якщо рішення залишено в силі за результатами апеляційного розгляду справи.\n\nСуддя &lt;span class=\&quot;info judge strict\&quot; data-search=\&quot;%7B%22type%22:%22judge%22,%22_id%22:%220519_shevchenko_o__a_%22,%22idName%22:%22%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE%20%D0%9E.%20%D0%90.%22,%22courtCode%22:%220519%22%7D\&quot;&gt;О.А. Шевченко&lt;/span&gt;&quot;,
+    &quot;proceedingLinks&quot;: [{&quot;proceedingNumber&quot;: &quot;2/263/229/2018&quot; }],
+    &quot;description&quot;: &quot;про стягнення заборгованості за кредитним договором&quot;,
+    &quot;court&quot;: { &quot;courtName&quot;: &quot;Жовтневий районний суд м. Маріуполя&quot;, &quot;instanceType&quot;: &quot;Перша&quot; },
+    &quot;lawsuitNumber&quot;: &quot;264/3538/17&quot;,
+    &quot;causeKind&quot;: &quot;Цивільне&quot;,
+    &quot;lawsuitLinks&quot;: [{ &quot;lawsuitNumber&quot;: &quot;1-10/2004&quot; }, { &quot;lawsuitNumber&quot;: &quot;264/3538/17&quot; }, { &quot;lawsuitNumber&quot;: &quot;826/18330/14&quot;…],
+    &quot;lawsuitDate&quot;: &quot;2018-01-16T22:00:00.000Z&quot;,
+    &quot;outcomeFull&quot;:[ &quot;&lt;strong&gt;Накладено стягнення&lt;/strong&gt;&quot;, &quot;Позов задоволено частково&quot;, &quot;Відмовлено у задоволенні позову&quot;],
+    &quot;id&quot;: &quot;71709911&quot;,
+    &quot;judge&quot;: [{ &quot;person&quot;: { &quot;idName&quot;: &quot;Шевченко О. А.&quot; }}],
+    &quot;causeForm&quot;: &quot;&lt;strong&gt;Рішення&lt;/strong&gt;&quot;,
+    &quot;outcome&quot;: &quot;Матеріальне&quot;
+  }]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="endpoint-attorney.html" class="btn btn-neutral float-right" title="Адвокат" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="endpoint-login.html" class="btn btn-neutral" title="Авторизація користувача" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Кирило Захаров
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script type="text/javascript" src="static/jquery.js"></script>
+        <script type="text/javascript" src="static/underscore.js"></script>
+        <script type="text/javascript" src="static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

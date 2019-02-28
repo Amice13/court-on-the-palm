@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="uk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="uk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="Опис API для дати та часу на проекті &quot;Суд на долоні&quot;" name="desctription" />
+<meta content="index, follow" name="robots" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="uk" name="language" />
+<meta content="Суд на долоні, API, дата, час" name="keywords" />
+<meta content="Кирило Захаров" name="author" />
+<meta content="Суд на долоні" name="copyright" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API Суд на долоні - Дата/час &mdash; Суд на долоні alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="index" title="Індекс" href="genindex.html" />
+    <link rel="search" title="Пошук" href="search.html" />
+    <link rel="next" title="Державний реєстр виборців" href="drv.html" />
+    <link rel="prev" title="Відео судових засідань" href="video.html" /> 
+
+  
+  <script src="static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Суд на долоні
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Зміст:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Огляд</a></li>
+<li class="toctree-l1"><a class="reference internal" href="endpoints.html">Точки входу</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="data-model.html">Стандарт даних</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="lawsuit.html">Судове рішення</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attorney.html">Адвокати</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arbitrage.html">Арбітражні керуючі</a></li>
+<li class="toctree-l2"><a class="reference internal" href="video.html">Відео судових засідань</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Дати</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drv.html">Державний реєстр виборців</a></li>
+<li class="toctree-l2"><a class="reference internal" href="law.html">Законодавство</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lands.html">Земельна ділянка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identifier.html">Ідентифікатор юридичної особи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="koatuu.html">КОАТУУ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exchange.html">Курс валют</a></li>
+<li class="toctree-l2"><a class="reference internal" href="legislation.html">Нормативно-правові документи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notary.html">Нотаріуси</a></li>
+<li class="toctree-l2"><a class="reference internal" href="address.html">Поштова адреса</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prosecutor.html">Прокурори</a></li>
+<li class="toctree-l2"><a class="reference internal" href="article.html">Стаття законодавства</a></li>
+<li class="toctree-l2"><a class="reference internal" href="court.html">Суди</a></li>
+<li class="toctree-l2"><a class="reference internal" href="judge.html">Судді</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courtexpert.html">Судові експерти</a></li>
+<li class="toctree-l2"><a class="reference internal" href="person.html">Фізичні особи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="organization.html">Юридичні особи (організації)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contacts.html">Контакти</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Суд на долоні</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="data-model.html">Стандарт даних</a> &raquo;</li>
+        
+      <li>API Суд на долоні - Дата/час</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="sources/date-format.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Дати<a class="headerlink" href="#id1" title="Постійне посилання на цей заголовок">¶</a></h1>
+<p>Дати форматуються за стандартом <a class="reference external" href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>.</p>
+<img alt="http://imgs.xkcd.com/comics/iso_8601.png" src="http://imgs.xkcd.com/comics/iso_8601.png" />
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="drv.html" class="btn btn-neutral float-right" title="Державний реєстр виборців" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="video.html" class="btn btn-neutral" title="Відео судових засідань" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Кирило Захаров
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script type="text/javascript" src="static/jquery.js"></script>
+        <script type="text/javascript" src="static/underscore.js"></script>
+        <script type="text/javascript" src="static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

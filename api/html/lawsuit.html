@@ -1,0 +1,666 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="uk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="uk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="Опис API до опису судового рішення на проекті &quot;Суд на долоні&quot;" name="desctription" />
+<meta content="index, follow" name="robots" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="uk" name="language" />
+<meta content="Суд на долоні, API, судове рішення" name="keywords" />
+<meta content="Кирило Захаров" name="author" />
+<meta content="Суд на долоні" name="copyright" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API Суд на долоні - Судове рішення &mdash; Суд на долоні alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="index" title="Індекс" href="genindex.html" />
+    <link rel="search" title="Пошук" href="search.html" />
+    <link rel="next" title="Адвокати" href="attorney.html" />
+    <link rel="prev" title="Стандарт даних" href="data-model.html" /> 
+
+  
+  <script src="static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Суд на долоні
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Зміст:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Огляд</a></li>
+<li class="toctree-l1"><a class="reference internal" href="endpoints.html">Точки входу</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="data-model.html">Стандарт даних</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Судове рішення</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Схема даних</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25">Посилання на справу</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id26">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id27">Посилання на провадження</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id28">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id29">Посилання на кримінальні провадження</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id30">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id31">Вебсайт</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id32">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id33">Виборча комісія</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id34">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id35">Тендер</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id36">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id37">Сума грошей</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id38">Схема даних</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="attorney.html">Адвокати</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arbitrage.html">Арбітражні керуючі</a></li>
+<li class="toctree-l2"><a class="reference internal" href="video.html">Відео судових засідань</a></li>
+<li class="toctree-l2"><a class="reference internal" href="date-format.html">Дати</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drv.html">Державний реєстр виборців</a></li>
+<li class="toctree-l2"><a class="reference internal" href="law.html">Законодавство</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lands.html">Земельна ділянка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identifier.html">Ідентифікатор юридичної особи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="koatuu.html">КОАТУУ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exchange.html">Курс валют</a></li>
+<li class="toctree-l2"><a class="reference internal" href="legislation.html">Нормативно-правові документи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notary.html">Нотаріуси</a></li>
+<li class="toctree-l2"><a class="reference internal" href="address.html">Поштова адреса</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prosecutor.html">Прокурори</a></li>
+<li class="toctree-l2"><a class="reference internal" href="article.html">Стаття законодавства</a></li>
+<li class="toctree-l2"><a class="reference internal" href="court.html">Суди</a></li>
+<li class="toctree-l2"><a class="reference internal" href="judge.html">Судді</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courtexpert.html">Судові експерти</a></li>
+<li class="toctree-l2"><a class="reference internal" href="person.html">Фізичні особи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="organization.html">Юридичні особи (організації)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contacts.html">Контакти</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Суд на долоні</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="data-model.html">Стандарт даних</a> &raquo;</li>
+        
+      <li>API Суд на долоні - Судове рішення</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="sources/lawsuit.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span class="target" id="index-0"></span><div class="section" id="id1">
+<h1>Судове рішення<a class="headerlink" href="#id1" title="Постійне посилання на цей заголовок">¶</a></h1>
+<div class="section" id="id2">
+<h2>Схема даних<a class="headerlink" href="#id2" title="Постійне посилання на цей заголовок">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">id:</th><td class="field-body"><p class="first">рядок</p>
+<p>Ідентифікатор судового рішення з даних Державної судової адміністрації.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">lawsuitNumber:</th><td class="field-body"><p class="first">рядок</p>
+<p>Номер судової справи.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">lawsuitDate:</th><td class="field-body"><p class="first">рядок, <a class="reference external" href="date-format.html">дата</a></p>
+<p>Дата прийняття судового рішення.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">publishedDate:</th><td class="field-body"><p class="first">рядок, <a class="reference external" href="date-format.html">дата</a></p>
+<p>Дата публікації судового рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">proceedingNumber:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">рядок, <a class="reference external" href="date-format.html">дата</a></p>
+<p>Номер судового провадження (перший номер, який алгоритми вилучають з тексту як номер судового провадження).</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">judge:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="judge.html">суддя</a></p>
+<p>Перелік суддів, які приймали рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">numberOfJudges:</th><td class="field-body"><p class="first">ціле число</p>
+<p>Кількість суддів, які приймали рішення.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">description:</th><td class="field-body"><p class="first">рядок</p>
+<p>Короткий опис судової справи.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">language:</th><td class="field-body"><p class="first">рядок</p>
+<p>Мова судового рішення (українська (<code class="docutils literal notranslate"><span class="pre">uk</span></code>) або російська (<code class="docutils literal notranslate"><span class="pre">ru</span></code>)).</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">fullText:</th><td class="field-body"><p class="first">рядок</p>
+<p>Повний текст судового рішення українською мовою з розміченими сутностями.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">fullTextRussian:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Повний текст судового рішення російською мовою з розміченими сутностями.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">fullTextClean:</th><td class="field-body"><p class="first">рядок</p>
+<p>Повний текст судового рішення українською мовою без розмічених сутностей.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">fullTextCleanRussian:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Повний текст судового рішення російською мовою без розмічених сутностей.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">outcome:</th><td class="field-body"><p class="first">рядок</p>
+<p>Чи є рішення процесуальним (проміжним) чи матеріальним (кінцевим).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">outcomeFull:</th><td class="field-body"><p class="first">рядок</p>
+<p>Резолютивна частина судового рішення українською мовою.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">outcomeTextRussian:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Резолютивна частина судового рішення російською мовою.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">outcomeTextRussian:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Резолютивна частина судового рішення російською мовою.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">causeCategories:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Категорія судової справи відповідно до переліку категорій Деражвної судової адміністрації.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">causeForm:</th><td class="field-body"><p class="first">рядок</p>
+<p>Форма судового документу.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">causeKind:</th><td class="field-body"><p class="first">рядок</p>
+<p>Форма судочинства.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">court:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="court.html">суд</a></p>
+<p>Судова установа, в якій працює суддя. Надається як масив з одним об’єктом. В подальшому можлива зміна схеми, коли кожний запис судді буде містити перелік усіх судів, в яких він здійснював судочинство.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">lawsuitLinks:</th><td class="field-body"><p class="first">об’єкт, посилання на справу</p>
+<p>Посилання на інші справі в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">proceedingLinks:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">об’єкт, посилання на провадження</p>
+<p>Посилання на судові провадження в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">criminalProceedingLinks:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">об’єкт, посилання на кримінальне провадження</p>
+<p>Посилання на кримінальні провадження в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">legislation:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="legislation.html">законодавство</a></p>
+<p>Законодавство, на яке наявні посилання в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">echr:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="legislation.html">законодавство</a></p>
+<p>Посилання на рішення Європейського суда з прав людини, які наявні в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">legislationReferences:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="article.html">статті та частини законодавства</a></p>
+<p>Статті та частини законодавства, на яке наявні посилання в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">organizations:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="organization.html">юридична особа</a></p>
+<p>Організації, які зазначені в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">complainants:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="organization.html">юридична особа</a></p>
+<p>Позивач в судовій справі.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">defendants:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="organization.html">юридична особа</a></p>
+<p>Відповідач в судовій справі.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">thirdParties:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="organization.html">юридична особа</a></p>
+<p>Треті сторони в судовій справі.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">attorney:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="attorney.html">адвокат</a></p>
+<p>Адвокат, зазначений в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">courtExpert:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="courtexpert.html">судовий експерт</a></p>
+<p>Судовий експерт, зазначений в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">arbitrage:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="arbitrage.html">арбітражний керуючий</a></p>
+<p>Арбітражний керуючий, зазначений в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">notary:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="notary.html">нотаріус</a></p>
+<p>Нотаріус, зазначений в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">prosecutor:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="prosecutor.html">прокурор</a></p>
+<p>Прокурор, зазначений в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">judgesMentions:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="judge.html">суддя</a></p>
+<p>Прокурор, зазначений в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">person:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="person.html">фізична особа</a></p>
+<p>Фізична особа, зазначена в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">emails:</th><td class="field-body"><p class="first">рядок</p>
+<p>Електроні пошти, зазначені в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">phones:</th><td class="field-body"><p class="first">рядок</p>
+<p>Телефони, зазначені в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">websites:</th><td class="field-body"><p class="first">об’єкт, вебсайт</p>
+<p>Вебсайти, зазначені в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">election:</th><td class="field-body"><p class="first">об’єкт, виборча комісія</p>
+<p>Виборчі комісії, зазначені в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">tenders:</th><td class="field-body"><p class="first">об’єкт, тендер</p>
+<p>Тендери, зазначені в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">money:</th><td class="field-body"><p class="first">об’єкт, гроші</p>
+<p>Суми грошей, зазначені в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">lands:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="lands.html">земельна ділянка</a></p>
+<p>Земельні ділянки, зазначені в тексті судового рішення.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">estate:</th><td class="field-body"><p class="first">рядок</p>
+<p>Ідентифікаційний номер нерухомого майна.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">video:</th><td class="field-body"><p class="first">об’єкт, <a class="reference external" href="video.html">відео</a></p>
+<p>Відеозапис судового засідання.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">url:</th><td class="field-body"><p class="first">рядок</p>
+<p>Посилання, за яким було завантажено судове рішення.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">length:</th><td class="field-body"><p class="first">ціле число</p>
+<p>Розмір судового рішення у кількості символів.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">updatedAt:</th><td class="field-body"><p class="first">рядок, <a class="reference external" href="date-format.html">дата</a></p>
+<p class="last">Дата останнього оновлення судового рішення.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="id25">
+<h2>Посилання на справу<a class="headerlink" href="#id25" title="Постійне посилання на цей заголовок">¶</a></h2>
+<div class="section" id="id26">
+<h3>Схема даних<a class="headerlink" href="#id26" title="Постійне посилання на цей заголовок">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">lawsuitNumber:</th><td class="field-body"><p class="first">рядок</p>
+<p>Номер судової справи.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">caseType:</th><td class="field-body"><p class="first">рядок</p>
+<p>Тип судової справи.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">year:</th><td class="field-body"><p class="first">рядок</p>
+<p class="last">Рік початку судової справи.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id27">
+<h2>Посилання на провадження<a class="headerlink" href="#id27" title="Постійне посилання на цей заголовок">¶</a></h2>
+<div class="section" id="id28">
+<h3>Схема даних<a class="headerlink" href="#id28" title="Постійне посилання на цей заголовок">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">proceedingNumber:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Номер судового провадження.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">caseType:</th><td class="field-body"><p class="first">рядок</p>
+<p>Тип судового провадження.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">year:</th><td class="field-body"><p class="first">рядок</p>
+<p class="last">Рік початку судового провадження.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id29">
+<h2>Посилання на кримінальні провадження<a class="headerlink" href="#id29" title="Постійне посилання на цей заголовок">¶</a></h2>
+<div class="section" id="id30">
+<h3>Схема даних<a class="headerlink" href="#id30" title="Постійне посилання на цей заголовок">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">criminalProceedingNumber:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Номер кримінального провадження.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">criminalProceedingIssuer:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Орган, який почав судове провадження.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">criminalProceedingYear:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Рік початку кримінального провадження.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">criminalDepartmentCode:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Код відомства органу, який почав провадження.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">criminalInstitutionCode:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p class="last">Код територіального органу, який почав провадження.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id31">
+<h2>Вебсайт<a class="headerlink" href="#id31" title="Постійне посилання на цей заголовок">¶</a></h2>
+<div class="section" id="id32">
+<h3>Схема даних<a class="headerlink" href="#id32" title="Постійне посилання на цей заголовок">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">url:</th><td class="field-body"><p class="first">рядок</p>
+<p>Повне посилання.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">domain:</th><td class="field-body"><p class="first">рядок</p>
+<p class="last">Домен посилання.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id33">
+<h2>Виборча комісія<a class="headerlink" href="#id33" title="Постійне посилання на цей заголовок">¶</a></h2>
+<div class="section" id="id34">
+<h3>Схема даних<a class="headerlink" href="#id34" title="Постійне посилання на цей заголовок">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">precinctNum:</th><td class="field-body"><p class="first">рядок</p>
+<p>Номер виборчої дільниці.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">districtNum:</th><td class="field-body"><p class="first">рядок</p>
+<p class="last">Номер виборчого округу.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id35">
+<h2>Тендер<a class="headerlink" href="#id35" title="Постійне посилання на цей заголовок">¶</a></h2>
+<div class="section" id="id36">
+<h3>Схема даних<a class="headerlink" href="#id36" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>В розробці</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id37">
+<h2>Сума грошей<a class="headerlink" href="#id37" title="Постійне посилання на цей заголовок">¶</a></h2>
+<div class="section" id="id38">
+<h3>Схема даних<a class="headerlink" href="#id38" title="Постійне посилання на цей заголовок">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">amount:</th><td class="field-body"><p class="first">дробове число (float)</p>
+<p>Кількість грошей у відповідній валюті.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">currency:</th><td class="field-body"><p class="first">рядок</p>
+<p>Валюта.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">currencyCode:</th><td class="field-body"><p class="first">рядок</p>
+<p>Код валюти.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">equivalent:</th><td class="field-body"><p class="first">рядок</p>
+<p class="last">Кількість грошей у гривні (для іноземних валют, еквівалент за курсом валют НБУ на дату прийняття судового рішення)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="attorney.html" class="btn btn-neutral float-right" title="Адвокати" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="data-model.html" class="btn btn-neutral" title="Стандарт даних" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Кирило Захаров
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script type="text/javascript" src="static/jquery.js"></script>
+        <script type="text/javascript" src="static/underscore.js"></script>
+        <script type="text/javascript" src="static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

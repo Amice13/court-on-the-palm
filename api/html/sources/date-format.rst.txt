@@ -1,0 +1,17 @@
+.. title:: API Суд на долоні - Дата/час
+
+.. meta::
+    :desctription: Опис API для дати та часу на проекті "Суд на долоні"
+    :robots: index, follow
+    :viewport: width=device-width, initial-scale=1
+    :language: uk
+    :keywords: Суд на долоні, API, дата, час
+    :author: Кирило Захаров
+    :copyright: Суд на долоні
+
+Дати
+====
+
+Дати форматуються за стандартом `ISO 8601 <http://en.wikipedia.org/wiki/ISO_8601>`_.
+
+.. image:: http://imgs.xkcd.com/comics/iso_8601.png

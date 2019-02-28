@@ -1,0 +1,103 @@
+.. title:: Огляд API проекту "Суд на долоні"
+
+.. meta::
+    :desctription: Огляд API проекту "Суд на долоні"
+    :robots: index, follow
+    :viewport: width=device-width, initial-scale=1
+    :language: uk
+    :keywords: Суд на долоні, API, документація, огляд
+    :author: Кирило Захаров
+    :copyright: Суд на долоні
+
+Огляд
+=====
+
+API проекту "Суд на долоні" - це єдиний інтерфейс для баз даних проекту.
+
+API в даному випадку розуміється як REST-ful інтерфейс, що надає програмний доступ до баз даних, які наявні в проекті "Суд на долоні". Він надає URL-адреси для доступу до ресурсів і використовує вбудовані HTTP особливості, щоб повертати відповіді на запит.
+
+API приймає JSON вміст у запитах та повертає JSON вміст у всіх свої відповідях. Підтримується лише UTF-8 кодування і для запитів, і для відповідей.
+
+Стан проекту
+~~~~~~~~~~~~
+
+Стан цього проекту - альфа
+
+Повідомляйте про всі проблеми та надавайте поради на електрону пошту `kirillzakharov13@gmail.com <mailto:kirillzakharov13@gmail.com>_`.
+
+
+Getting list of all tenders
+---------------------------
+.. sourcecode:: http
+
+  GET /tenders HTTP/1.1
+
+.. sourcecode:: http
+
+  HTTP/1.1 200 OK
+
+Sorting
+~~~~~~~
+Tenders retuned are sorted by modification time.
+
+Limiting number of Tenders returned
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can control the number of `data` entries in the tenders feed (batch
+size) with `limit` parameter. If not specified, data is being returned in
+batches of 100 elements.
+
+Batching
+~~~~~~~~
+
+The response contains `next_page` element with the following properties:
+
+:offset:
+    This is the parameter you have to add to the original request you made
+    to get next page.
+
+:path:
+    This is path section of URL with original parameters and `offset`
+    parameter added/replaced above.
+
+:uri:
+    The full version of URL for next page.
+
+If next page request returns no data (i.e. empty array) then there is little
+sense in fetching further pages.
+
+
+Please report any problems or suggestions for improvement either via the
+`mailing list <http://groups.google.com/group/open-procurement-general>`_ or
+the `issue tracker
+<https://github.com/openprocurement/openprocurement.api/issues>`_.
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Зміст:
+
+   data-model.rst
+   contacts.rst
+
+Перший заголовок
+----------------
+
+
+Другий заголовок
+----------------
+
+Просто текст
+
+* Список
+  * Список
+
+* Список
+
+  * Список
+
+
+
+Пошук
+==================
+
+* :ref:`search`

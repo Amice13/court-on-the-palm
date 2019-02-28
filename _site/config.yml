@@ -1,0 +1,25 @@
+# Site settings
+title: Суд на долоні
+header-img: img/home-bg.jpg
+email: kirillzakharov13@gmail.com
+copyright_name: Суд на долоні
+description: "Суд на долоні - аналітичний інструмент для пошуку, дослідження та візуалізації судових рішень!"
+baseurl: "http://court-on-the-palm.com.ua"
+url: "http://court-on-the-palm.com.ua"
+facebook_username:  courtonthepalm
+email_username:  kirillzakharov13@gmail.com
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+google_tracking_id: "UA-109491896-1"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate_path: "/blog/page:num/"
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
+theme: jekyll-theme-cayman

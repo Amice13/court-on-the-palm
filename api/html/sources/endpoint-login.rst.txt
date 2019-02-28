@@ -1,0 +1,47 @@
+.. title:: Точка входу "Адвокат" для API проекту "Суд на долоні"
+
+.. meta::
+    :desctription: Точка входу "Адвокат" для API проекту "Суд на долоні"
+    :robots: index, follow
+    :viewport: width=device-width, initial-scale=1
+    :language: uk
+    :keywords: Суд на долоні, API, адвокат
+    :author: Кирило Захаров
+    :copyright: Суд на долоні
+
+Авторизація користувача
+=======================
+
+Точка входу "Авторизація користувача" дозволяє отримати `JWT токен <https://jwt.io/>`_, що ідентифікує користувача.
+
+Авторизація та отримання токену
+-------------------------------
+
+Для авторизації користувача та отримання JWT-токену необхідон зробити POST-запит за адресою ``https://api.conp.com.ua/api/v1.0/login`` в тілі, якого мають бути вказані електронна пошта (``"email"``) та пароль користувача (``password``). В результаті буде отримана відповідь
+
+.. sourcecode:: http
+
+  POST /login HTTP/1.0
+  Host: https://api.conp.com.ua/api/v1.0
+
+  { "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDb3VydE9uVGhlUGFsbSIsInN1YiI6IjVjMjVmYjZlNWNmNmFiMzhjZDZmZjE5NiIsInJvbGVzIjoiY2xpZW50IiwianRpIjoiYTBVM2hSd3lVd0RPWTRqWiIsImlhdCI6MTU0Nzg3MDU0MzA3NCwiZXhwIjoxNTQ3ODcxNDQzMDc0fQ.x5RLH-4bo5rHaT7bliOH_7esTuMxOdNuE0_IU3tX_fU",
+    "user": {
+      "email":"[usermail]",
+      "roles":"client" }
+    }
+  }
+
+Токе має передаватися з кожним запитом в заголовку ``Authorization``. В залежності від тарифного плана користувача або його окремих прав, система буде надавати у відповідь більше або менше інформації.
+
+Зазаначений токен може бути декодовано за алгоритмом HS256. В тілі токена є значення ``exp``, що визначає кінцевий термін дійсності токена. Зазвичай токен є дійсним 15 хвилин. Після цього токен має бути оновлений. 
+
+-----
+
+Оновлення токена
+----------------
+
+Для оновлення токена просто відправте GET-запит, який містить недійсний токен в заголовку ``Authorization``, за адресою ``https://api.conp.com.ua/api/v1.0/login``.
+
+В тілі запиту буде повернено новий токен та оновлену інформацію щодо користувача.
+
+**ВАЖЛИВО!** Не використовуйте для подовження дії токену процедуру авторизації (звернення до ``https://api.conp.com.ua/api/v1.0/login``)!

@@ -1,0 +1,568 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="uk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="uk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="Точка входу &quot;Судовий експерт&quot; для API проекту &quot;Суд на долоні&quot;" name="desctription" />
+<meta content="index, follow" name="robots" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="uk" name="language" />
+<meta content="Суд на долоні, API, судовий експерт" name="keywords" />
+<meta content="Кирило Захаров" name="author" />
+<meta content="Суд на долоні" name="copyright" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Точка входу &#34;Судовий експерт&#34; для API проекту &#34;Суд на долоні&#34; &mdash; Суд на долоні alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="index" title="Індекс" href="genindex.html" />
+    <link rel="search" title="Пошук" href="search.html" />
+    <link rel="next" title="Стандарт даних" href="data-model.html" />
+    <link rel="prev" title="Суддя" href="endpoint-judge.html" /> 
+
+  
+  <script src="static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Суд на долоні
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Зміст:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Огляд</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="endpoints.html">Точки входу</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="endpoint-general.html">Загальні правила</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-login.html">Авторизація користувача</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-lawsuit.html">Судове рішення</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-attorney.html">Адвокат</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-arbitrage.html">Арбітражний керуючий</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-notary.html">Нотаріус</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-organization.html">Організація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-prosecutor.html">Прокурор</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-court.html">Суд</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-judge.html">Суддя</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Судовий експерт</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Загальна інформація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Кількість судових експертів</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Отримання інформації про судового експерта</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Пошук судових експертів</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Фільтри</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Сортування</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Агрегація</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data-model.html">Стандарт даних</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contacts.html">Контакти</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Суд на долоні</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="endpoints.html">Точки входу</a> &raquo;</li>
+        
+      <li>Точка входу &quot;Судовий експерт&quot; для API проекту &quot;Суд на долоні&quot;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="sources/endpoint-courtexpert.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Судовий експерт<a class="headerlink" href="#id1" title="Постійне посилання на цей заголовок">¶</a></h1>
+<p>Точка входу «Судовий експерт» повертає інформацію стосовно судових експертів України.</p>
+<div class="section" id="id2">
+<h2>Загальна інформація<a class="headerlink" href="#id2" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>Інформація про судових експертів з даних Єдиного реєстру нотаріусів Міністерства юстиції України, опублікованого на <a class="reference external" href="https://data.gov.ua/dataset/0a556891-d6ef-4a5f-a182-caac2f7aa9c9">Національному порталі відкритих даних</a>.</p>
+<p>Уся інформація щодо юридичних осіб оновлюється один раз на 1-2 тижні.</p>
+</div>
+<div class="section" id="id4">
+<h2>Кількість судових експертів<a class="headerlink" href="#id4" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>GET-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/courtexpert</span></code> повертає загальну кількість судових експертів в системі</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">GET</span> <span class="nn">/courtexpert</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{ &quot;message&quot;: 11118 }
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id5">
+<h2>Отримання інформації про судового експерта<a class="headerlink" href="#id5" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>GET-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/courtexpert/:id</span></code> повертає інормацію про судового експерта за <a class="reference external" href="courtexpert.html">відповідною схемою даних</a> <cite>. Де ``id`</cite> - це транслітерована комбінація дати видачі першого свідоцтва та прізвища та ініціалів експерта.</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">GET</span> <span class="nn">/courtexpert/2003_34_barchyshak_svitlana_petrivna</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{
+  &quot;person&quot;: {
+    &quot;source&quot;: &quot;барчишак світлана петрівна&quot;,
+    &quot;idName&quot;: &quot;Барчишак С. П.&quot;,
+    &quot;fullName&quot;: &quot;Барчишак Світлана Петрівна&quot;,
+    &quot;familyName&quot;: &quot;Барчишак&quot;,
+    &quot;givenName&quot;: &quot;Світлана&quot;,
+    &quot;additionalName&quot;: &quot;Петрівна&quot;,
+    &quot;sex&quot;: &quot;жінка&quot;,
+    &quot;jobTitle&quot;: &quot;Судовий експерт&quot;
+  },
+  &quot;phone&quot;: [
+    &quot;2 37 06&quot;
+  ],
+  &quot;documents&quot;: [
+    {
+      &quot;certificateIssuer&quot;: &quot;Експертно-кваліфікаційна комісія, Тернопільського ОБСМЕ&quot;,
+      &quot;certificateDate&quot;: &quot;2003-08-04T00:00:00.000Z&quot;,
+      &quot;certificateDecisionNumber&quot;: &quot;34&quot;,
+      &quot;speciality&quot;: {
+        &quot;specialityMeta&quot;: &quot;moz&quot;,
+        &quot;specialityType&quot;: &quot;Cудово-медична експертиза&quot;,
+        &quot;specialitySpecials&quot;: [
+          &quot;Судово-медична експертиза&quot;
+        ]
+      }
+    },
+    {
+      &quot;certificateIssuer&quot;: &quot;Експертно-кваліфікаційна комісія, Тернопільського ОБСМЕ&quot;,
+      &quot;certificateDate&quot;: &quot;2005-12-16T00:00:00.000Z&quot;,
+      &quot;certificateDecisionNumber&quot;: &quot;2&quot;,
+      &quot;expires&quot;: &quot;2010-12-16T00:00:00.000Z&quot;,
+      &quot;speciality&quot;: {
+        &quot;specialityMeta&quot;: &quot;moz&quot;,
+        &quot;specialityType&quot;: &quot;Cудово-медична експертиза&quot;,
+        &quot;specialitySpecials&quot;: [
+          &quot;Судово-медична експертиза&quot;
+        ]
+      }
+    }
+  ],
+  &quot;organization&quot;: {
+    &quot;address&quot;: {
+      &quot;source&quot;: &quot;Тернопільська обл., Чортківський р-н, 48500, вул. Степана Бандери, 50&quot;,
+      &quot;countryName&quot;: &quot;Україна&quot;,
+      &quot;postalCode&quot;: &quot;48500&quot;,
+      &quot;region&quot;: &quot;Тернопільська область&quot;,
+      &quot;district&quot;: &quot;Чортківський район&quot;,
+      &quot;streetAddress&quot;: &quot;вулиця Степана Бандери, 50&quot;,
+      &quot;fullAddress&quot;: &quot;48500, Тернопільська область, Чортківський район, вулиця Степана Бандери, 50&quot;
+    },
+    &quot;name&quot;: &quot;Тернопільське обласне бюро судово-медичної експертизи&quot;
+  },
+  &quot;updatedAt&quot;: &quot;2018-08-07T08:52:25.989Z&quot;,
+  &quot;id&quot;: &quot;2003_34_barchyshak_svitlana_petrivna&quot;
+}
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id7">
+<h2>Пошук судових експертів<a class="headerlink" href="#id7" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>POST-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/courtexpert/search</span></code> дозволяє шукати судових експертів.</p>
+<p>POST-запит має містити JSON з наступними змінними</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">query:</th><td class="field-body"><p class="first">рядок</p>
+<p>Перелік термінів для повнотекстового пошуку.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">defaultOperator:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Приймає значення <code class="docutils literal notranslate"><span class="pre">or</span></code> або <code class="docutils literal notranslate"><span class="pre">and</span></code>, щоб шукати будь-який з термінів для повнотекстового пошуку або усі терміни.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">filter:</th><td class="field-body"><p class="first">об’єкт</p>
+<p>Об’єкт, який містить перелік усіх пошукових фільтрів, встановлених користувачем.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">sort:</th><td class="field-body"><p class="first">об’єкт</p>
+<p>Об’єкт, який визначає порядок сортування результатів.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">from:</th><td class="field-body"><p class="first">ціле число (integer)</p>
+<p>Кількість об’єктів, яку необхідно пропустити (використовується для пагінації).</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">aggregation:</th><td class="field-body"><p class="first">булеве значення</p>
+<p class="last">Якщо встановлено значення <code class="docutils literal notranslate"><span class="pre">false</span></code>, то в результаті буде отримано перелік судових експертів, які відповідають повнотекстовому запиту та фільтрам. Якщо встановлено значення <code class="docutils literal notranslate"><span class="pre">true</span></code>, то повертає перелік агрегацій для фасетного пошуку.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id8">
+<h3>Фільтри<a class="headerlink" href="#id8" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Кожен з фільтрів має бути об’єктом з певною назвою (поле, за яким відбувається фільтрація) та будуватися за схемою:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">list:</th><td class="field-body"><p class="first">масив рядків</p>
+<p>Перелік точних значень термінів для фільтрації результату.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">operator:</th><td class="field-body"><p class="first">рядок</p>
+<p class="last">Приймає значення <code class="docutils literal notranslate"><span class="pre">or</span></code> або <code class="docutils literal notranslate"><span class="pre">and</span></code>, щоб у результат попадали сутності з будь-яким зі значень фільтру або усі значення фільтру.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Судових експертів можна фільтрувати за точними значеннями таких змінних:</p>
+<ul class="simple">
+<li><strong>address.region</strong> - Область, в якій працює судовий експерт</li>
+<li><strong>address.district</strong> - Район або район у місті, в якому працює судовий експерт</li>
+<li><strong>address.locality</strong> - Населений пункт, в якому працює судовий експерт</li>
+<li><strong>address.fullAddress</strong> - Повна адреса, за якою працює судовий експерт</li>
+<li><strong>specialityClass</strong> - Клас спеціалізації</li>
+<li><strong>specialityType</strong> - Тип спеціалізації</li>
+<li><strong>specialitySpecials</strong> - Спеціалізація</li>
+</ul>
+<p>Судових експертів можна фільтрувати за діапазонами значень таких змінних (для таких фільтрів вказується діапазон зі змінними <code class="docutils literal notranslate"><span class="pre">from</span></code> та <code class="docutils literal notranslate"><span class="pre">to</span></code>):</p>
+<ul class="simple">
+<li><strong>certificateDate</strong> - Дата видачі свідоцтва судового експерта</li>
+<li><strong>expires</strong> - Дата закінчення дії свідоцтва судового експерта</li>
+</ul>
+<p>Приклад використання фільтру - «(1) Судові експерти, які працюють в Київському НДІСЕ, (2) володіють криміналістичною експертизою (3) за спеціалізацією - технічна експертиза документів»:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+{&quot;filter&quot;: {
+  &quot;organization.name&quot;: {
+    &quot;list&quot;: [
+      &quot;Київський НДІСЕ&quot;
+    ],
+    &quot;operator&quot;: &quot;or&quot;
+  },
+  &quot;specialityClass&quot;: {
+    &quot;list&quot;: [
+      &quot;I. Криміналістична експертиза&quot;
+    ],
+    &quot;operator&quot;: &quot;or&quot;
+  },
+  &quot;specialityType&quot;: {
+    &quot;list&quot;: [
+      &quot;2. Технічна експертиза документів&quot;
+    ],
+    &quot;operator&quot;: &quot;or&quot;
+  }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>Сортування<a class="headerlink" href="#id9" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Для судових експертів дозволено сортування за повним іменем. Якщо змінна <code class="docutils literal notranslate"><span class="pre">sort</span></code> у запиті має значення <code class="docutils literal notranslate"><span class="pre">{}</span></code>, то сортування відбуватиметься за релевантністю.</p>
+<p>Приклад сортування за повним іменем:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+&quot;sort&quot;: {
+  &quot;person.fullName.sort&quot;: { &quot;order&quot;: &quot;desc&quot; }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>Агрегація<a class="headerlink" href="#id10" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Для судових експертів передбачено агрегацію за такими змінними:</p>
+<ul class="simple">
+<li>Організація, в якій працює судовий експерт</li>
+<li>Клас експертизи</li>
+<li>Вид експертизи</li>
+<li>Спеціалізації</li>
+<li>Область, де працює судовий експерт</li>
+<li>Населений, де працює судовий експерт</li>
+<li>Район або район у місті, де працює судовий експерт</li>
+<li>Стать судового експерта</li>
+</ul>
+<p>Агрегації розраховуються автоматично для усіх змінних, для яких встановлено фільтр. Якщо необхідно отримати агрегацію без фільтрації, то необхідно задати «пустий» фільтр таким чином:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+&quot;filter&quot;: {
+  &quot;address.region&quot;: {
+    &quot;list&quot;: [],
+    &quot;operator&quot;: &quot;or&quot;
+  }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id11">
+<h3>Приклад повного запиту та відповіді<a class="headerlink" href="#id11" title="Постійне посилання на цей заголовок">¶</a></h3>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">POST</span> <span class="nn">/courtexpert/search</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{
+  &quot;query&quot;: &quot;&quot;,
+  &quot;defaultOperator&quot;: &quot;or&quot;,
+  &quot;filter&quot;: {
+    &quot;fullName&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;person.sex&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;organization.name&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;address.region&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;address.district&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;address.locality&quot;: {
+      &quot;list&quot;: [
+        &quot;місто Одеса&quot;
+      ],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;certificateIssuer&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;certificateDate&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;expires&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;specialityClass&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;specialityType&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;specialitySpecials&quot;: {
+      &quot;list&quot;: [
+        &quot;Судово-медична гістологія&quot;,
+        &quot;Судово-медична експертиза&quot;
+      ],
+      &quot;operator&quot;: &quot;and&quot;
+    }
+  },
+  &quot;searchIndex&quot;: &quot;courtexpert&quot;,
+  &quot;aggregation&quot;: true
+}
+
+{
+  &quot;aggs&quot;: {
+    &quot;address.locality&quot;: [],
+    &quot;compound&quot;: {},
+    &quot;address.district&quot;: [],
+    &quot;specialityType&quot;: [
+      {
+        &quot;key&quot;: &quot;Cудово-медична експертиза&quot;,
+        &quot;doc_count&quot;: 22
+      }
+    ],
+    &quot;address.region&quot;: [
+      {
+        &quot;key&quot;: &quot;Одеська область&quot;,
+        &quot;doc_count&quot;: 3
+      }
+    ],
+    &quot;specialitySpecials&quot;: [
+      {
+        &quot;key&quot;: &quot;Судово-медична криміналістика&quot;,
+        &quot;doc_count&quot;: 1
+      }
+    ],
+    &quot;specialityClass&quot;: [],
+    &quot;organization.name&quot;: [
+      {
+        &quot;key&quot;: &quot;Одеське обласне бюро судово-медичної експертизи&quot;,
+        &quot;doc_count&quot;: 3
+      }
+    ]
+  },
+  &quot;total&quot;: 3
+}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data-model.html" class="btn btn-neutral float-right" title="Стандарт даних" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="endpoint-judge.html" class="btn btn-neutral" title="Суддя" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Кирило Захаров
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script type="text/javascript" src="static/jquery.js"></script>
+        <script type="text/javascript" src="static/underscore.js"></script>
+        <script type="text/javascript" src="static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

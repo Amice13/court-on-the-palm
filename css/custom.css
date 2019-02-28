@@ -1,0 +1,321 @@
+.navbar-transparent .navbar-brand svg .fil0 {
+	fill: #FFF;
+}
+
+.navbar-brand svg .fil0 {
+	fill: #046997;
+}
+
+.navbar-brand {
+	opacity: 1.0;
+}
+
+.navbar-brand span {
+	color: #046997;
+}
+
+.navbar-transparent .navbar-brand span {
+	color: #FFF;
+}
+
+.btn-primary {
+	background-color: #046997 !important;
+	border-color: #035C85 !important;
+}
+
+.filter.filter-color-red:before {
+	background: #035C85 !important;
+}
+
+.btn-warning {
+	color: #fff;
+    background-color: #f0ad4e !important;
+    border-color: #eea236 !important;
+}
+
+.btn-warning:hover {
+	background-color:#ec971f !important;
+	border-color:#d58512;
+}
+
+.separator-primary:before, .separator-primary:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 10px;
+    border: 1px solid #046997 !important;
+}
+
+.text-primary i {
+	display: inline !important;
+	color: #046997 !important;
+}
+
+.section .title-area {
+	max-width: 960px !important;
+}
+
+.avatar-primary {
+    border: 3px solid #046997 !important;
+}
+
+.card-member h3 {
+	color: #046997 !important;
+	font-weight: 800;
+}
+
+.filter-color-black,
+.filter.filter-color-black:before {
+	background: #003B61 !important;
+}
+
+.gray-section {
+	background: #F0F0F0;
+}
+
+.case {
+    padding: 0px 8px 0px 0px;
+    border-radius: 20px;
+	display: inline-flex;
+	height: 20px;
+	cursor: pointer;
+}
+
+.case:before {
+	border-radius: 20px;
+	width: 20px;
+	height: 20px;	
+}
+
+.case-court {
+	background: rgba(0, 169, 133, 0.3);
+}
+
+.case-court:before {
+	content: url(../img/icons/court.svg);
+	margin-right: 5px;
+	background: rgba(0, 169, 133, 1);
+}
+
+.case-lawsuitnumber {
+	background: rgba(41, 105, 176, 0.3);
+}
+
+.case-lawsuitnumber:before {
+	content: url(../img/icons/lawsuit.svg);
+	margin-right: 5px;
+	background: rgba(41, 105, 176, 1);
+}
+
+.case-judge {
+	background: rgba(0, 169, 133, 0.3);
+}
+
+.case-judge:before {
+	content: url(../img/icons/judge.svg);
+	margin-right: 5px;
+	background: rgba(0, 169, 133, 1);
+}
+
+.case-person {
+	background: rgba(147, 101, 184, 0.3);
+}
+
+.case-person:before {
+	content: url(../img/icons/person.svg);
+	margin-right: 5px;
+	background: rgba(147, 101, 184, 1);
+}
+
+.case-money {
+	background: rgba(250, 197, 28, 0.3);
+}
+
+.case-money:before {
+	content: url(../img/icons/person.svg);
+	margin-right: 5px;
+	background: rgba(250, 197, 28, 1);
+}
+
+.case-organization {
+	background: rgba(147, 101, 184, 0.3);
+}
+
+.case-organization:before {
+	content: url(../img/icons/organization.svg);
+	margin-right: 5px;
+	background: rgba(147, 101, 184, 1);
+}
+
+.case-legislationLink {
+	background: rgba(219, 68, 83, 0.3);
+}
+
+.case-legislationLink:before {
+	content: url(../img/icons/link.svg);
+	margin-right: 5px;
+	background: rgba(219, 68, 83, 1);
+}
+
+.case-law {
+	background: rgba(219, 68, 83, 0.3);
+}
+
+.case-law:before {
+	content: url(../img/icons/law.svg);
+	margin-right: 5px;
+	background: rgba(219, 68, 83, 1);
+}
+
+.case-crimeNumber {
+	background: rgba(71, 85, 119, 0.3);
+}
+
+.case-crimeNumber:before {
+	content: url(../img/icons/crime.svg);
+	margin-right: 5px;
+	background: rgba(71, 85, 119, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.media a {
+	opacity: 1;
+}
+
+.team .description i {
+	font-size: 130%;
+	margin: 0px 2px;
+	color: #1C344E;
+}
+
+.section-40 .parallax, .section-40 .static-image {
+  height: 60vh !important;
+}
+
+.previous a:hover, .next a:hover {
+	background-color: #046997 !important;
+}
+
+h2.post-title {
+	margin-top: 10px !important;
+}
+
+.post-meta {
+    color: #808080;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.badge {
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.badge-primary {
+	background: #046997;
+}
+
+h3 {
+	line-height: 1.15em;
+}
+
+article {
+	margin-top: 50px;
+}
+
+.separator-primary {
+    color: #046997 !important;
+}
+
+.media dt img {
+	height: 20px;
+	width: auto;
+	float: right;
+}
+
+.media dt {
+	margin-bottom: 20px;
+}
+
+.title-modern {
+	margin-top: 10px;
+}
+
+.social_buttons {
+	position: absolute;
+	width: 100%;
+	z-index: -9999;
+}
+
+.pager {
+	z-index: 0;
+}
+
+@media screen and (max-width: 460px) {
+	.title-area svg {
+		max-width: 25% !important;
+		height: auto;
+	}
+
+	.title-area .title-modern {
+		font-size: 2.5em !important;
+		line-height: 1.3em !important;
+	}
+
+	.title-area .separator {
+		margin: 0 auto;
+	}
+
+	.media img {
+		max-width: 60% !important;
+	}
+
+	.navbar .navbar-brand {
+		margin: 5px 0px;
+	}
+
+	.separator {
+		color: #FFF !important;
+	}
+
+	.section-header .parallax, .section-header .static-image {
+	    height: 100vh;
+	}
+
+	.dont-show-mobile {
+		display: none;
+	}
+	
+	.media {
+		text-align: center;
+	}
+
+	.media dt img {
+		float: none;
+		height: 40px;
+		margin: auto;
+		margin-top: 60px;
+		margin-bottom: 10px;
+	}
+
+	.media dt {
+		margin-bottom: 0px;
+	}
+
+	.media dd {
+		margin-bottom: 20px;
+	}
+
+	.social_buttons {
+		padding-top: 50px;
+	}
+
+	.post .pager {
+		padding-bottom: 30px;
+	}
+}
+

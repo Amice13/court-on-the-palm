@@ -1,0 +1,611 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="uk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="uk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="Точка входу &quot;Адвокат&quot; для API проекту &quot;Суд на долоні&quot;" name="desctription" />
+<meta content="index, follow" name="robots" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="uk" name="language" />
+<meta content="Суд на долоні, API, адвокат" name="keywords" />
+<meta content="Кирило Захаров" name="author" />
+<meta content="Суд на долоні" name="copyright" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Точка входу &#34;Адвокат&#34; для API проекту &#34;Суд на долоні&#34; &mdash; Суд на долоні alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="index" title="Індекс" href="genindex.html" />
+    <link rel="search" title="Пошук" href="search.html" />
+    <link rel="next" title="Арбітражний керуючий" href="endpoint-arbitrage.html" />
+    <link rel="prev" title="Судове рішення" href="endpoint-lawsuit.html" /> 
+
+  
+  <script src="static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Суд на долоні
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Зміст:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Огляд</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="endpoints.html">Точки входу</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="endpoint-general.html">Загальні правила</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-login.html">Авторизація користувача</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-lawsuit.html">Судове рішення</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Адвокат</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Загальна інформація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Кількість адвокатів</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Отримання інформації про адвоката</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Пошук адвокатів</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Фільтри</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">Сортування</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">Агрегація</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id13">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-arbitrage.html">Арбітражний керуючий</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-notary.html">Нотаріус</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-organization.html">Організація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-prosecutor.html">Прокурор</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-court.html">Суд</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-judge.html">Суддя</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-courtexpert.html">Судовий експерт</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data-model.html">Стандарт даних</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contacts.html">Контакти</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Суд на долоні</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="endpoints.html">Точки входу</a> &raquo;</li>
+        
+      <li>Точка входу &quot;Адвокат&quot; для API проекту &quot;Суд на долоні&quot;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="sources/endpoint-attorney.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Адвокат<a class="headerlink" href="#id1" title="Постійне посилання на цей заголовок">¶</a></h1>
+<p>Точка входу «Адвокат» повертає інформацію стосовно адвокатів України.</p>
+<div class="section" id="id2">
+<h2>Загальна інформація<a class="headerlink" href="#id2" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>Інформація про адвокатів з даних Єдиного реєстру Адвокатів України, опублікованого на <a class="reference external" href="http://erau.unba.org.ua/">офіційному сайті Національної Асоціації Адвокатів України</a>.</p>
+<p>Уся інформація щодо юридичних осіб оновлюється один раз на 1-2 тижні.</p>
+</div>
+<div class="section" id="id4">
+<h2>Кількість адвокатів<a class="headerlink" href="#id4" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>GET-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/attorney</span></code> повертає загальну кількість адвокатів в системі</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">GET</span> <span class="nn">/attorney</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{ &quot;message&quot;: 44925 }
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id5">
+<h2>Отримання інформації про адвоката<a class="headerlink" href="#id5" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>GET-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/attorney/:id</span></code> повертає інормацію про адвоката за <a class="reference external" href="attorney.html">відповідною схемою даних</a> <a href="#id7"><span class="problematic" id="id8">`</span></a>. Де id - номер адвокатського свідоцтва.</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">GET</span> <span class="nn">/attorney/7820</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{
+  &quot;id&quot;: &quot;7820&quot;,
+  &quot;accountHolder&quot;: &quot;Рада адвокатів Закарпатської області&quot;,
+  &quot;certificateNumber&quot;: &quot;10&quot;,
+  &quot;certificateIssuer&quot;: &quot;Закарпатська обласна КДКА&quot;,
+  &quot;certificateDate&quot;: null,
+  &quot;person&quot;: {
+    &quot;source&quot;: &quot;Масяк Нінель Степанівна&quot;,
+    &quot;idName&quot;: &quot;Масяк Н. С.&quot;,
+    &quot;fullName&quot;: &quot;Масяк Нінель Степанівна&quot;,
+    &quot;familyName&quot;: &quot;Масяк&quot;,
+    &quot;givenName&quot;: &quot;Нінель&quot;,
+    &quot;additionalName&quot;: &quot;Степанівна&quot;,
+    &quot;sex&quot;: &quot;жінка&quot;,
+    &quot;jobTitle&quot;: &quot;Адвокат&quot;
+  },
+  &quot;organization&quot;: {
+    &quot;address&quot;: {
+      &quot;source&quot;: &quot;88000, Закарпатська обл., Ужгородський р-н., Ужгород, вул. Руська , буд. 25, квартира 2&quot;,
+      &quot;countryName&quot;: &quot;Україна&quot;,
+      &quot;postalCode&quot;: &quot;88000&quot;,
+      &quot;region&quot;: &quot;Закарпатська  область&quot;,
+      &quot;district&quot;: &quot;Ужгородський район&quot;,
+      &quot;streetNumber&quot;: &quot;25&quot;,
+      &quot;streetAddress&quot;: &quot;вулиця Руська&quot;,
+      &quot;apartment&quot;: &quot;2&quot;,
+      &quot;fullAddress&quot;: &quot;88000, Закарпатська  область, Ужгородський район, вулиця Руська, 2&quot;
+    },
+    &quot;phones&quot;: [],
+    &quot;email&quot;: &quot;ninellems@gmail.com&quot;
+  },
+  &quot;workplace&quot;: {
+    &quot;source&quot;: &quot;88000, Закарпатська обл., Ужгородський р-н., Ужгород, пл. Театральна, буд. 13&quot;,
+    &quot;countryName&quot;: &quot;Україна&quot;,
+    &quot;postalCode&quot;: &quot;88000&quot;,
+    &quot;region&quot;: &quot;Закарпатська область&quot;,
+    &quot;district&quot;: &quot;Ужгородський район&quot;,
+    &quot;streetNumber&quot;: &quot;13&quot;,
+    &quot;streetAddress&quot;: &quot;площа Театральна, 13&quot;,
+    &quot;fullAddress&quot;: &quot;88000, Закарпатська область, місто Ужгород, площа Театральна, 13&quot;,
+    &quot;locality&quot;: &quot;місто Ужгород&quot;
+  },
+  &quot;phone&quot;: [
+    &quot;+38 (050) 953 61 10&quot;
+  ],
+  &quot;email&quot;: [
+    &quot;ninellems@gmail.com&quot;
+  ],
+  &quot;updatedAt&quot;: &quot;2018-08-07T17:56:28.574Z&quot;
+}
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id9">
+<h2>Пошук адвокатів<a class="headerlink" href="#id9" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>POST-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/attorney/search</span></code> дозволяє шукати адвокатів.</p>
+<p>POST-запит має містити JSON з наступними змінними</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">query:</th><td class="field-body"><p class="first">рядок</p>
+<p>Перелік термінів для повнотекстового пошуку.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">defaultOperator:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Приймає значення <code class="docutils literal notranslate"><span class="pre">or</span></code> або <code class="docutils literal notranslate"><span class="pre">and</span></code>, щоб шукати будь-який з термінів для повнотекстового пошуку або усі терміни.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">filter:</th><td class="field-body"><p class="first">об’єкт</p>
+<p>Об’єкт, який містить перелік усіх пошукових фільтрів, встановлених користувачем.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">sort:</th><td class="field-body"><p class="first">об’єкт</p>
+<p>Об’єкт, який визначає порядок сортування результатів.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">from:</th><td class="field-body"><p class="first">ціле число (integer)</p>
+<p>Кількість об’єктів, яку необхідно пропустити (використовується для пагінації).</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">aggregation:</th><td class="field-body"><p class="first">булеве значення</p>
+<p class="last">Якщо встановлено значення <code class="docutils literal notranslate"><span class="pre">false</span></code>, то в результаті буде отримано перелік адвокатів, які відповідають повнотекстовому запиту та фільтрам. Якщо встановлено значення <code class="docutils literal notranslate"><span class="pre">true</span></code>, то повертає перелік агрегацій для фасетного пошуку.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id10">
+<h3>Фільтри<a class="headerlink" href="#id10" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Кожен з фільтрів має бути об’єктом з певною назвою (поле, за яким відбувається фільтрація) та будуватися за схемою:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">list:</th><td class="field-body"><p class="first">масив рядків</p>
+<p>Перелік точних значень термінів для фільтрації результату.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">operator:</th><td class="field-body"><p class="first">рядок</p>
+<p class="last">Приймає значення <code class="docutils literal notranslate"><span class="pre">or</span></code> або <code class="docutils literal notranslate"><span class="pre">and</span></code>, щоб у результат попадали сутності з будь-яким зі значень фільтру або усі значення фільтру.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Адвокатів можна фільтрувати за точними значеннями таких змінних:</p>
+<ul class="simple">
+<li><strong>accountHolder</strong> - Назва організації, на обліку якої перебуває адвокат</li>
+<li><strong>certificateDate</strong> - Дата видачі свідоцтва на здійснення адвокатської діяльності</li>
+<li><strong>certificateIssuer</strong> - Назва органу, що видав свідоцтво на здійснення адвокатської діяльності</li>
+<li><strong>certificateNumber</strong> - Номер свідоцтва на здійснення адвокатської діяльності</li>
+<li><strong>sex</strong> - Стать адвоката</li>
+<li><strong>workplace.region</strong> - Область, в якій працює адвокат</li>
+<li><strong>workplace.district</strong> - Район або район у місті, в якому працює адвокат</li>
+<li><strong>workplace.locality</strong> - Населений пункт, в якому працює адвокат</li>
+<li><strong>workplace.fullAddress</strong> - Повна адреса, за якою працює адвокат</li>
+<li><strong>organization.name</strong> - Повна назва організації, в якій працює адвокат</li>
+</ul>
+<p>Приклад використання фільтру - «(1) Адвокати, які облікуються у Раді адвокатіва Дніпропетровської області (2) та працюють у Донецькій області»:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+{&quot;filter&quot;: {
+  &quot;accountHolder&quot;: {
+    &quot;list&quot;: [
+      &quot;Рада адвокатів Дніпропетровської області&quot;
+    ],
+    &quot;operator&quot;: &quot;or&quot;
+  },
+  &quot;workplace.region&quot;: {
+    &quot;list&quot;: [
+      &quot;Донецька область&quot;
+    ],
+    &quot;operator&quot;: &quot;or&quot;
+  }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id11">
+<h3>Сортування<a class="headerlink" href="#id11" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Для адвокатів дозволено сортування за повним іменем (<cite>person.fullName.sort</cite>) та датою видачі свідоцтва (<code class="docutils literal notranslate"><span class="pre">certificateDate</span></code>). Якщо змінна <code class="docutils literal notranslate"><span class="pre">sort</span></code> у запиті має значення <code class="docutils literal notranslate"><span class="pre">{}</span></code>, то сортування відбуватиметься за релевантністю.</p>
+<p>Приклад сортування за датою видачі свідоцтва:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+&quot;sort&quot;: {
+  &quot;certificateDate&quot;: { &quot;order&quot;: &quot;desc&quot; }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id12">
+<h3>Агрегація<a class="headerlink" href="#id12" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Для суддів передбачено агрегацію за такими змінними:</p>
+<ul class="simple">
+<li>Організація, в якій працює адвокат</li>
+<li>Організація, в якій обліковується адвокат</li>
+<li>Організація, яка видала адвокатське свідоцтво</li>
+<li>Область, де працює адвокат</li>
+<li>Населений, де працює адвокат</li>
+<li>Район або район у місті, де працює адвокат</li>
+<li>Стать адвоката</li>
+</ul>
+<p>Агрегації розраховуються автоматично для усіх змінних, для яких встановлено фільтр. Якщо необхідно отримати агрегацію без фільтрації, то необхідно задати «пустий» фільтр таким чином:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+&quot;filter&quot;: {
+  &quot;certificateIssuer&quot;: {
+    &quot;list&quot;: [],
+    &quot;operator&quot;: &quot;or&quot;
+  }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id13">
+<h3>Приклад повного запиту та відповіді<a class="headerlink" href="#id13" title="Постійне посилання на цей заголовок">¶</a></h3>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">POST</span> <span class="nn">/attorney/search</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{
+  &quot;query&quot;: &quot;&quot;,
+  &quot;defaultOperator&quot;: &quot;or&quot;,
+  &quot;filter&quot;: {
+    &quot;accountHolder&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;certificateDate&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;,
+      &quot;type&quot;: &quot;object&quot;
+    },
+    &quot;certificateIssuer&quot;: {
+      &quot;list&quot;: [
+        &quot;Київська обласна КДКА&quot;
+      ],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;certificateNumber&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;fullName&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;sex&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;workplace.region&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;workplace.district&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;workplace.locality&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;workplace.fullAddress&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;organization.name&quot;: {
+      &quot;list&quot;: [
+        &quot;Адвокатське обa&#39;єднання: \&quot;Юридична фірма \&quot;ЕКВО\&quot;&quot;
+      ],
+      &quot;operator&quot;: &quot;or&quot;
+    }
+  },
+  &quot;sort&quot;: {
+    &quot;certificateDate&quot;: {
+      &quot;order&quot;: &quot;desc&quot;
+    }
+  },
+  &quot;searchIndex&quot;: &quot;attorney&quot;,
+  &quot;from&quot;: 0,
+  &quot;aggregation&quot;: false
+}
+
+{
+  &quot;total&quot;: 4,
+  &quot;items&quot;: [
+    {
+      &quot;accountHolder&quot;: &quot;Рада адвокатів Київської області&quot;,
+      &quot;certificateDate&quot;: null,
+      &quot;certificateIssuer&quot;: &quot;&lt;strong&gt;Київська обласна КДКА&lt;/strong&gt;&quot;,
+      &quot;certificateNumber&quot;: &quot;3854/10&quot;,
+      &quot;person&quot;: {
+        &quot;jobTitle&quot;: &quot;Адвокат&quot;,
+        &quot;fullName&quot;: &quot;Бєлоусов Павло Іванович&quot;
+      },
+      &quot;organization&quot;: {
+        &quot;name&quot;: &quot;&lt;strong&gt;Адвокатське об&#39;єднання: \&quot;Юридична фірма \&quot;ЕКВО\&quot;&lt;/strong&gt;&quot;
+      },
+      &quot;id&quot;: &quot;26960&quot;,
+      &quot;workplace&quot;: {
+        &quot;streetAddress&quot;: &quot;вулиця Бехтеревський, 4&quot;,
+        &quot;district&quot;: &quot;Шевченківський район&quot;,
+        &quot;locality&quot;: &quot;місто Київ&quot;,
+        &quot;region&quot;: &quot;місто Київ&quot;,
+        &quot;apartment&quot;: &quot;літера \&quot;А\&quot;&quot;
+      }
+    },
+    {
+      &quot;accountHolder&quot;: &quot;Рада адвокатів Київської області&quot;,
+      &quot;certificateDate&quot;: null,
+      &quot;certificateIssuer&quot;: &quot;&lt;strong&gt;Київська обласна КДКА&lt;/strong&gt;&quot;,
+      &quot;certificateNumber&quot;: &quot;3855/10&quot;,
+      &quot;person&quot;: {
+        &quot;jobTitle&quot;: &quot;Адвокат&quot;,
+        &quot;fullName&quot;: &quot;Терещенко Олександр Сергійович&quot;
+      },
+      &quot;organization&quot;: {
+        &quot;name&quot;: &quot;&lt;strong&gt;Адвокатське об&#39;єднання: \&quot;Юридична фірма \&quot;ЕКВО\&quot;&lt;/strong&gt;&quot;
+      },
+      &quot;id&quot;: &quot;30552&quot;,
+      &quot;workplace&quot;: {
+        &quot;streetAddress&quot;: &quot;вулиця Бехтеревський, 4&quot;,
+        &quot;district&quot;: &quot;Шевченківський район&quot;,
+        &quot;locality&quot;: &quot;місто Київ&quot;,
+        &quot;region&quot;: &quot;місто Київ&quot;,
+        &quot;apartment&quot;: &quot;літера \&quot;А\&quot;&quot;
+      }
+    },
+    {
+      &quot;accountHolder&quot;: &quot;Рада адвокатів Київської області&quot;,
+      &quot;certificateDate&quot;: null,
+      &quot;certificateIssuer&quot;: &quot;&lt;strong&gt;Київська обласна КДКА&lt;/strong&gt;&quot;,
+      &quot;certificateNumber&quot;: &quot;3497/10&quot;,
+      &quot;person&quot;: {
+        &quot;jobTitle&quot;: &quot;Адвокат&quot;,
+        &quot;fullName&quot;: &quot;Дрюк Наталія Олександрівна&quot;
+      },
+      &quot;organization&quot;: {
+        &quot;name&quot;: &quot;&lt;strong&gt;Адвокатське об&#39;єднання: \&quot;Юридична фірма \&quot;ЕКВО\&quot;&lt;/strong&gt;&quot;
+      },
+      &quot;id&quot;: &quot;24710&quot;,
+      &quot;workplace&quot;: {
+        &quot;streetAddress&quot;: &quot;вулиця Бехтеревський, 4&quot;,
+        &quot;district&quot;: &quot;Шевченківський район&quot;,
+        &quot;locality&quot;: &quot;місто Київ&quot;,
+        &quot;region&quot;: &quot;місто Київ&quot;,
+        &quot;apartment&quot;: &quot;літера \&quot;А\&quot;&quot;
+      }
+    },
+    {
+      &quot;accountHolder&quot;: &quot;Рада адвокатів Київської області&quot;,
+      &quot;certificateDate&quot;: null,
+      &quot;certificateIssuer&quot;: &quot;&lt;strong&gt;Київська обласна КДКА&lt;/strong&gt;&quot;,
+      &quot;certificateNumber&quot;: &quot;2816/10&quot;,
+      &quot;person&quot;: {
+        &quot;jobTitle&quot;: &quot;Адвокат&quot;,
+        &quot;fullName&quot;: &quot;Мамуня Олександр Сергійович&quot;
+      },
+      &quot;organization&quot;: {
+        &quot;name&quot;: &quot;&lt;strong&gt;Адвокатське об&#39;єднання: \&quot;Юридична фірма \&quot;ЕКВО\&quot;&lt;/strong&gt;&quot;
+      },
+      &quot;id&quot;: &quot;26197&quot;,
+      &quot;workplace&quot;: {
+        &quot;streetAddress&quot;: &quot;вулиця Бехтеревський, 4&quot;,
+        &quot;district&quot;: &quot;Шевченківський район&quot;,
+        &quot;locality&quot;: &quot;місто Київ&quot;,
+        &quot;region&quot;: &quot;місто Київ&quot;,
+        &quot;apartment&quot;: &quot;літера \&quot;А\&quot;&quot;
+      }
+    }
+  ]
+}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="endpoint-arbitrage.html" class="btn btn-neutral float-right" title="Арбітражний керуючий" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="endpoint-lawsuit.html" class="btn btn-neutral" title="Судове рішення" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Кирило Захаров
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script type="text/javascript" src="static/jquery.js"></script>
+        <script type="text/javascript" src="static/underscore.js"></script>
+        <script type="text/javascript" src="static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="uk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="uk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="Огляд API проекту &quot;Суд на долоні&quot;" name="desctription" />
+<meta content="index, follow" name="robots" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="uk" name="language" />
+<meta content="Суд на долоні, API, документація, огляд" name="keywords" />
+<meta content="Кирило Захаров" name="author" />
+<meta content="Суд на долоні" name="copyright" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Огляд API проекту &#34;Суд на долоні&#34; &mdash; Суд на долоні alph documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="index" title="Індекс" href="genindex.html" />
+    <link rel="search" title="Пошук" href="search.html" /> 
+
+  
+  <script src="static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Суд на долоні
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Зміст:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Огляд</a></li>
+<li class="toctree-l1"><a class="reference internal" href="endpoints.html">Точки входу</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-model.html">Стандарт даних</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contacts.html">Контакти</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Суд на долоні</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Огляд API проекту &quot;Суд на долоні&quot;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="sources/overview (copy).rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Огляд<a class="headerlink" href="#id1" title="Постійне посилання на цей заголовок">¶</a></h1>
+<p>API проекту «Суд на долоні» - це єдиний інтерфейс для баз даних проекту.</p>
+<p>API в даному випадку розуміється як REST-ful інтерфейс, що надає програмний доступ до баз даних, які наявні в проекті «Суд на долоні». Він надає URL-адреси для доступу до ресурсів і використовує вбудовані HTTP особливості, щоб повертати відповіді на запит.</p>
+<p>API приймає JSON вміст у запитах та повертає JSON вміст у всіх свої відповідях. Підтримується лише UTF-8 кодування і для запитів, і для відповідей.</p>
+<div class="section" id="id2">
+<h2>Стан проекту<a class="headerlink" href="#id2" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>Стан цього проекту - альфа</p>
+<p>Повідомляйте про всі проблеми та надавайте поради на електрону пошту <cite>kirillzakharov13&#64;gmail.com &lt;mailto:kirillzakharov13&#64;gmail.com&gt;_</cite>.</p>
+<div class="section" id="getting-list-of-all-tenders">
+<h3>Getting list of all tenders<a class="headerlink" href="#getting-list-of-all-tenders" title="Постійне посилання на цей заголовок">¶</a></h3>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">GET</span> <span class="nn">/tenders</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+</pre></div>
+</div>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="sorting">
+<h2>Sorting<a class="headerlink" href="#sorting" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>Tenders retuned are sorted by modification time.</p>
+</div>
+<div class="section" id="limiting-number-of-tenders-returned">
+<h2>Limiting number of Tenders returned<a class="headerlink" href="#limiting-number-of-tenders-returned" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>You can control the number of <cite>data</cite> entries in the tenders feed (batch
+size) with <cite>limit</cite> parameter. If not specified, data is being returned in
+batches of 100 elements.</p>
+</div>
+<div class="section" id="batching">
+<h2>Batching<a class="headerlink" href="#batching" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>The response contains <cite>next_page</cite> element with the following properties:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">offset:</th><td class="field-body">This is the parameter you have to add to the original request you made
+to get next page.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">path:</th><td class="field-body">This is path section of URL with original parameters and <cite>offset</cite>
+parameter added/replaced above.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">uri:</th><td class="field-body">The full version of URL for next page.</td>
+</tr>
+</tbody>
+</table>
+<p>If next page request returns no data (i.e. empty array) then there is little
+sense in fetching further pages.</p>
+<p>Please report any problems or suggestions for improvement either via the
+<a class="reference external" href="http://groups.google.com/group/open-procurement-general">mailing list</a> or
+the <a class="reference external" href="https://github.com/openprocurement/openprocurement.api/issues">issue tracker</a>.</p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Зміст:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-model.html">Стандарт даних</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lawsuit.html">Судове рішення</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="lawsuit.html#id3">Схема даних</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lawsuit.html#id26">Посилання на справу</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lawsuit.html#id28">Посилання на провадження</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lawsuit.html#id30">Посилання на кримінальні провадження</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lawsuit.html#id32">Вебсайт</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lawsuit.html#id34">Виборча комісія</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lawsuit.html#id36">Тендер</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lawsuit.html#id38">Сума грошей</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="attorney.html">Адвокати</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="attorney.html#id3">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="arbitrage.html">Арбітражні керуючі</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="arbitrage.html#id3">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="video.html">Відео судових засідань</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="video.html#id2">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="date-format.html">Дати</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drv.html">Державний реєстр виборців</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="drv.html#id3">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="law.html">Законодавство</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="law.html#id3">Схема даних</a></li>
+<li class="toctree-l3"><a class="reference internal" href="law.html#id5">Історія нормативно-правового документу</a></li>
+<li class="toctree-l3"><a class="reference internal" href="law.html#id8">Публікація нормативно-правового документу</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="lands.html">Земельна ділянка</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="lands.html#id3">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="identifier.html">Ідентифікатор юридичної особи</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="identifier.html#id2">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="koatuu.html">КОАТУУ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="koatuu.html#id3">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exchange.html">Курс валют</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="exchange.html#id2">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="legislation.html">Нормативно-правові документи</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="legislation.html#id3">Схема даних</a></li>
+<li class="toctree-l3"><a class="reference internal" href="legislation.html#id5">Історія нормативно-правового документу</a></li>
+<li class="toctree-l3"><a class="reference internal" href="legislation.html#id8">Публікація нормативно-правового документу</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="notary.html">Нотаріуси</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="notary.html#id3">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="address.html">Поштова адреса</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="address.html#id2">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="prosecutor.html">Прокурори</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="prosecutor.html#id3">Схема даних</a></li>
+<li class="toctree-l3"><a class="reference internal" href="prosecutor.html#id7">Декларація</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="article.html">Стаття законодавства</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="article.html#id3">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="court.html">Суди</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="court.html#id3">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="judge.html">Судді</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="judge.html#id3">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="courtexpert.html">Судові експерти</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="courtexpert.html#id3">Схема даних</a></li>
+<li class="toctree-l3"><a class="reference internal" href="courtexpert.html#id8">Схема даних</a></li>
+<li class="toctree-l3"><a class="reference internal" href="courtexpert.html#id12">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="person.html">Фізичні особи</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="person.html#id2">Схема даних</a></li>
+<li class="toctree-l3"><a class="reference internal" href="person.html#id4">Місце роботи фізичної особи</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="organization.html">Юридичні особи (організації)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="organization.html#id3">Схема даних</a></li>
+<li class="toctree-l3"><a class="reference internal" href="organization.html#id10">КВЕД</a></li>
+<li class="toctree-l3"><a class="reference internal" href="organization.html#id12">Оновлення</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contacts.html">Контакти</a></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>Перший заголовок<a class="headerlink" href="#id3" title="Постійне посилання на цей заголовок">¶</a></h3>
+</div>
+<div class="section" id="id4">
+<h3>Другий заголовок<a class="headerlink" href="#id4" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Просто текст</p>
+<ul class="simple">
+<li>Список
+* Список</li>
+<li>Список<ul>
+<li>Список</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="id5">
+<h1>Пошук<a class="headerlink" href="#id5" title="Постійне посилання на цей заголовок">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Сторінка пошуку</span></a></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Кирило Захаров
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script type="text/javascript" src="static/jquery.js"></script>
+        <script type="text/javascript" src="static/underscore.js"></script>
+        <script type="text/javascript" src="static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

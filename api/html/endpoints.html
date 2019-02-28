@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="uk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="uk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="Точки входу API проекту &quot;Суд на долоні&quot;" name="desctription" />
+<meta content="index, follow" name="robots" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="uk" name="language" />
+<meta content="Суд на долоні, API, точки входу, схема, JSON" name="keywords" />
+<meta content="Кирило Захаров" name="author" />
+<meta content="Суд на долоні" name="copyright" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Точки входу API проекту &#34;Суд на долоні&#34; &mdash; Суд на долоні alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="index" title="Індекс" href="genindex.html" />
+    <link rel="search" title="Пошук" href="search.html" />
+    <link rel="next" title="Загальні правила" href="endpoint-general.html" />
+    <link rel="prev" title="Огляд" href="overview.html" /> 
+
+  
+  <script src="static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Суд на долоні
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Зміст:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Огляд</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Точки входу</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-general.html">Загальні правила</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-login.html">Авторизація користувача</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-lawsuit.html">Судове рішення</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-attorney.html">Адвокат</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-arbitrage.html">Арбітражний керуючий</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-notary.html">Нотаріус</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-organization.html">Організація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-prosecutor.html">Прокурор</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-court.html">Суд</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-judge.html">Суддя</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-courtexpert.html">Судовий експерт</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data-model.html">Стандарт даних</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contacts.html">Контакти</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Суд на долоні</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Точки входу API проекту &quot;Суд на долоні&quot;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="sources/endpoints.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Точки входу<a class="headerlink" href="#id1" title="Постійне посилання на цей заголовок">¶</a></h1>
+<p>Точки входу API проекту «Суд на долоні» надають окремий доступ до кожного з реєстрів, доступ до яких надається в проекті.
+А саме:</p>
+<ul class="simple">
+<li>Єдиний державний реєстр судових рішень</li>
+<li>Реєстр судів</li>
+<li>Єдиний державний реєстр юридичних осіб</li>
+<li>Єдиний Реєстр Адвокатів України</li>
+<li>Реєстр атестованих судових експертів</li>
+<li>Єдиний реєстр нотаріусів</li>
+<li>Єдиний реєстр арбітражних керуючих</li>
+</ul>
+<p>Окрім цього надається інформація щодо:</p>
+<ul class="simple">
+<li>суддів</li>
+<li>працівників прокуратури</li>
+</ul>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Перелік точок входу:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="endpoint-general.html">Загальні правила</a></li>
+<li class="toctree-l1"><a class="reference internal" href="endpoint-login.html">Авторизація користувача</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-login.html#id2">Авторизація та отримання токену</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-login.html#id3">Оновлення токена</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="endpoint-lawsuit.html">Судове рішення</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-lawsuit.html#id2">Загальна інформація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-lawsuit.html#id4">Кількість судових рішень</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-lawsuit.html#id5">Отримання вмісту судового рішення</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-lawsuit.html#id7">Пошук судових рішень</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-lawsuit.html#id8">Фільтри</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-lawsuit.html#id9">Сортування</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-lawsuit.html#id10">Агрегація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-lawsuit.html#id11">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="endpoint-attorney.html">Адвокат</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-attorney.html#id2">Загальна інформація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-attorney.html#id4">Кількість адвокатів</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-attorney.html#id5">Отримання інформації про адвоката</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-attorney.html#id9">Пошук адвокатів</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-attorney.html#id10">Фільтри</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-attorney.html#id11">Сортування</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-attorney.html#id12">Агрегація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-attorney.html#id13">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="endpoint-arbitrage.html">Арбітражний керуючий</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-arbitrage.html#id2">Загальна інформація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-arbitrage.html#id4">Кількість арбітражних керуючих</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-arbitrage.html#id5">Отримання інформації про арбітражного керуючого</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-arbitrage.html#id9">Пошук арбітражних керуючих</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-arbitrage.html#id10">Фільтри</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-arbitrage.html#id11">Сортування</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-arbitrage.html#id12">Агрегація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-arbitrage.html#id13">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="endpoint-notary.html">Нотаріус</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-notary.html#id2">Загальна інформація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-notary.html#id4">Кількість нотаріусів</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-notary.html#id5">Отримання інформації про нотаріуса</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-notary.html#id9">Пошук нотаріусів</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-notary.html#id10">Фільтри</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-notary.html#id11">Сортування</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-notary.html#id12">Агрегація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-notary.html#id13">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="endpoint-organization.html">Організація</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-organization.html#id2">Загальна інформація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-organization.html#id4">Кількість організацій</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-organization.html#id5">Отримання інформації про організації</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-organization.html#id7">Пошук організацій</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-organization.html#id8">Фільтри</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-organization.html#id9">Агрегація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-organization.html#id10">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="endpoint-prosecutor.html">Прокурор</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-prosecutor.html#id2">Загальна інформація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-prosecutor.html#id4">Кількість прокурорів</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-prosecutor.html#id5">Отримання інформації про прокурорів</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-prosecutor.html#id7">Пошук прокурорів</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-prosecutor.html#id8">Фільтри</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-prosecutor.html#id9">Сортування</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-prosecutor.html#id10">Агрегація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-prosecutor.html#id11">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="endpoint-court.html">Суд</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-court.html#id2">Загальна інформація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-court.html#id4">Кількість судів</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-court.html#id5">Отримання інформації про суди</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-court.html#id7">Пошук судів</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-court.html#id8">Фільтри</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-court.html#id9">Сортування</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-court.html#id10">Агрегація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-court.html#id11">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="endpoint-judge.html">Суддя</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-judge.html#id2">Загальна інформація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-judge.html#id4">Кількість суддів</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-judge.html#id5">Отримання інформації про суддю</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-judge.html#id7">Пошук суддів</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-judge.html#id8">Фільтри</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-judge.html#id9">Сортування</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-judge.html#id10">Агрегація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-judge.html#id11">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="endpoint-courtexpert.html">Судовий експерт</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-courtexpert.html#id2">Загальна інформація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-courtexpert.html#id4">Кількість судових експертів</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-courtexpert.html#id5">Отримання інформації про судового експерта</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-courtexpert.html#id7">Пошук судових експертів</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-courtexpert.html#id8">Фільтри</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-courtexpert.html#id9">Сортування</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-courtexpert.html#id10">Агрегація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="endpoint-courtexpert.html#id11">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="endpoint-general.html" class="btn btn-neutral float-right" title="Загальні правила" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="overview.html" class="btn btn-neutral" title="Огляд" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Кирило Захаров
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script type="text/javascript" src="static/jquery.js"></script>
+        <script type="text/javascript" src="static/underscore.js"></script>
+        <script type="text/javascript" src="static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

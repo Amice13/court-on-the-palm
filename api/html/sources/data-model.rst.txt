@@ -1,0 +1,39 @@
+.. title:: Стандарт даних API проекту "Суд на долоні"
+
+.. meta::
+    :desctription: Стандарт даних API проекту "Суд на долоні"
+    :robots: index, follow
+    :viewport: width=device-width, initial-scale=1
+    :language: uk
+    :keywords: Суд на долоні, API, стандарт даних, схема, JSON
+    :author: Кирило Захаров
+    :copyright: Суд на долоні
+
+Стандарт даних
+==============
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Моделі даних для різних сутностей:
+
+   lawsuit.rst
+   attorney.rst
+   arbitrage.rst
+   video.rst
+   date-format.rst
+   drv.rst
+   law.rst
+   lands.rst
+   identifier.rst
+   koatuu.rst
+   exchange.rst
+   legislation.rst
+   notary.rst
+   address.rst
+   prosecutor.rst
+   article.rst
+   court.rst
+   judge.rst
+   courtexpert.rst
+   person.rst
+   organization.rst

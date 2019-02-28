@@ -1,0 +1,42 @@
+---
+layout: page
+title: "Блог"
+description: "Все про нашу діяльність"
+header-img: "img/static_page/blog.jpg"
+---
+
+<article>
+    {% for post in paginator.posts %}
+    <div class="post-preview">
+        <span class="post-meta">{{ post.date | date: "%-d.%m.%Y" }}</span>
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <h2 class="post-title">{{ post.title }}
+            </h2>
+            {% if post.subtitle %}
+            <h3 class="post-subtitle">
+                {{ post.subtitle }}
+            </h3>
+            {% endif %}
+        </a>
+        <span class="blog-author badge badge-primary"><i class="fa fa-user-circle-o white" style="position:relative; left: -5px;"></i>{% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}</span> <a data-disqus-identifier="{{ post.url }}" href="{{ post.url | prepend: site.baseurl }}#disqus_thread"></a>
+    </div>
+
+    <hr>
+    {% endfor %}
+
+    <!-- Pager -->
+    {% if paginator.total_pages > 1 %}
+    <ul class="pager">
+        {% if paginator.previous_page %}
+        <li class="previous">
+            <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&larr; Новіші <span class="dont-show-mobile">записи</span></a>
+        </li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="next">
+            <a href="{{ paginator.next_page_path | replace: '//', '/' }}">Попередні <span class="dont-show-mobile">записи</span> &rarr;</a>
+        </li>
+        {% endif %}
+    </ul>
+    {% endif %}
+</article>

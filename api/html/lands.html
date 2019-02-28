@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="uk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="uk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="Опис API до опису земельних ділянок на проекті &quot;Суд на долоні&quot;" name="desctription" />
+<meta content="index, follow" name="robots" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="uk" name="language" />
+<meta content="Суд на долоні, API, земельна ділянка" name="keywords" />
+<meta content="Кирило Захаров" name="author" />
+<meta content="Суд на долоні" name="copyright" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API Суд на долоні - Земельна ділянка &mdash; Суд на долоні alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="index" title="Індекс" href="genindex.html" />
+    <link rel="search" title="Пошук" href="search.html" />
+    <link rel="next" title="Ідентифікатор юридичної особи" href="identifier.html" />
+    <link rel="prev" title="Законодавство" href="law.html" /> 
+
+  
+  <script src="static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Суд на долоні
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Зміст:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Огляд</a></li>
+<li class="toctree-l1"><a class="reference internal" href="endpoints.html">Точки входу</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="data-model.html">Стандарт даних</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="lawsuit.html">Судове рішення</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attorney.html">Адвокати</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arbitrage.html">Арбітражні керуючі</a></li>
+<li class="toctree-l2"><a class="reference internal" href="video.html">Відео судових засідань</a></li>
+<li class="toctree-l2"><a class="reference internal" href="date-format.html">Дати</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drv.html">Державний реєстр виборців</a></li>
+<li class="toctree-l2"><a class="reference internal" href="law.html">Законодавство</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Земельна ділянка</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="identifier.html">Ідентифікатор юридичної особи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="koatuu.html">КОАТУУ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exchange.html">Курс валют</a></li>
+<li class="toctree-l2"><a class="reference internal" href="legislation.html">Нормативно-правові документи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notary.html">Нотаріуси</a></li>
+<li class="toctree-l2"><a class="reference internal" href="address.html">Поштова адреса</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prosecutor.html">Прокурори</a></li>
+<li class="toctree-l2"><a class="reference internal" href="article.html">Стаття законодавства</a></li>
+<li class="toctree-l2"><a class="reference internal" href="court.html">Суди</a></li>
+<li class="toctree-l2"><a class="reference internal" href="judge.html">Судді</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courtexpert.html">Судові експерти</a></li>
+<li class="toctree-l2"><a class="reference internal" href="person.html">Фізичні особи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="organization.html">Юридичні особи (організації)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contacts.html">Контакти</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Суд на долоні</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="data-model.html">Стандарт даних</a> &raquo;</li>
+        
+      <li>API Суд на долоні - Земельна ділянка</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="sources/lands.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Земельна ділянка<a class="headerlink" href="#id1" title="Постійне посилання на цей заголовок">¶</a></h1>
+<p>Опис земельних ділянок з сайту <a class="reference external" href="http://land.gov.ua/">Державої служби України з питань геодезії, картографії та кадастру</a>.</p>
+<p>Інформація зберігається при індексації судового рішення, яке містить номер земельної ділянки. І є релевантною на момент індексації рішення.
+В подальшому інформація не оновлюється.</p>
+<div class="section" id="id3">
+<h2>Схема даних<a class="headerlink" href="#id3" title="Постійне посилання на цей заголовок">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">koatuu:</th><td class="field-body"><p class="first">рядок</p>
+<p>Код Класифікатору об’єктів адміністративно-територіального устрою України (<a class="reference external" href="http://www.ukrstat.gov.ua/klasf/st_kls/op_koatuu_2016.htm">КОАТУУ</a>).</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">quartal:</th><td class="field-body"><p class="first">рядок</p>
+<p>Номер кадастрового кварталу, у якому розташована земельна ділянка, є складовою частиною кадастрового номеру земельної ділянки.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">zone:</th><td class="field-body"><p class="first">рядок</p>
+<p>Кадастрова зона, яка поєднує декілька кварталів</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">parcel:</th><td class="field-body"><p class="first">рядок</p>
+<p>Порядковий номер реєстрації земельної ділянки.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">cadnum:</th><td class="field-body"><p class="first">рядок.</p>
+<p>Кадастровий номер земельної ділянки.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">ownershipcode:</th><td class="field-body"><p class="first">рядок</p>
+<p>Код форми власності земельної ділянки.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">purpose:</th><td class="field-body"><p class="first">рядок</p>
+<p>Цільове призначення земельної ділянки.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">use:</th><td class="field-body"><p class="first">рядок</p>
+<p>Актуальне використання земельної ділянки.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">area:</th><td class="field-body"><p class="first">дробове число (float)</p>
+<p>Розмір земельної ділянки.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">unit_area:</th><td class="field-body"><p class="first">рядок</p>
+<p>Одиниця виміру площі земельної ділянки (зазвичай в гектарах).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">ownershipvalue:</th><td class="field-body"><p class="first">рядок</p>
+<p>Форма власності земельної ділянки.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">id_office:</th><td class="field-body"><p class="first">рядок</p>
+<p>Невизначено.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">firstLevel:</th><td class="field-body"><p class="first">рядок</p>
+<p>Назва адміністативно-територіальної одиниці першого рівня за кодом КОАТУУ, де розташована земельна ділянка.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">secondLevel:</th><td class="field-body"><p class="first">рядок</p>
+<p>Назва адміністативно-територіальної одиниці другого рівня за кодом КОАТУУ, де розташована земельна ділянка.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">thirdLevel:</th><td class="field-body"><p class="first">рядок</p>
+<p>Назва адміністативно-територіальної одиниці третього рівня за кодом КОАТУУ, де розташована земельна ділянка.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">fourthLevel:</th><td class="field-body"><p class="first">рядок</p>
+<p class="last">Назва адміністативно-територіальної одиниці четвертого рівня за кодом КОАТУУ, де розташована земельна ділянка.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="identifier.html" class="btn btn-neutral float-right" title="Ідентифікатор юридичної особи" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="law.html" class="btn btn-neutral" title="Законодавство" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Кирило Захаров
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script type="text/javascript" src="static/jquery.js"></script>
+        <script type="text/javascript" src="static/underscore.js"></script>
+        <script type="text/javascript" src="static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

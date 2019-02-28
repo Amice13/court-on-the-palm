@@ -1,0 +1,611 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="uk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="uk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="Точка входу &quot;Суддя&quot; для API проекту &quot;Суд на долоні&quot;" name="desctription" />
+<meta content="index, follow" name="robots" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="uk" name="language" />
+<meta content="Суд на долоні, API, суддя" name="keywords" />
+<meta content="Кирило Захаров" name="author" />
+<meta content="Суд на долоні" name="copyright" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Точка входу &#34;Суддя&#34; для API проекту &#34;Суд на долоні&#34; &mdash; Суд на долоні alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="index" title="Індекс" href="genindex.html" />
+    <link rel="search" title="Пошук" href="search.html" />
+    <link rel="next" title="Судовий експерт" href="endpoint-courtexpert.html" />
+    <link rel="prev" title="Суд" href="endpoint-court.html" /> 
+
+  
+  <script src="static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Суд на долоні
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Зміст:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Огляд</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="endpoints.html">Точки входу</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="endpoint-general.html">Загальні правила</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-login.html">Авторизація користувача</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-lawsuit.html">Судове рішення</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-attorney.html">Адвокат</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-arbitrage.html">Арбітражний керуючий</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-notary.html">Нотаріус</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-organization.html">Організація</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-prosecutor.html">Прокурор</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-court.html">Суд</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Суддя</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Загальна інформація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Кількість суддів</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Отримання інформації про суддю</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Пошук суддів</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Фільтри</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Сортування</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Агрегація</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-courtexpert.html">Судовий експерт</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data-model.html">Стандарт даних</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contacts.html">Контакти</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Суд на долоні</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="endpoints.html">Точки входу</a> &raquo;</li>
+        
+      <li>Точка входу &quot;Суддя&quot; для API проекту &quot;Суд на долоні&quot;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="sources/endpoint-judge.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Суддя<a class="headerlink" href="#id1" title="Постійне посилання на цей заголовок">¶</a></h1>
+<p>Точка входу «Суддя» повертає інформацію стосовно суддів України.</p>
+<div class="section" id="id2">
+<h2>Загальна інформація<a class="headerlink" href="#id2" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>Інформація про суддів з даних Державної судової адміністрації, опублікованих на <a class="reference external" href="https://court.gov.ua/opendata/">відповідному порталі відкритих даних</a>.</p>
+<p>Унікальним ідентифікатором для кожного судді є певна судова установа та прізвище, ім’я та по батькові судді (або прізвище та ініціали).</p>
+<p>Оновлюється за відповідними нормативно-правовими документами, опублікованими на сайті Верховної Ради України.</p>
+</div>
+<div class="section" id="id4">
+<h2>Кількість суддів<a class="headerlink" href="#id4" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>GET-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/judge</span></code> повертає загальну кількість суддів в системі</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">GET</span> <span class="nn">/judge</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{ &quot;message&quot;: 13852 }
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id5">
+<h2>Отримання інформації про суддю<a class="headerlink" href="#id5" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>GET-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/judge/:id</span></code> повертає інформацію про суддю за <a class="reference external" href="judge.html">відповідною схемою даних</a> <cite>. Де ``id`</cite> - це транслітерована комбінація коду суду та прізвища та ініціалів судді.</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">GET</span> <span class="nn">/judge/0590_ahieiev_o__v_</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{
+  &quot;person&quot;: {
+    &quot;source&quot;: &quot;Агєєв Олександр Володимирович&quot;,
+    &quot;idName&quot;: &quot;Агєєв О. В.&quot;,
+    &quot;fullName&quot;: &quot;Агєєв Олександр Володимирович&quot;,
+    &quot;familyName&quot;: &quot;Агєєв&quot;,
+    &quot;givenName&quot;: &quot;Олександр&quot;,
+    &quot;additionalName&quot;: &quot;Володимирович&quot;,
+    &quot;sex&quot;: &quot;чоловік&quot;,
+    &quot;jobTitle&quot;: &quot;Голова Апеляційного суду Донецької області (м. Бахмут)&quot;,
+    &quot;idNameRus&quot;: &quot;Агеев А. В.&quot;,
+    &quot;fullNameRus&quot;: &quot;Агеев Александр В&quot;,
+    &quot;familyNameRus&quot;: &quot;Агеев&quot;,
+    &quot;givenNameRus&quot;: &quot;Александр&quot;,
+    &quot;additionalNameRus&quot;: &quot;В&quot;
+  },
+  &quot;courts&quot;: [
+    {
+      &quot;address&quot;: {
+        &quot;geo&quot;: {
+          &quot;lon&quot;: &quot;37.998301&quot;,
+          &quot;lat&quot;: &quot;48.589041&quot;
+        },
+        &quot;streetAddress&quot;: &quot;вулиця Свободи,10&quot;,
+        &quot;postalCode&quot;: &quot;84513&quot;,
+        &quot;locality&quot;: &quot;місто Бахмут&quot;,
+        &quot;fullAddress&quot;: &quot;84513, Донецька область, місто Бахмут, вулиця Свободи,10&quot;,
+        &quot;source&quot;: &quot;84500, м. Бахмут, вул. Свободи,10&quot;,
+        &quot;countryName&quot;: &quot;Україна&quot;,
+        &quot;region&quot;: &quot;Донецька область&quot;,
+        &quot;oldLocality&quot;: &quot;місто Артемівськ&quot;
+      },
+      &quot;courtName&quot;: &quot;Апеляційний суд Донецької області&quot;,
+      &quot;courtCode&quot;: &quot;0590&quot;,
+      &quot;phone&quot;: [
+        &quot;+38 (062) 744 50 26&quot;,
+        &quot;+38 (062) 744 50 24&quot;,
+        &quot;+38 (062) 744 51 44&quot;,
+        &quot;+38 (062) 744 51 57&quot;
+      ],
+      &quot;instanceType&quot;: &quot;Апеляційна&quot;,
+      &quot;organization&quot;: {
+        &quot;legalName&quot;: &quot;АПЕЛЯЦІЙНИЙ СУД ДОНЕЦЬКОЇ ОБЛАСТІ&quot;,
+        &quot;head&quot;: {
+          &quot;idName&quot;: &quot;Лісовий О. О.&quot;,
+          &quot;familyName&quot;: &quot;Лісовий&quot;,
+          &quot;givenName&quot;: &quot;Олександр&quot;,
+          &quot;sex&quot;: &quot;чоловік&quot;,
+          &quot;jobTitle&quot;: &quot;Директор&quot;,
+          &quot;fullName&quot;: &quot;Лісовий Олександр Олександрович&quot;,
+          &quot;source&quot;: &quot;ЛІСОВИЙ ОЛЕКСАНДР ОЛЕКСАНДРОВИЧ&quot;,
+          &quot;additionalName&quot;: &quot;Олександрович&quot;
+        },
+        &quot;identifier&quot;: {
+          &quot;valid&quot;: true,
+          &quot;scheme&quot;: &quot;UA-EDR&quot;,
+          &quot;id&quot;: &quot;02891428&quot;
+        },
+        &quot;address&quot;: {
+          &quot;streetNumber&quot;: &quot;1-А&quot;,
+          &quot;streetAddress&quot;: &quot;проспект Миру, 1-А&quot;,
+          &quot;postalCode&quot;: &quot;87500&quot;,
+          &quot;district&quot;: &quot;Центральний район&quot;,
+          &quot;locality&quot;: &quot;місто Маріуполь&quot;,
+          &quot;fullAddress&quot;: &quot;87500, Донецька область, місто Маріуполь, проспект Миру, 1-А&quot;,
+          &quot;source&quot;: &quot;87500, Донецька обл., місто Маріуполь, Центральний район, ПРОСПЕКТ МИРУ, будинок 1-А&quot;,
+          &quot;countryName&quot;: &quot;Україна&quot;,
+          &quot;region&quot;: &quot;Донецька область&quot;
+        },
+        &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+        &quot;numberOfFounders&quot;: 1,
+        &quot;name&quot;: &quot;АПЕЛЯЦІЙНИЙ СУД ДОНЕЦЬКОЇ ОБЛАСТІ&quot;,
+        &quot;kved&quot;: {
+          &quot;part&quot;: &quot;84&quot;,
+          &quot;group&quot;: &quot;23&quot;
+        },
+        &quot;founders&quot;: [
+          {
+            &quot;organization&quot;: {
+              &quot;name&quot;: &quot;Державна Судова Адміністрація України&quot;,
+              &quot;source&quot;: &quot;ДЕРЖАВНА СУДОВА АДМІНІСТРАЦІЯ УКРАЇНИ&quot;
+            },
+            &quot;source&quot;: &quot;ДЕРЖАВНА СУДОВА АДМІНІСТРАЦІЯ УКРАЇНИ, розмір внеску до статутного фонду - 0.00 грн.&quot;
+          }
+        ],
+        &quot;full_kved&quot;: &quot;84.23 Діяльність у сфері юстиції та правосуддя&quot;,
+        &quot;updatedAt&quot;: &quot;2018-08-10T12:30:10.548Z&quot;
+      },
+      &quot;courtRegion&quot;: &quot;Донецька область&quot;,
+      &quot;openingHours&quot;: [
+        &quot;Пн-Чт з 08:00 до 17:00&quot;,
+        &quot;Пт з 08:00 до 15:45&quot;,
+        &quot;Перерва з 12:00 до 12:45&quot;
+      ],
+      &quot;url&quot;: &quot;http://dna.court.gov.ua/sud0590/&quot;,
+      &quot;email&quot;: &quot;inbox@dna.court.gov.ua&quot;,
+      &quot;updatedAt&quot;: &quot;2018-08-10T13:15:42.915Z&quot;
+    }
+  ],
+  &quot;id&quot;: &quot;0590_ahieiev_o__v_&quot;,
+  &quot;updatedAt&quot;: &quot;2018-08-10T15:19:57.947Z&quot;
+}
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id7">
+<h2>Пошук суддів<a class="headerlink" href="#id7" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>POST-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/judge/search</span></code> дозволяє шукати суддів.</p>
+<p>POST-запит має містити JSON з наступними змінними</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">query:</th><td class="field-body"><p class="first">рядок</p>
+<p>Перелік термінів для повнотекстового пошуку.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">defaultOperator:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Приймає значення <code class="docutils literal notranslate"><span class="pre">or</span></code> або <code class="docutils literal notranslate"><span class="pre">and</span></code>, щоб шукати будь-який з термінів для повнотекстового пошуку або усі терміни.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">filter:</th><td class="field-body"><p class="first">об’єкт</p>
+<p>Об’єкт, який містить перелік усіх пошукових фільтрів, встановлених користувачем.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">sort:</th><td class="field-body"><p class="first">об’єкт</p>
+<p>Об’єкт, який визначає порядок сортування результатів.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">from:</th><td class="field-body"><p class="first">ціле число (integer)</p>
+<p>Кількість об’єктів, яку необхідно пропустити (використовується для пагінації).</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">aggregation:</th><td class="field-body"><p class="first">булеве значення</p>
+<p class="last">Якщо встановлено значення <code class="docutils literal notranslate"><span class="pre">false</span></code>, то в результаті буде отримано перелік суддів, які відповідають повнотекстовому запиту та фільтрам. Якщо встановлено значення <code class="docutils literal notranslate"><span class="pre">true</span></code>, то повертає перелік агрегацій для фасетного пошуку.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id8">
+<h3>Фільтри<a class="headerlink" href="#id8" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Кожен з фільтрів має бути об’єктом з певною назвою (поле, за яким відбувається фільтрація) та будуватися за схемою:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">list:</th><td class="field-body"><p class="first">масив рядків</p>
+<p>Перелік точних значень термінів для фільтрації результату.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">operator:</th><td class="field-body"><p class="first">рядок</p>
+<p class="last">Приймає значення <code class="docutils literal notranslate"><span class="pre">or</span></code> або <code class="docutils literal notranslate"><span class="pre">and</span></code>, щоб у результат попадали сутності з будь-яким зі значень фільтру або усі значення фільтру.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Суддів можна фільтрувати за точними значеннями таких змінних:</p>
+<ul class="simple">
+<li><strong>instanceType</strong> - Інстанція суду</li>
+<li><strong>courtName</strong> - Назва суду</li>
+<li><strong>sex</strong> - Стать судді</li>
+<li><strong>address.region</strong> - Область адреси суду</li>
+<li><strong>address.district</strong> - Район або район у місті адреси суду</li>
+<li><strong>address.locality</strong> - Населений пункт адреси суду</li>
+<li><strong>address.fullAddress</strong> - Повна адреса суду</li>
+<li><strong>address.currentStatus</strong> - Поточний статус суду</li>
+</ul>
+<p>Приклад використання фільтру - «(1) Тільки судді-жінки (2) судів першої інстанції (3) міста Харків»:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+{ &quot;filter&quot;: {
+  &quot;instanceType&quot;: {
+    &quot;list&quot;: [
+      &quot;Перша&quot;
+    ],
+    &quot;operator&quot;: &quot;or&quot;
+  },
+  &quot;sex&quot;: {
+    &quot;list&quot;: [
+      &quot;жінка&quot;
+    ],
+    &quot;operator&quot;: &quot;or&quot;
+  },
+  &quot;address.locality&quot;: {
+    &quot;list&quot;: [
+      &quot;місто Харків&quot;
+    ],
+    &quot;operator&quot;: &quot;or&quot;
+  }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>Сортування<a class="headerlink" href="#id9" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Для суддів дозволено сортування за повним іменем. Якщо змінна <code class="docutils literal notranslate"><span class="pre">sort</span></code> у запиті має значення <code class="docutils literal notranslate"><span class="pre">{}</span></code>, то сортування відбуватиметься за релевантністю.</p>
+<p>Приклад сортування за повним іменем:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+&quot;sort&quot;: {
+  &quot;person.fullName.sort&quot;: { &quot;order&quot;: &quot;asc&quot; }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>Агрегація<a class="headerlink" href="#id10" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Для суддів передбачено агрегацію за такими змінними:</p>
+<ul class="simple">
+<li>Інстанція суду</li>
+<li>Область суду</li>
+<li>Населений пункт суду</li>
+<li>Район суду</li>
+<li>Стать судді</li>
+</ul>
+<p>Агрегації розраховуються автоматично для усіх змінних, для яких встановлено фільтр. Якщо необхідно отримати агрегацію без фільтрації, то необхідно задати «пустий» фільтр таким чином:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+&quot;filter&quot;: {
+  &quot;instanceType&quot;: {
+    &quot;list&quot;: [],
+    &quot;operator&quot;: &quot;or&quot;
+  }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id11">
+<h3>Приклад повного запиту та відповіді<a class="headerlink" href="#id11" title="Постійне посилання на цей заголовок">¶</a></h3>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">POST</span> <span class="nn">/judge/search</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{
+  &quot;query&quot;: &quot;&quot;,
+  &quot;defaultOperator&quot;: &quot;or&quot;,
+  &quot;filter&quot;: {
+    &quot;instanceType&quot;: {
+      &quot;list&quot;: [
+        &quot;Апеляційна&quot;
+      ],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;courtName&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;fullName&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;sex&quot;: {
+      &quot;list&quot;: [
+        &quot;чоловік&quot;
+      ],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;address.region&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;address.district&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;address.locality&quot;: {
+      &quot;list&quot;: [
+        &quot;місто Дніпро&quot;
+      ],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;address.fullAddress&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;organization.currentStatus&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    }
+  },
+  &quot;searchIndex&quot;: &quot;judge&quot;,
+  &quot;aggregation&quot;: true
+}
+
+{
+  &quot;aggs&quot;: {
+    &quot;address.locality&quot;: [],
+    &quot;compound&quot;: {},
+    &quot;address.district&quot;: [
+      {
+        &quot;key&quot;: &quot;Бабушкінський район&quot;,
+        &quot;doc_count&quot;: 35
+      },
+      {
+        &quot;key&quot;: &quot;Жовтневий район&quot;,
+        &quot;doc_count&quot;: 18
+      },
+      {
+        &quot;key&quot;: &quot;Шевченківський район&quot;,
+        &quot;doc_count&quot;: 14
+      }
+    ],
+    &quot;courtName&quot;: [
+      {
+        &quot;key&quot;: &quot;Апеляційний суд Дніпропетровської області&quot;,
+        &quot;doc_count&quot;: 34
+      },
+      {
+        &quot;key&quot;: &quot;Дніпропетровський апеляційний адміністративний суд&quot;,
+        &quot;doc_count&quot;: 18
+      },
+      {
+        &quot;key&quot;: &quot;Дніпропетровський апеляційний господарський суд&quot;,
+        &quot;doc_count&quot;: 14
+      },
+      {
+        &quot;key&quot;: &quot;Апеляційний суд Дніпропетровської області (м. Кривий Ріг)&quot;,
+        &quot;doc_count&quot;: 1
+      }
+    ],
+    &quot;address.region&quot;: [
+      {
+        &quot;key&quot;: &quot;Дніпропетровська область&quot;,
+        &quot;doc_count&quot;: 67
+      }
+    ],
+    &quot;instanceType&quot;: [],
+    &quot;sex&quot;: []
+  },
+  &quot;total&quot;: 67
+}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="endpoint-courtexpert.html" class="btn btn-neutral float-right" title="Судовий експерт" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="endpoint-court.html" class="btn btn-neutral" title="Суд" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Кирило Захаров
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script type="text/javascript" src="static/jquery.js"></script>
+        <script type="text/javascript" src="static/underscore.js"></script>
+        <script type="text/javascript" src="static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

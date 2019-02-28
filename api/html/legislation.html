@@ -1,0 +1,375 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="uk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="uk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="Опис API до опису нормативно-правових документів на проекті &quot;Суд на долоні&quot;" name="desctription" />
+<meta content="index, follow" name="robots" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="uk" name="language" />
+<meta content="Суд на долоні, API, нормативно-правовий документ, закон, постанова, акт" name="keywords" />
+<meta content="Кирило Захаров" name="author" />
+<meta content="Суд на долоні" name="copyright" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API Суд на долоні - Нормативно-правові документи &mdash; Суд на долоні alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="index" title="Індекс" href="genindex.html" />
+    <link rel="search" title="Пошук" href="search.html" />
+    <link rel="next" title="Нотаріуси" href="notary.html" />
+    <link rel="prev" title="Курс валют" href="exchange.html" /> 
+
+  
+  <script src="static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Суд на долоні
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Зміст:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Огляд</a></li>
+<li class="toctree-l1"><a class="reference internal" href="endpoints.html">Точки входу</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="data-model.html">Стандарт даних</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="lawsuit.html">Судове рішення</a></li>
+<li class="toctree-l2"><a class="reference internal" href="attorney.html">Адвокати</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arbitrage.html">Арбітражні керуючі</a></li>
+<li class="toctree-l2"><a class="reference internal" href="video.html">Відео судових засідань</a></li>
+<li class="toctree-l2"><a class="reference internal" href="date-format.html">Дати</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drv.html">Державний реєстр виборців</a></li>
+<li class="toctree-l2"><a class="reference internal" href="law.html">Законодавство</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lands.html">Земельна ділянка</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identifier.html">Ідентифікатор юридичної особи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="koatuu.html">КОАТУУ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exchange.html">Курс валют</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Нормативно-правові документи</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Схема даних</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Історія нормативно-правового документу</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Схема даних</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Публікація нормативно-правового документу</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Схема даних</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="notary.html">Нотаріуси</a></li>
+<li class="toctree-l2"><a class="reference internal" href="address.html">Поштова адреса</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prosecutor.html">Прокурори</a></li>
+<li class="toctree-l2"><a class="reference internal" href="article.html">Стаття законодавства</a></li>
+<li class="toctree-l2"><a class="reference internal" href="court.html">Суди</a></li>
+<li class="toctree-l2"><a class="reference internal" href="judge.html">Судді</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courtexpert.html">Судові експерти</a></li>
+<li class="toctree-l2"><a class="reference internal" href="person.html">Фізичні особи</a></li>
+<li class="toctree-l2"><a class="reference internal" href="organization.html">Юридичні особи (організації)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contacts.html">Контакти</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Суд на долоні</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="data-model.html">Стандарт даних</a> &raquo;</li>
+        
+      <li>API Суд на долоні - Нормативно-правові документи</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="sources/legislation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Нормативно-правові документи<a class="headerlink" href="#id1" title="Постійне посилання на цей заголовок">¶</a></h1>
+<p>Опис усіх нормативно-прававих документів з сайту <a class="reference external" href="http://data.rada.gov.ua/open/data/docs">Відкритих даних Верховної Ради України</a>.</p>
+<p>Інфомація оновлюється раз на тиждень.</p>
+<div class="section" id="id3">
+<h2>Схема даних<a class="headerlink" href="#id3" title="Постійне посилання на цей заголовок">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">identifier:</th><td class="field-body"><p class="first">рядок</p>
+<p>Ідентифікатор нормативно-правового документу.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">legislationIdentifier:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Номер нормативно-правового документу із вказанням скликання Верховної Ради України (для бази «Законодавство»).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">legislationTitle:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Назва нормативно-правового документу.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">legislationTitleRus:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Назва нормативно-правового документу російською мовою (за наявності).</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">meta:</th><td class="field-body"><p class="first">рядок.</p>
+<p>Метаінформація про нормативно-правовий документ з сайту Верховної Ради України (дати та номери публікацій).</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">metaOrgans:</th><td class="field-body"><p class="first">рядок</p>
+<p>Метаінформація про орган, який прийняв нормативно-правовий документ.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">legislationLegalForce:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Поточний стан нормативно-правового документу.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">legislationType:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Тип нормативно-правового документу.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">legislationPassedBy:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Орган, який прийняв нормативно-правовий документ.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">additionalType:</th><td class="field-body"><p class="first">рядок</p>
+<p>Категорія нормативно-правового документу, сфера застосування.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">tags:</th><td class="field-body"><p class="first">рядок</p>
+<p>Опис форми документа.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">history:</th><td class="field-body"><p class="first">об’єкт, історія нормативно-правового документу</p>
+<p>Історія нормативно-правового документу.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">publicationEvent:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">об’єкт, публікація нормативно-правового документу</p>
+<p>Публікації нормативно-правового документу.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">updatedAt:</th><td class="field-body"><p class="first">рядок, <a class="reference external" href="date-format.html">дата</a></p>
+<p class="last">Дата останнього оновлення.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<div class="section" id="id5">
+<h2>Історія нормативно-правового документу<a class="headerlink" href="#id5" title="Постійне посилання на цей заголовок">¶</a></h2>
+<div class="section" id="id6">
+<h3>Схема даних<a class="headerlink" href="#id6" title="Постійне посилання на цей заголовок">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">date:</th><td class="field-body"><p class="first">рядок, <a class="reference external" href="date-format.html">дата</a></p>
+<p>Дата події.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">eventType:</th><td class="field-body"><p class="first">рядок</p>
+<p class="last">Тип/опис події.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>Публікація нормативно-правового документу<a class="headerlink" href="#id8" title="Постійне посилання на цей заголовок">¶</a></h2>
+<div class="section" id="id9">
+<h3>Схема даних<a class="headerlink" href="#id9" title="Постійне посилання на цей заголовок">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">date:</th><td class="field-body"><p class="first">рядок, <a class="reference external" href="date-format.html">дата</a></p>
+<p>Дата події.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">publisher:</th><td class="field-body"><p class="first">рядок</p>
+<p class="last">Місце публікації документа або орган, що опублікував документ.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="notary.html" class="btn btn-neutral float-right" title="Нотаріуси" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="exchange.html" class="btn btn-neutral" title="Курс валют" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Кирило Захаров
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script type="text/javascript" src="static/jquery.js"></script>
+        <script type="text/javascript" src="static/underscore.js"></script>
+        <script type="text/javascript" src="static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

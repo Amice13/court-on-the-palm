@@ -1,0 +1,45 @@
+.. title:: Точки входу API проекту "Суд на долоні"
+
+.. meta::
+    :desctription: Точки входу API проекту "Суд на долоні"
+    :robots: index, follow
+    :viewport: width=device-width, initial-scale=1
+    :language: uk
+    :keywords: Суд на долоні, API, точки входу, схема, JSON
+    :author: Кирило Захаров
+    :copyright: Суд на долоні
+
+Точки входу
+===========
+
+Точки входу API проекту "Суд на долоні" надають окремий доступ до кожного з реєстрів, доступ до яких надається в проекті. 
+А саме: 
+
+* Єдиний державний реєстр судових рішень
+* Реєстр судів
+* Єдиний державний реєстр юридичних осіб
+* Єдиний Реєстр Адвокатів України
+* Реєстр атестованих судових експертів
+* Єдиний реєстр нотаріусів
+* Єдиний реєстр арбітражних керуючих
+
+Окрім цього надається інформація щодо:
+
+* суддів
+* працівників прокуратури
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Перелік точок входу:
+
+   endpoint-general.rst
+   endpoint-login.rst
+   endpoint-lawsuit.rst
+   endpoint-attorney.rst
+   endpoint-arbitrage.rst
+   endpoint-notary.rst
+   endpoint-organization.rst
+   endpoint-prosecutor.rst
+   endpoint-court.rst
+   endpoint-judge.rst
+   endpoint-courtexpert.rst

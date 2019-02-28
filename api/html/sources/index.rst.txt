@@ -1,0 +1,27 @@
+.. title:: Документація до API проекту "Суд на долоні"
+
+.. meta::
+    :desctription: Документація до API проекту "Суд на долоні"
+    :robots: index, follow
+    :viewport: width=device-width, initial-scale=1
+    :language: uk
+    :keywords: Суд на долоні, API, документація
+    :author: Кирило Захаров
+    :copyright: Суд на долоні
+
+Документація до API проекту "Суд на долоні"
+=================================================
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Зміст:
+
+   overview.rst
+   endpoints.rst
+   data-model.rst
+   contacts.rst
+
+Пошук
+==================
+
+* :ref:`search`

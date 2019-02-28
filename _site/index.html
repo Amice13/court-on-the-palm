@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Суд на долоні - аналітичний інструмент для пошуку, дослідження та візуалізації судових рішень!">
+    <meta name="keywords" content="Суд на ладоні, судові рішення, суд, суддя, судова аналітика, візуалізація судових рішень"/>
+    <meta name="author" content="Court on the Palm" />
+    
+    <title>Суд на долоні</title>
+
+    <link rel="canonical" href="http://court-on-the-palm.com.ua/">
+
+    <!-- Bootstrap Core CSS -->
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/clean-blog.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Суд на долоні</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/court.css">
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!--     Fonts and icons     -->
+    <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/fonts/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="/vis/vis.min.css">
+    <link rel="stylesheet" href="/britecharts/britecharts.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" type="text/javascript"></script>
+
+    <!-- Update your html tag to include the itemscope and itemtype attributes. -->
+    <html itemscope itemtype="http://schema.org/Article">
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Суд на долоні">
+    <meta itemprop="description" content="Суд на долоні">
+    <meta itemprop="image" content="/img/posts_img/img/home-bg.jpg">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Суд на долоні">
+    <meta name="twitter:description" content="Суд на долоні">
+    <meta name="twitter:creator" content="@author_handle">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="/img/posts_img/img/home-bg.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Суд на долоні" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/img/posts_img/img/home-bg.jpg" />
+    <meta property="og:description" content="Суд на долоні" />
+    <meta property="og:site_name" content="Суд на долоні" />
+    <meta property="fb:admins" content="1283168205" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link type="application/atom+xml" rel="alternate" href="http://court-on-the-palm.com.ua/feed.xml" title="" />
+
+</head>
+
+
+<body class="default">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Відкрити меню</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                </button>
+                <a href="/" class="navbar-brand">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="32px" height="32px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                    viewBox="0 0 661 661"
+                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                     <defs>
+                      <style type="text/css">
+                       <![CDATA[
+                        .fil0 {fill:#FEFEFE}
+                       ]]>
+                      </style>
+                     </defs>
+                     <g>
+                      <path class="fil0" d="M658 331c0,-91 -37,-172 -96,-232 -59,-59 -141,-95 -231,-95 -91,0 -172,36 -232,95 -59,60 -95,141 -95,232 0,79 28,151 74,208 4,-4 7,-7 11,-11 7,-8 12,-18 19,-26 31,-35 106,-49 149,-31 56,24 43,47 102,37 18,-2 33,-4 50,-3 14,2 42,6 43,26 -2,8 -35,12 -50,15 -37,8 -20,4 -49,8 25,8 39,-1 64,-5 8,-2 25,-3 31,-6 18,-7 10,-17 8,-28 16,-15 46,-42 63,-54 8,-5 32,-13 30,4 -1,7 -18,27 -23,33 -50,65 -47,62 -122,93 -64,27 -59,24 -131,9 -81,-16 -80,-22 -111,11 49,30 107,47 169,47 90,0 172,-37 231,-96 59,-59 96,-141 96,-231zm-145 120l0 0zm-67 -205l0 257c1,1 2,1 3,2l3 -2c17,-16 44,-41 61,-52 3,-2 10,-5 16,-7l0 -198 18 0 0 -18 -119 0 0 18 18 0zm-157 0l0 229c7,4 12,8 16,11 13,10 20,16 52,11 5,-1 10,-2 15,-3l0 -248 19 0 0 -18 -120 0 0 18 18 0zm-74 205l0 -205 19 0 0 -18 -120 0 0 18 19 0 0 223c12,-6 26,-11 41,-14 14,-3 28,-4 41,-4zm-128 -261l488 0 0 -11 -488 0 0 11zm245 -115l0 0 246 99 -491 0 245 -99zm-245 148l488 0 0 -28 -488 0 0 28z"/>
+                     </g>
+                    </svg>
+                    <span style="position:relative; top: -8px; left:8px; font-weight: bold;">
+                    СУД НА ДОЛОНІ
+                    </span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">На головну</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li>
+                        <a href="/about/">Сервіси</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li>
+                        <a href="/team/">Наша команда</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li>
+                        <a href="/blog/">Блог</a>
+                    </li>
+                    <li>
+                        <a target="_blank" style="background: orange; opacity: 1.0; border-radius: 10px; text-align: center;" href="https://docs.google.com/forms/d/e/1FAIpQLSfnL4bHAA0FCtrSkAT21l8hj4bNL-HCfx2HUa1NZq0d_Yv55g/viewform">Тестування</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+
+    <div class="section section-header">
+        <div class="parallax filter filter-color-red">
+            <div class="image"
+                style="background-image: url('img/header-1.jpg')">
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="180px" height="180px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                        viewBox="0 0 661 661"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                         <defs>
+                          <style type="text/css">
+                           <![CDATA[
+                            .fil0 {fill:#FEFEFE}
+                           ]]>
+                          </style>
+                         </defs>
+                         <g>
+                          <path class="fil0" d="M658 331c0,-91 -37,-172 -96,-232 -59,-59 -141,-95 -231,-95 -91,0 -172,36 -232,95 -59,60 -95,141 -95,232 0,79 28,151 74,208 4,-4 7,-7 11,-11 7,-8 12,-18 19,-26 31,-35 106,-49 149,-31 56,24 43,47 102,37 18,-2 33,-4 50,-3 14,2 42,6 43,26 -2,8 -35,12 -50,15 -37,8 -20,4 -49,8 25,8 39,-1 64,-5 8,-2 25,-3 31,-6 18,-7 10,-17 8,-28 16,-15 46,-42 63,-54 8,-5 32,-13 30,4 -1,7 -18,27 -23,33 -50,65 -47,62 -122,93 -64,27 -59,24 -131,9 -81,-16 -80,-22 -111,11 49,30 107,47 169,47 90,0 172,-37 231,-96 59,-59 96,-141 96,-231zm-145 120l0 0zm-67 -205l0 257c1,1 2,1 3,2l3 -2c17,-16 44,-41 61,-52 3,-2 10,-5 16,-7l0 -198 18 0 0 -18 -119 0 0 18 18 0zm-157 0l0 229c7,4 12,8 16,11 13,10 20,16 52,11 5,-1 10,-2 15,-3l0 -248 19 0 0 -18 -120 0 0 18 18 0zm-74 205l0 -205 19 0 0 -18 -120 0 0 18 19 0 0 223c12,-6 26,-11 41,-14 14,-3 28,-4 41,-4zm-128 -261l488 0 0 -11 -488 0 0 11zm245 -115l0 0 246 99 -491 0 245 -99zm-245 148l488 0 0 -28 -488 0 0 28z"/>
+                         </g>
+                        </svg>
+
+                        <h1 class="title-modern" style="font-weight:bold;">СУД НА ДОЛОНІ</h1>
+                        <h3>Аналітичний інструмент для пошуку, дослідження та візуалізації судових рішень</h2>
+                        <div class="separator line-separator white">♦</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Main Content -->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="title-area">
+                    <h2>Наша пропозиція</h2>
+                    <div class="separator separator-primary">✻</div>
+                    <p class="description">Однією з проблем судової влади є непослідовність правозастосування, що призводить до непрозорості роботи суддів та вимагає від правників витрачати забагато часу для вирішення неправничих питань. Наш додаток дозволить аналізувати судову практику в декілька кліків.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="info-icon">
+                        <div class="icon text-primary">
+                            <i class="fa fa-database" aria-hidden="true"></i>
+                        </div>
+                        <h3>Структура</h3>
+                        <p class="description">Ми перетворюємо тексти судових рішень на структуровану базу даних</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-icon">
+                        <div class="icon text-primary">
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                        </div>
+                        <h3>Відкриті дані</h3>
+                        <p class="description">Усі дані з судових рішень ми поєднуємо з даними відкритих державних реєстрів</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-icon">
+                        <div class="icon text-primary">
+                            <i class="fa fa-filter" aria-hidden="true"></i>
+                        </div>
+                        <h3>Сервіс</h3>
+                        <p class="description">Користувачі можуть швидко знайти необхідні рішення за будь-яким специфічним запитом</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="title-area">
+                    <h2>Ми беремо участь</h2>
+                    <div class="separator separator-primary">✻</div>
+                </div>
+                <a href="http://judicialforum.uba.ua/" style="display: inline-block;">
+                  <img alt="VII Судовий форуму" src="img/banners/banner.jpg" style="width:860px; cursor: pointer;" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-our-team-freebie">
+        <div class="parallax filter filter-color-black">
+            <div class="image" style="background-image:url('img/header-2.jpg')">
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="row">
+                        <div class="title-area">
+                            <h2>Наша команда</h2>
+                            <div class="separator separator-danger">✻</div>
+                            <p class="description">Наша команда 5 років працює в проектах, пов’язаних з виборчим законодавством та розробкою інформаційно-аналітичних продуктів. Одним з пріоритетів сьогодні для нас є робота з відкритими даними.</p>
+                        </div>
+                    </div>
+
+                    <div class="team">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card card-member">
+                                            <div class="content">
+                                                <div class="avatar avatar-primary">
+                                                    <img alt="..." class="img-circle" src="img/faces/zakharov.png"/>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="team#zakharov"><h3 class="title">Кирило Захаров</h3></a>
+                                                    <p class="small-text">CEO / Співзасновник</p>
+                                                    <p class="description">Управління розвиткому проекту, статистичний аналіз даних та веб-розробка. Більше 10 років роботи в сфері аналізу даних.</p>
+                                                    <p>
+                                                        <a href="https://www.facebook.com/KirillZaharov" target="_blank">
+                                                            <i class="fa fa-facebook-square"></i>
+                                                        </a>
+                                                        <a href="https://www.linkedin.com/in/kyrylo-zakharov-8704838/" target="_blank">
+                                                            <i class="fa fa-linkedin-square"></i> 
+                                                        </a>
+                                                        <a href="https://github.com/Amice13" target="_blank">
+                                                            <i class="fa fa-github-square"></i>
+                                                        </a>
+                                                        <a href="mailto:kirillzakharov13@gmail.com" target="_blank">
+                                                            <i class="fa fa-envelope"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-member">
+                                            <div class="content">
+                                                <div class="avatar avatar-primary">
+                                                    <img alt="..." class="img-circle" src="img/faces/buhai.png"/>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="team#buhai"><h3 class="title">Ольга Бугай</h3></a>
+                                                    <p class="small-text">Співзасновник / Медіа</p>
+                                                    <p class="description">Відповідає за зв'язки з громадськістю, медіасупровід, маркетинг та комунікації. Більше 15 років роботи з місцевими та загальноукраїнськими медіа.</p>
+                                                    <p>
+                                                        <a href="https://www.facebook.com/olga.buhay" target="_blank">
+                                                            <i class="fa fa-facebook-square"></i>
+                                                        </a>
+                                                        <a href="https://www.linkedin.com/in/olga-buhay-b975a35/" target="_blank">
+                                                            <i class="fa fa-linkedin-square"></i>
+                                                        </a>
+                                                        <a href="mailto:olga.buhay@gmail.com" target="_blank">
+                                                            <i class="fa fa-envelope"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-member">
+                                            <div class="content">
+                                                <div class="avatar avatar-primary">
+                                                    <img alt="..." class="img-circle" src="img/faces/dantseva.png"/>
+                                                </div>
+                                                <div class="description">
+                                                    <a href="team#dantseva"><h3 class="title">Олена Данцева</h3></a>
+                                                    <p class="small-text">Співзасновник / Методолог</p>
+                                                    <p class="description">Розробляє концепцію продукту та методологію. Більше 20 років науково-дослідної роботи, консультацій в комерційних та політичній сферах.</p>
+                                                    <p>
+                                                        <a href="https://www.facebook.com/profile.php?id=100002121620053" target="_blank">
+                                                            <i class="fa fa-facebook-square"></i>
+                                                        </a>
+                                                        <a href="mailto:elenadantseva@gmail.com" target="_blank">
+                                                            <i class="fa fa-envelope"></i>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="title-area">
+                <h2>ЗМІ про нас</h2>
+                <div class="separator separator-primary">✻</div>
+            </div>
+            <div class="row media">
+                <div class="col-md-12">
+                    <dl class="dl-horizontal">
+                      <dt><img src="img/media/dou.png"/></dt>
+                      <dt><img src="img/media/bit.png"/></dt>
+                      <dd>
+                        <a href="https://lab.bit.ua/2017/10/innovating-justice-boostcamp-kyiv-2017/" target="_blank">
+                        На Innovating Justice Boostcamp Kyiv назвали лучшие legal-tech-стартапы Украины (2017.10.23)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/yur-gazeta-logo.gif"/></dt>
+                      <dd>
+                        <a href="http://yur-gazeta.com/golovna/chi-dorivnyuvatime-legal-tech-dostupu-do-pravosuddya.html" target="_blank">
+                        Чи дорівнюватиме legal tech доступу до правосуддя? (2017.10.20)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/9channel.jpg"/></dt>
+                      <dd>
+                        <a href="https://www.youtube.com/watch?v=fBa45ZKizOo" target="_blank">
+                        Проект "Суд на долоні" буде втілений у Дніпрі (2017.10.18)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/yurprakt.png"/></dt>
+                      <dd>
+                        <a href="http://pravo.ua/news.php?id=0062986" target="_blank">
+                        Названы лучшие legal-tech-стартапы Украины (2017.10.20)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/gromadske.png"/></dt>
+                      <dd>
+                        <a href="https://hromadskeradio.org/programs/kyiv-donbas/kak-proekt-sud-na-ladony-pomozhet-ponymat-sudebnye-reshenyya-kazhdomu" target="_blank">
+                        Как проект «Суд на ладони» поможет понимать судебные решения каждому? (2017.10.09)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/2000.png"/></dt>
+                      <dd>
+                        <a href="https://www.2000.ua/v-nomere/forum/mnenie/deshevyh-juristov-uzhe-ne-budet.htm" target="_blank">
+                        Дешевых юристов уже не будет (2017.10.05)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/odf.png"/></dt>
+                      <dd>
+                        <a href="http://tapas.org.ua/peremozhets-open-data-challenge-kyrylo-zaharov-pro-sud-na-doloni-ta-bazhannya-vidkryty-dnipro/" target="_blank">
+                        Переможець Open Data Challenge Кирило Захаров про «Суд на долоні» та бажання «відкрити Дніпро» (2017.09.29)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/1991.png"/></dt>
+                      <dd>
+                        <a href="http://1991.vc/2017/09/27/odc-final/" target="_blank">
+                        Підсумки Open Data Forum: є трійка переможців Open Data Challenge (2017.09.27)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/yur-gazeta-logo.gif"/></dt>
+                      <dd>
+                        <a href="http://yur-gazeta.com/golovna/sud-na-doloni-stav-peremozhcem-naybilshogo-itkonkursu-startapiv-.html" target="_blank">
+                        «Суд на долоні» став переможцем найбільшого IT-конкурсу стартапів (2017.09.25)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/dniprograd.png"/></dt>
+                      <dd>
+                        <a href="http://dniprograd.org/2017/09/23/dniprovskiy-proekt-sud-na-doloni-stav-peremozhtsem-naybilshogo-it-konkursu-startapiv-na-osnovi-vidkritikh-danikh_60710" target="_blank">
+                        Дніпровський проект «Суд на долоні» став переможцем найбільшого IT-конкурсу стартапів на основі відкритих даних (2017.09.23)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/depo.jpg"/></dt>
+                      <dd>
+                        <a href="https://dnipro.depo.ua/ukr/dnipro/avtori-dniprovskogo-startapu-z-vidkritih-danih-vigrali-na-rozvitok-pivmilyona-griven-20170922645261" target="_blank">
+                        Автори дніпровського стартапу з відкритих даних виграли на розвиток півмільйона гривень (2017.09.22)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/odi.png"/></dt>
+                      <dd>
+                        <a href="https://theodi.org/blog/ukraine-open-data-challenge-finalists-revealed" target="_blank">
+                        Ukraine Open Data Challenge: finalists revealed (2017.08.11)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/imena.png"/></dt>
+                      <dd>
+                        <a href="https://www.imena.ua/blog/open-data-challenge-talks/" target="_blank">
+                        Нішева ніша: організатори Open Data Challenge — про роботу з відкритими даними (2017.07.27)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/texty.jpg"/></dt>
+                      <dd>
+                        <a href="http://texty.org.ua/pg/blog/opendata/read/78166/Jak_startap_Sud_na_doloni_dodast_prozorosti" target="_blank">
+                        Як стартап «Суд на долоні» додасть прозорості українському судчинству (2017.07.25)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/dneprinfo.png"/></dt>
+                      <dd>
+                        <a href="http://dnepr.info/news/dve-komandy-iz-dnepra-proshli-v-final-konkursa-natsionalnogo-masshtaba" target="_blank">
+                        Две команды из Днепра прошли в финал IT-конкурса национального масштаба (2017.07.13)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/9channel.jpg"/></dt>
+                      <dd>
+                        <a href="http://9-channel.com/dniprovska-komanda-proyshla-u-final-natsionalnogo-it-konkursu-open-data-challenge-komentar-000135333.html" target="_blank">
+                        Дніпровська команда — у фіналі національного ІТ-конкурсу «Open Data Challenge» (2017.07.11)
+                        </a>
+                      </dd>
+                      <dd>
+                        <a href="https://dou.ua/forums/topic/21156/" target="_blank">
+                        Оголошено фіналістів конкурсу стартапів Open Data Challenge (2017.07.11)
+                        </a>
+                      </dd>
+                      <dt><img src="img/media/gazeta.png"/></dt>
+                      <dd>
+                        <a href="http://gazeta.dp.ua/22488/v-dnepre-utverzhdayut-chto-sud-mozhet-byt-na-ladoni" target="_blank">
+                        В Днепре утверждают, что суд может быть… на ладони (2017.07.11)
+                        </a>
+                      </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section  gray-section">
+        <div class="container">
+            <div class="title-area">
+                <h2>Терміни</h2>
+                <div class="separator separator-primary">✻</div>
+            </div>
+            <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Ми очікуємо впровадження тестової версії у найближчий час. А до виходу програми пропонуємо вам підписатися на нашу стрічку новин в соціальній мережі Facebook.</p>
+                    </div>
+                <p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="title-area">
+                    <h2>Наші партнери</h2>
+                    <div class="separator separator-primary">✻</div>
+                    <p class="description">Проект розвивається за підтримки Всеукраїнських та міжнародних організацій</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info-icon">
+                        <div class="icon text-primary">
+                          <a href="http://eef.org.ua/" target="_blank"><img alt="Фонд Східна Європа" style="width:80%;margin:auto;cursor:pointer;" class="img" src="img/partners/East Europe Foundation.png"/></a>
+                        </div>
+                        <h3><a style="color:black; font-family:'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="http://eef.org.ua/" target="_blank">Фонд Східна Європа</a></h3>
+                        <p class="description">Сприяє соціальному та економічному розвитку України, мобілізуючи ресурси, зміцнюючи громади та підтримуючи партнерство громади, влади та бізнесу</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-icon">
+                        <div class="icon text-primary">
+                            <a href="http://www.hiil.org/" target="_blank"><img alt="Гаазький інститут інновацій в праві" style="width:60%;margin:auto;cursor:pointer;" class="img" src="img/partners/HiiL_user_friendly_justice.png"/></a>
+                        </div>
+                        <h3><a style="color:black; font-family:'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="http://www.hiil.org/" target="_blank">Гаазький інститут інновацій в праві</a></h3>
+                        <p class="description">Працює для того, щоб правосуддя працювало для людей з допомогою нових технологій, передових знань для розв’язання конфліктів і нових форм організації та управління</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-icon">
+                        <div class="icon text-primary">
+                            <a href="http://1991.vc/" target="_blank"><img alt="Інкубатор 1991" style="width:60%;margin:auto;cursor:pointer;" class="img" src="img/partners/1991.png"/></a>
+                        </div>
+                        <h3><a style="color:black; font-family:'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="http://1991.vc/" target="_blank">Інкубатор 1991</a></h3>
+                        <p class="description">Некомерційний інкубатор, який допомагає перетворити відкриті дані на реальні стартапи, що надають сервіси українським громадянам, підприємствам та державним органам</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-icon">
+                        <div class="icon text-primary">
+                            <a href="http://hrvector.org/" target="_blank"><img alt="ГО «Вектор прав людини»" style="width:45%;margin:auto;cursor:pointer;" src="img/partners/HRV_Logo_small.png"/></a>
+                        </div>
+                        <h3><a style="color:black; font-family:'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="http://hrvector.org/" target="_blank">ГО «Вектор прав людини»</a></h3>
+                        <p class="description">Реалізація та захист прав людини через сприяння практичному виконанню норм та принципів, викладених у міжнародних документах, ратифікованих Україною</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:20px;">
+                <div class="col-md-6">
+                    <div class="info-icon">
+                        <div class="icon text-primary">
+                            <a href="http://tapas.org.ua/" target="_blank"><img alt="TAPAS Project" style="width:80%; max-width:170px; margin:auto;cursor:pointer;" class="img" src="img/partners/TAPAS.png"/></a>
+                        </div>
+                        <h3><a style="color:black; font-family:'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="http://tapas.org.ua/" target="_blank">TAPAS Project</a></h3>
+                        <p class="description">Фінансова підтримка громадян України та українського уряду у боротьбі з корупцією в ключових послугах та службах державного управління</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info-icon">
+                        <div class="icon text-primary">
+                            <a href="https://aequo.ua/ua/" target="_blank"><img alt="Гаагський інститут інновацій в праві" style="width:80%; max-width:170px; margin:auto;cursor:pointer;" class="img" src="img/partners/Aequo.png"/></a>
+                        </div>
+                        <h3><a style="color:black; font-family:'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;" href="https://aequo.ua/ua/" target="_blank">Юридична фірма "Aeuqo"</a></h3>
+                        <p class="description">Українська багатопрофільна юридична фірма з індустріальною спеціалізацією. Пріоритет нашої роботи –досягнення стратегічних цілей клієнтів</p>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="section section-small section-get-started">
+        <div class="parallax filter">
+            <div class="image"
+                style="background-image: url('img/office-1.jpeg')">
+            </div>
+            <div class="container">
+                <div class="title-area">
+                    <h2 class="text-white">Більше!</h2>
+                    <div class="separator line-separator">♦</div>
+                    <p class="description">Ми дуже цінуємо вашу підтримку і хочемо робити для вас більше, ніж зручний сервіс для роботи з судовим та іншими реєстрами.<br/><br/>У середині тижня часто потрібен додатковий поштовх і натхнення для продовження продуктивної роботи. Тому ми створили для вас CoffeeCourt. З наступного тижня він виходитиме по середах. Якщо ви хочете отримувати Coffee Court, заповніть, будь ласка, реєстраційну форму</p>
+                </div>
+
+                <div class="button-get-started">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSczIIiKcJunFEd2AAdJsy5ZoM58sVekU3itP9nscrY6XN0Vsw/viewform" class="btn btn-warning btn-fill btn-lg">Підписатися!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<hr>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="https://www.facebook.com/courtonthepalm">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="mailto:kirillzakharov13@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; Суд на долоні 2018</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+<!--  js library for devices recognition -->
+<script src="/js/modernizr.js"></script>
+
+<!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
+<script src="/js/gaia.js"></script>
+
+<script id="dsq-count-scr" src="//courtonthepalm.disqus.com/count.js" async></script>
+
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109491896-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109491896-1');
+</script>
+
+
+
+</body>
+
+</html>

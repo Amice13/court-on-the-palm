@@ -1,0 +1,854 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="uk" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="uk" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta content="Точка входу &quot;Організація&quot; для API проекту &quot;Суд на долоні&quot;" name="desctription" />
+<meta content="index, follow" name="robots" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="uk" name="language" />
+<meta content="Суд на долоні, API, організація" name="keywords" />
+<meta content="Кирило Захаров" name="author" />
+<meta content="Суд на долоні" name="copyright" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Точка входу &#34;Організація&#34; для API проекту &#34;Суд на долоні&#34; &mdash; Суд на долоні alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="index" title="Індекс" href="genindex.html" />
+    <link rel="search" title="Пошук" href="search.html" />
+    <link rel="next" title="Прокурор" href="endpoint-prosecutor.html" />
+    <link rel="prev" title="Нотаріус" href="endpoint-notary.html" /> 
+
+  
+  <script src="static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Суд на долоні
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Зміст:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Огляд</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="endpoints.html">Точки входу</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="endpoint-general.html">Загальні правила</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-login.html">Авторизація користувача</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-lawsuit.html">Судове рішення</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-attorney.html">Адвокат</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-arbitrage.html">Арбітражний керуючий</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-notary.html">Нотаріус</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Організація</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Загальна інформація</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Кількість організацій</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Отримання інформації про організації</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Пошук організацій</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Фільтри</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Агрегація</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Приклад повного запиту та відповіді</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-prosecutor.html">Прокурор</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-court.html">Суд</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-judge.html">Суддя</a></li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint-courtexpert.html">Судовий експерт</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data-model.html">Стандарт даних</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contacts.html">Контакти</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Суд на долоні</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="endpoints.html">Точки входу</a> &raquo;</li>
+        
+      <li>Точка входу &quot;Організація&quot; для API проекту &quot;Суд на долоні&quot;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="sources/endpoint-organization.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Організація<a class="headerlink" href="#id1" title="Постійне посилання на цей заголовок">¶</a></h1>
+<p>Точка входу «Організація» повертає інформацію про юридичні особи України.</p>
+<div class="section" id="id2">
+<h2>Загальна інформація<a class="headerlink" href="#id2" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>Інформація з Єдиного державного реєстру юридичних осіб, фізичних осіб-підприємців та громадських формувань,
+завантажена з <a class="reference external" href="https://data.gov.ua/dataset/b244f35a-e50a-4a80-b704-032c42ba8142/resource/b0476139-62f2-4ede-9d3b-884ad99afd08">Національного порталу відкритих даних</a>.</p>
+<p>Уся інформація щодо юридичних осіб оновлюється один раз на 1-2 тижні.</p>
+</div>
+<div class="section" id="id4">
+<h2>Кількість організацій<a class="headerlink" href="#id4" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>GET-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/organization</span></code> повертає загальну кількість організацій в системі</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">GET</span> <span class="nn">/organization</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{ &quot;message&quot;: 1605026 }
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id5">
+<h2>Отримання інформації про організації<a class="headerlink" href="#id5" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>GET-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/organization/:id</span></code> повертає інормацію про організацію за <a class="reference external" href="organization.html">відповідною схемою даних</a> <cite>. Де ``id`</cite> - це код ЄДРПОУ організації.</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">GET</span> <span class="nn">/organization/34975289</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{
+  &quot;legalName&quot;: &quot;ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \&quot;АНАЛІТИЧНІ ТЕХНОЛОГІЇ\&quot;&quot;,
+  &quot;name&quot;: &quot;ТОВ \&quot;АНАЛІТИЧНІ ТЕХНОЛОГІЇ\&quot;&quot;,
+  &quot;identifier&quot;: {
+    &quot;scheme&quot;: &quot;UA-EDR&quot;,
+    &quot;id&quot;: &quot;34975289&quot;,
+    &quot;valid&quot;: true
+  },
+  &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+  &quot;kved&quot;: {
+    &quot;part&quot;: &quot;0&quot;,
+    &quot;group&quot;: &quot;87&quot;
+  },
+  &quot;full_kved&quot;: &quot;51.87.0 Оптова торгівля іншими машинами та устаткованням&quot;,
+  &quot;address&quot;: {
+    &quot;source&quot;: &quot;69068, Запорізька обл., місто Запоріжжя, Шевченківський район, ВУЛИЦЯ 8 БЕРЕЗНЯ, будинок 32, квартира 179&quot;,
+    &quot;countryName&quot;: &quot;Україна&quot;,
+    &quot;postalCode&quot;: &quot;69068&quot;,
+    &quot;region&quot;: &quot;Запорізька область&quot;,
+    &quot;district&quot;: &quot;Шевченківський район&quot;,
+    &quot;locality&quot;: &quot;місто Запоріжжя&quot;,
+    &quot;streetNumber&quot;: &quot;32&quot;,
+    &quot;streetAddress&quot;: &quot;вулиця 8 Березня, 32&quot;,
+    &quot;apartment&quot;: &quot;179&quot;,
+    &quot;fullAddress&quot;: &quot;69068, Запорізька область, місто Запоріжжя, вулиця 8 Березня, 32&quot;
+  },
+  &quot;head&quot;: {
+    &quot;source&quot;: &quot;ПАЛЬЧИК ДЕНИС ВІКТОРОВИЧ&quot;,
+    &quot;idName&quot;: &quot;Пальчик Д. В.&quot;,
+    &quot;fullName&quot;: &quot;Пальчик Денис Вікторович&quot;,
+    &quot;familyName&quot;: &quot;Пальчик&quot;,
+    &quot;givenName&quot;: &quot;Денис&quot;,
+    &quot;additionalName&quot;: &quot;Вікторович&quot;,
+    &quot;sex&quot;: &quot;чоловік&quot;,
+    &quot;jobTitle&quot;: &quot;Директор&quot;
+  },
+  &quot;founders&quot;: [
+    {
+      &quot;source&quot;: &quot;ПАЛЬЧИК ДЕНИС ВІКТОРОВИЧ, розмір внеску до статутного фонду - 40000.00 грн.&quot;,
+      &quot;person&quot;: {
+        &quot;source&quot;: &quot;ПАЛЬЧИК ДЕНИС ВІКТОРОВИЧ&quot;,
+        &quot;idName&quot;: &quot;Пальчик Д. В.&quot;,
+        &quot;fullName&quot;: &quot;Пальчик Денис Вікторович&quot;,
+        &quot;familyName&quot;: &quot;Пальчик&quot;,
+        &quot;givenName&quot;: &quot;Денис&quot;,
+        &quot;additionalName&quot;: &quot;Вікторович&quot;,
+        &quot;sex&quot;: &quot;чоловік&quot;
+      },
+      &quot;amountOfFunds&quot;: 40000
+    }
+  ],
+  &quot;amountOfFunds&quot;: 40000,
+  &quot;numberOfFounders&quot;: 1,
+  &quot;updatedAt&quot;: &quot;2018-08-06T20:54:27.833Z&quot;
+}
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id7">
+<h2>Пошук організацій<a class="headerlink" href="#id7" title="Постійне посилання на цей заголовок">¶</a></h2>
+<p>POST-запит за адресою <code class="docutils literal notranslate"><span class="pre">https://api.conp.com.ua/api/v1.0/organization/search</span></code> дозволяє шукати організації.</p>
+<p>POST-запит має містити JSON з наступними змінними</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">query:</th><td class="field-body"><p class="first">рядок</p>
+<p>Перелік термінів для повнотекстового пошуку.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">defaultOperator:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first">рядок</p>
+<p>Приймає значення <code class="docutils literal notranslate"><span class="pre">or</span></code> або <code class="docutils literal notranslate"><span class="pre">and</span></code>, щоб шукати будь-який з термінів для повнотекстового пошуку або усі терміни.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">filter:</th><td class="field-body"><p class="first">об’єкт</p>
+<p>Об’єкт, який містить перелік усіх пошукових фільтрів, встановлених користувачем.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">sort:</th><td class="field-body"><p class="first">об’єкт</p>
+<p>Об’єкт, який визначає порядок сортування результатів.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">from:</th><td class="field-body"><p class="first">ціле число (integer)</p>
+<p>Кількість об’єктів, яку необхідно пропустити (використовується для пагінації).</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">aggregation:</th><td class="field-body"><p class="first">булеве значення</p>
+<p class="last">Якщо встановлено значення <code class="docutils literal notranslate"><span class="pre">false</span></code>, то в результаті буде отримано перелік організацій, які відповідають повнотекстовому запиту та фільтрам. Якщо встановлено значення <code class="docutils literal notranslate"><span class="pre">true</span></code>, то повертає перелік агрегацій для фасетного пошуку.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id8">
+<h3>Фільтри<a class="headerlink" href="#id8" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Кожен з фільтрів має бути об’єктом з певною назвою (поле, за яким відбувається фільтрація) та будуватися за схемою:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">list:</th><td class="field-body"><p class="first">масив рядків</p>
+<p>Перелік точних значень термінів для фільтрації результату.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">operator:</th><td class="field-body"><p class="first">рядок</p>
+<p class="last">Приймає значення <code class="docutils literal notranslate"><span class="pre">or</span></code> або <code class="docutils literal notranslate"><span class="pre">and</span></code>, щоб у результат попадали сутності з будь-яким зі значень фільтру або усі значення фільтру.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Організації можна фільтрувати за точними значеннями таких змінних:</p>
+<ul class="simple">
+<li><strong>currentStatus</strong> - Поточний статус організації</li>
+<li><strong>fullKved</strong> - Повний КВЕД організації</li>
+<li><strong>kved.part</strong> - Розділ КВЕД організації</li>
+<li><strong>kved.group</strong> - Група КВЕД організації</li>
+<li><strong>address.region</strong> - Область організації</li>
+<li><strong>address.district</strong> - Район або район у місті організації</li>
+<li><strong>address.locality</strong> - Населений пункт організації</li>
+<li><strong>address.fullAddress</strong> - Повна адреса організації</li>
+<li><strong>head.fullName</strong> - ПІБ керівника організації</li>
+<li><strong>head.sex</strong> - Стать керівника організації</li>
+<li><strong>founder.fullName</strong> - ПІБ засновника організації</li>
+<li><strong>founder.sex</strong> - Стать засновника організації</li>
+<li><strong>founder.organization</strong> - Назва організації-засновника</li>
+</ul>
+<p>Організації можна фільтрувати за діапазонами значень таких змінних (для таких фільтрів вказується діапазон зі змінними <code class="docutils literal notranslate"><span class="pre">from</span></code> та <code class="docutils literal notranslate"><span class="pre">to</span></code>):</p>
+<ul class="simple">
+<li><strong>amountOfFunds</strong> - Розмір статутного фонду</li>
+</ul>
+<p>Приклад використання фільтру - «(1) Зареєстровані (2) в місті Одеса організації (3) зі статутним капіталом до 1000 грн., (4) які працюють у неспеціалізованій оптовій торгівлі»:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+{&quot;filter&quot;: {
+  &quot;currentStatus&quot;: {
+    &quot;list&quot;: [
+      &quot;зареєстровано&quot;
+    ],
+    &quot;operator&quot;: &quot;or&quot;
+  },
+  &quot;fullKved&quot;: {
+    &quot;list&quot;: [
+      &quot;46.90 Неспеціалізована оптова торгівля&quot;
+    ],
+    &quot;operator&quot;: &quot;or&quot;
+  },
+  &quot;address.locality&quot;: {
+    &quot;list&quot;: [
+      &quot;місто Одеса&quot;
+    ],
+    &quot;operator&quot;: &quot;or&quot;
+  },
+  &quot;amountOfFunds&quot;: {
+    &quot;list&quot;: [
+      {
+        &quot;from&quot;: 0.001,
+        &quot;to&quot;: 1000
+      }
+    ]
+  }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h3>Агрегація<a class="headerlink" href="#id9" title="Постійне посилання на цей заголовок">¶</a></h3>
+<p>Для організацій передбачено агрегацію за такими змінними:</p>
+<ul class="simple">
+<li>КВЕД</li>
+<li>Область організації</li>
+<li>Населений пункт організації</li>
+<li>Район або район у місті організації</li>
+<li>Керівник організації</li>
+<li>Стать керівника організації</li>
+<li>Статуний фонд</li>
+<li>Поточний статус</li>
+</ul>
+<p>Агрегації розраховуються автоматично для усіх змінних, для яких встановлено фільтр. Якщо необхідно отримати агрегацію без фільтрації, то необхідно задати «пустий» фільтр таким чином:</p>
+<div class="highlight-http notranslate"><div class="highlight"><pre>...
+&quot;filter&quot;: {
+  &quot;amountOfFunds&quot;: {
+    &quot;list&quot;: [],
+    &quot;operator&quot;: &quot;or&quot;
+  }
+}
+...
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>Приклад повного запиту та відповіді<a class="headerlink" href="#id10" title="Постійне посилання на цей заголовок">¶</a></h3>
+<div class="highlight-http notranslate"><div class="highlight"><pre><span class="nf">POST</span> <span class="nn">/organization/search</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.0</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">https://api.conp.com.ua/api/v1.0</span>
+
+{
+  &quot;query&quot;: &quot;&quot;,
+  &quot;defaultOperator&quot;: &quot;or&quot;,
+  &quot;filter&quot;: {
+    &quot;identifier&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;currentStatus&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;fullKved&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;kved.part&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;,
+      &quot;type&quot;: &quot;object&quot;
+    },
+    &quot;kved.group&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;,
+      &quot;type&quot;: &quot;object&quot;
+    },
+    &quot;address.region&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;address.district&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;address.locality&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;address.fullAddress&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;head.fullName&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;head.familyName&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;head.givenName&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;head.additionalName&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;head.sex&quot;: {
+      &quot;list&quot;: [
+        &quot;жінка&quot;
+      ],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;founder.fullName&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;founder.familyName&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;and&quot;
+    },
+    &quot;founder.givenName&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;founder.additionalName&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;founder.sex&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;founder.organization&quot;: {
+      &quot;list&quot;: [],
+      &quot;operator&quot;: &quot;or&quot;
+    },
+    &quot;amountOfFunds&quot;: {
+      &quot;list&quot;: [
+        {
+          &quot;key&quot;: &quot;Від 1 млрд. грн.&quot;,
+          &quot;from&quot;: 1000000000.001,
+          &quot;doc_count&quot;: 21
+        }
+      ]
+    }
+  },
+  &quot;sort&quot;: {},
+  &quot;searchIndex&quot;: &quot;organization&quot;,
+  &quot;from&quot;: 0,
+  &quot;aggregation&quot;: false
+}
+
+{
+  &quot;total&quot;: 22,
+  &quot;items&quot;: [
+    {
+      &quot;legalName&quot;: &quot;АКЦІОНЕРНЕ ТОВАРИСТВО \&quot;ЗАКРИТИЙ НЕДИВЕРСИФІКОВАНИЙ ВЕНЧУРНИЙ КОРПОРАТИВНИЙ ІНВЕСТИЦІЙНИЙ ФОНД \&quot;ОРЕГОН\&quot;&quot;,
+      &quot;head&quot;: {
+        &quot;fullName&quot;: &quot;Карамаркова Юлія Юріївна&quot;
+      },
+      &quot;identifier&quot;: {
+        &quot;id&quot;: &quot;40162043&quot;
+      },
+      &quot;amountOfFunds&quot;: 1000000000,
+      &quot;address&quot;: {
+        &quot;streetAddress&quot;: &quot;вулиця Велика Житомирська, 6/11&quot;,
+        &quot;district&quot;: &quot;Шевченківський район&quot;,
+        &quot;locality&quot;: &quot;місто Київ&quot;,
+        &quot;region&quot;: &quot;місто Київ&quot;,
+        &quot;apartment&quot;: &quot;307&quot;
+      },
+      &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+      &quot;name&quot;: &quot;АТ \&quot;ОРЕГОН\&quot;&quot;,
+      &quot;founders&quot;: [
+        {
+          &quot;person&quot;: {
+            &quot;fullName&quot;: &quot;Шевченко Світлана&quot;
+          }
+        }
+      ],
+      &quot;full_kved&quot;: &quot;64.30 Трасти, фонди та подібні фінансові суб&#39;єкти&quot;
+    },
+    {
+      &quot;legalName&quot;: &quot;ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \&quot;ІНТЕР-ТРЕЙД\&quot;&quot;,
+      &quot;head&quot;: {
+        &quot;fullName&quot;: &quot;Шатілова Ганна Валеріївна&quot;
+      },
+      &quot;identifier&quot;: {
+        &quot;id&quot;: &quot;33072192&quot;
+      },
+      &quot;amountOfFunds&quot;: 18000000000,
+      &quot;address&quot;: {
+        &quot;streetAddress&quot;: &quot;ВУЛ.ГЕНЕРАЛА ЦВЕТАЄВА, 3&quot;,
+        &quot;district&quot;: &quot;Малиновський район&quot;,
+        &quot;locality&quot;: &quot;місто Одеса&quot;,
+        &quot;region&quot;: &quot;Одеська область&quot;,
+        &quot;apartment&quot;: &quot;корпус 5&quot;
+      },
+      &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+      &quot;name&quot;: &quot;ТОВ \&quot;ІНТЕР-ТРЕЙД\&quot;&quot;,
+      &quot;founders&quot;: [
+        {
+          &quot;person&quot;: {
+            &quot;fullName&quot;: &quot;Шатілова Ганна Валеріївна&quot;
+          }
+        },
+        {
+          &quot;person&quot;: {
+            &quot;fullName&quot;: &quot;Шепелєв Сергій Олександрович&quot;
+          }
+        },
+        {
+          &quot;person&quot;: {
+            &quot;fullName&quot;: &quot;Червоненко Ігор Анатолійович&quot;
+          }
+        },
+        {
+          &quot;person&quot;: {
+            &quot;fullName&quot;: &quot;Снєтков Володимир Костянтинович&quot;
+          }
+        },
+        {
+          &quot;person&quot;: {
+            &quot;fullName&quot;: &quot;Музика Дар&#39;я Ігорівна&quot;
+          }
+        },
+        {
+          &quot;person&quot;: {
+            &quot;fullName&quot;: &quot;Галата Ігор Романович&quot;
+          }
+        },
+        {
+          &quot;person&quot;: {
+            &quot;fullName&quot;: &quot;Алташин Олег Миколайович&quot;
+          }
+        },
+        {
+          &quot;person&quot;: {
+            &quot;fullName&quot;: &quot;Чернов Віталій Валерійович&quot;
+          }
+        },
+        {
+          &quot;person&quot;: {
+            &quot;fullName&quot;: &quot;Снєтков Віталій Володимирович&quot;
+          }
+        },
+        {
+          &quot;person&quot;: {
+            &quot;fullName&quot;: &quot;Іванов Вячеслав Анатолійович&quot;
+          }
+        }
+      ],
+      &quot;full_kved&quot;: &quot;51.70 Інші види оптової торгівлі&quot;
+    },
+    {
+      &quot;legalName&quot;: &quot;ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \&quot;АВТОИНКОД\&quot;&quot;,
+      &quot;head&quot;: {
+        &quot;fullName&quot;: &quot;Карпіна Таісія Степанівна&quot;
+      },
+      &quot;identifier&quot;: {
+        &quot;id&quot;: &quot;22450784&quot;
+      },
+      &quot;amountOfFunds&quot;: 1877680000,
+      &quot;address&quot;: {
+        &quot;streetAddress&quot;: &quot;вулиця Троїцька, 24&quot;,
+        &quot;district&quot;: &quot;Приморський район&quot;,
+        &quot;locality&quot;: &quot;місто Одеса&quot;,
+        &quot;region&quot;: &quot;Одеська область&quot;,
+        &quot;apartment&quot;: &quot;13&quot;
+      },
+      &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+      &quot;name&quot;: &quot;ТОВ \&quot;АВТОИНКОД\&quot;&quot;,
+      &quot;founders&quot;: [
+        {
+          &quot;person&quot;: {
+            &quot;fullName&quot;: &quot;Карпіна Таісія Степанівна&quot;
+          }
+        }
+      ],
+      &quot;full_kved&quot;: &quot;70.31.2 Посередницькі послуги під час купівлі, продажу, здавання в оренду та оцінювання нерухомості невиробничого призначення&quot;
+    },
+    {
+      &quot;legalName&quot;: &quot;ПРИВАТНЕ АКЦІОНЕРНЕ ТОВАРИСТВО \&quot;F &amp; С RЕАLТY\&quot;&quot;,
+      &quot;head&quot;: {
+        &quot;fullName&quot;: &quot;Ловейкіна Тетяна Олександрівна&quot;
+      },
+      &quot;identifier&quot;: {
+        &quot;id&quot;: &quot;23496142&quot;
+      },
+      &quot;amountOfFunds&quot;: 1183273125,
+      &quot;address&quot;: {
+        &quot;streetAddress&quot;: &quot;ВУЛ.КІКВІДЗЕ, 18-А&quot;,
+        &quot;district&quot;: &quot;Печерський район&quot;,
+        &quot;locality&quot;: &quot;місто Київ&quot;,
+        &quot;region&quot;: &quot;місто Київ&quot;
+      },
+      &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+      &quot;name&quot;: &quot;ПРАТ \&quot;F &amp; С RЕАLТY\&quot;&quot;,
+      &quot;full_kved&quot;: &quot;68.20 Надання в оренду й експлуатацію власного чи орендованого нерухомого майна&quot;
+    },
+    {
+      &quot;legalName&quot;: &quot;ПУБЛІЧНЕ АКЦІОНЕРНЕ ТОВАРИСТВО \&quot;ЗАКРИТИЙ НЕДИВЕРСИФІКОВАНИЙ ВЕНЧУРНИЙ КОРПОРАТИВНИЙ ІНВЕСТИЦІЙНИЙ ФОНД \&quot;РЕНТАЛ\&quot;&quot;,
+      &quot;head&quot;: {
+        &quot;fullName&quot;: &quot;Голубашенко Маріана Вікторівна&quot;
+      },
+      &quot;identifier&quot;: {
+        &quot;id&quot;: &quot;38013498&quot;
+      },
+      &quot;amountOfFunds&quot;: 1100000000,
+      &quot;address&quot;: {
+        &quot;streetAddress&quot;: &quot;бульвар Лесі Українки, 7-Б&quot;,
+        &quot;district&quot;: &quot;Печерський район&quot;,
+        &quot;locality&quot;: &quot;місто Київ&quot;,
+        &quot;region&quot;: &quot;місто Київ&quot;,
+        &quot;apartment&quot;: &quot;157&quot;
+      },
+      &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+      &quot;name&quot;: &quot;ПАТ \&quot;ЗНВКІФ \&quot;РЕНТАЛ\&quot;&quot;,
+      &quot;full_kved&quot;: &quot;64.30 Трасти, фонди та подібні фінансові суб&#39;єкти&quot;
+    },
+    {
+      &quot;legalName&quot;: &quot;АКЦІОНЕРНЕ ТОВАРИСТВО \&quot;ЗАКРИТИЙ НЕДИВЕРСИФІКОВАНИЙ ВЕНЧУРНИЙ КОРПОРАТИВНИЙ ІНВЕСТИЦІЙНИЙ ФОНД \&quot;ТРЕНД-КАПІТАЛ\&quot;&quot;,
+      &quot;head&quot;: {
+        &quot;fullName&quot;: &quot;Покінська Наталія Петрівна&quot;
+      },
+      &quot;identifier&quot;: {
+        &quot;id&quot;: &quot;41150877&quot;
+      },
+      &quot;amountOfFunds&quot;: 2400000000,
+      &quot;address&quot;: {
+        &quot;streetAddress&quot;: &quot;вулиця Фізкультури, 28Д&quot;,
+        &quot;district&quot;: &quot;Голосіївський район&quot;,
+        &quot;locality&quot;: &quot;місто Київ&quot;,
+        &quot;region&quot;: &quot;місто Київ&quot;
+      },
+      &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+      &quot;name&quot;: &quot;АТ \&quot;ЗНВКІФ \&quot;ТРЕНД-КАПІТАЛ\&quot;&quot;,
+      &quot;full_kved&quot;: &quot;64.30 Трасти, фонди та подібні фінансові суб&#39;єкти&quot;
+    },
+    {
+      &quot;legalName&quot;: &quot;ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \&quot;АЛКИД-ТОРГ\&quot;&quot;,
+      &quot;head&quot;: {
+        &quot;fullName&quot;: &quot;Черновол Людмила Євгенівна&quot;
+      },
+      &quot;identifier&quot;: {
+        &quot;id&quot;: &quot;37296197&quot;
+      },
+      &quot;amountOfFunds&quot;: 1000002000,
+      &quot;address&quot;: {
+        &quot;streetAddress&quot;: &quot;вулиця Цусимська, 52&quot;,
+        &quot;district&quot;: &quot;Калінінський район&quot;,
+        &quot;locality&quot;: &quot;місто Донецьк&quot;,
+        &quot;region&quot;: &quot;Донецька область&quot;
+      },
+      &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+      &quot;name&quot;: &quot;ТОВ \&quot;АЛКИД-ТОРГ\&quot;&quot;,
+      &quot;full_kved&quot;: &quot;46.90 Неспеціалізована оптова торгівля&quot;
+    },
+    {
+      &quot;legalName&quot;: &quot;ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \&quot;МОНСАНТО ХОЛДИНГ УКРАЇНА\&quot;&quot;,
+      &quot;head&quot;: {
+        &quot;fullName&quot;: &quot;Озерова Лідія Володимирівна&quot;
+      },
+      &quot;identifier&quot;: {
+        &quot;id&quot;: &quot;38260782&quot;
+      },
+      &quot;amountOfFunds&quot;: 4000000000,
+      &quot;address&quot;: {
+        &quot;streetAddress&quot;: &quot;вулиця Володимирська, 101А&quot;,
+        &quot;district&quot;: &quot;Голосіївський район&quot;,
+        &quot;locality&quot;: &quot;місто Київ&quot;,
+        &quot;region&quot;: &quot;місто Київ&quot;
+      },
+      &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+      &quot;name&quot;: &quot;ТОВ \&quot;МОНСАНТО ХОЛДИНГ УКРАЇНА\&quot;&quot;,
+      &quot;founders&quot;: [
+        {
+          &quot;organization&quot;: {
+            &quot;source&quot;: &quot;КОМПАНІЯ МОНСАНТО ГОЛЛАНДІЯ Б.В.&quot;
+          }
+        },
+        {
+          &quot;organization&quot;: {
+            &quot;source&quot;: &quot;КОМПАНІЯ МОНСАНТО ІНВЕСТ Б.В.&quot;
+          }
+        }
+      ],
+      &quot;full_kved&quot;: &quot;70.10 Діяльність головних управлінь (хед-офісів)&quot;
+    },
+    {
+      &quot;legalName&quot;: &quot;ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \&quot;ГАЛЕРЕЯ Ф.К.А.У.\&quot;&quot;,
+      &quot;head&quot;: {
+        &quot;fullName&quot;: &quot;Корягіна Ганна Сергіївна&quot;
+      },
+      &quot;identifier&quot;: {
+        &quot;id&quot;: &quot;35085093&quot;
+      },
+      &quot;amountOfFunds&quot;: 1375108444.61,
+      &quot;address&quot;: {
+        &quot;streetAddress&quot;: &quot;проспект Степана Бандери, 15-А&quot;,
+        &quot;district&quot;: &quot;Оболонський район&quot;,
+        &quot;locality&quot;: &quot;місто Київ&quot;,
+        &quot;region&quot;: &quot;місто Київ&quot;
+      },
+      &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+      &quot;name&quot;: &quot;ТОВ \&quot;ГАЛЕРЕЯ Ф.К.А.У.\&quot;&quot;,
+      &quot;full_kved&quot;: &quot;68.20 Надання в оренду й експлуатацію власного чи орендованого нерухомого майна&quot;
+    },
+    {
+      &quot;legalName&quot;: &quot;ПУБЛІЧНЕ АКЦІОНЕРНЕ ТОВАРИСТВО \&quot;АЛЬФА-БАНК\&quot;&quot;,
+      &quot;head&quot;: {
+        &quot;fullName&quot;: &quot;Михайльо Вікторія Вікторівна&quot;
+      },
+      &quot;identifier&quot;: {
+        &quot;id&quot;: &quot;23494714&quot;
+      },
+      &quot;amountOfFunds&quot;: 12179756466,
+      &quot;address&quot;: {
+        &quot;streetAddress&quot;: &quot;вулиця Десятинна, 4/6&quot;,
+        &quot;district&quot;: &quot;Шевченківський район&quot;,
+        &quot;locality&quot;: &quot;місто Київ&quot;,
+        &quot;region&quot;: &quot;місто Київ&quot;
+      },
+      &quot;currentStatus&quot;: &quot;зареєстровано&quot;,
+      &quot;name&quot;: &quot;ПАТ \&quot;АЛЬФА-БАНК\&quot;&quot;,
+      &quot;full_kved&quot;: &quot;64.19 Інші види грошового посередництва&quot;
+    }
+  ]
+}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="endpoint-prosecutor.html" class="btn btn-neutral float-right" title="Прокурор" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="endpoint-notary.html" class="btn btn-neutral" title="Нотаріус" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Кирило Захаров
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="static/documentation_options.js"></script>
+        <script type="text/javascript" src="static/jquery.js"></script>
+        <script type="text/javascript" src="static/underscore.js"></script>
+        <script type="text/javascript" src="static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

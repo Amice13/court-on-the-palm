@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<!-- Post Header -->
+
+<div class="section section-header">
+    <div class="parallax filter">
+        <div class="image"
+            style="background-image: url('{{ site.baseurl }}/img/posts_img/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="title-area">
+                    <h1 class="title-modern" style="font-weight:bold;">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <h3>{{ page.description }}</h2>
+                    <div class="separator line-separator white">♦</div>
+                    {% if page.subtitle %}
+                    <p>{{ page.subtitle }}</p>
+                    {% endif %}
+                    <span class="meta">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}<br/> {{ page.date | date: "%-d.%m.%Y" }}</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				{{ content }}
+
+                <hr>
+
+                <ul class="pager" style="position:relative;">
+                    {% if page.previous.url %}
+                    <li class="previous">
+                        <a href="{{ page.previous.url | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Попередній <span class="dont-show-mobile">пост</span></a>
+                    </li>
+                    <div class="social_buttons" class="text-center">
+                        <div class="share42init"></div>
+                    </div>
+                    <script type="text/javascript" src="{{ '/js/share42/share42.js' | prepend: site.baseurl }}"></script>
+
+                    {% endif %}
+                    {% if page.next.url %}
+                    <li class="next">
+                        <a href="{{ page.next.url | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Наступний <span class="dont-show-mobile">пост</span> &rarr;</a>
+                    </li>
+                    {% endif %}
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<hr/>
+
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div id="disqus_thread"></div>
+</div>
+
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+  this.page.url = '{{ site.baseurl }}{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = '{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://courtonthepalm.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
