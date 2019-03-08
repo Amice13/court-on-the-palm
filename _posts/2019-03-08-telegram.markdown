@@ -24,7 +24,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/kyivlegalhackers">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramKLH.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/KLH.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -40,7 +40,7 @@ header-img: "2019-03-08-1.jpg"
 <p>Відповідали <strong>Денис Іванов</strong>, <strong>Валентин Півоваров</strong> та <strong>Діма Форемний</strong>.</p>
 <p>У кожного, до речі, є свій цікавий досвід у розвитку юридичних інновацій.</p>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramDenis Ivanov.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Денис Іванов</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Denis Ivanov.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Денис Іванов</div></h3> 
 
 <p><strong>Навіщо Україні лігал хакери?</strong></p>
 <p>Коректніше було б спитати «Навіщо лігал хакерам Україна?» Адже з першого заходу, який відбувся 20 квітня 2017 року в Одесі, за неповних 2 роки, український чаптер став одним із хедлайнерів міжнародного руху. Рахуйте самі:</p>
@@ -56,7 +56,7 @@ header-img: "2019-03-08-1.jpg"
 <p><strong>Який бажаний найкращий довгостроковий стратегічний результат і результат, який бажаний протягом цього року?</strong></p>
 <p>Минулі півтора роки ми присвятили тому, щоб сформувати ком'юніті та голосно заявити про нього, залучити найкращих та найталановитіших представників сучасної української інноваційної юриспруденції. І нам це вдалось настільки, що третій рік поспіль українці - серед лідерів світових юридичних конкурсів та змагань. А на цьогорічному «Innovation Justice Forum» в Peace Palace в Гаазі кількість представників України перевищила 15 осіб (учасники, спікери, ментори, організатори, команди, партнери, глядачі). Ще три роки тому там було не більше 2 людей від країни. Починаючи з січня 2019 року наша метрика - не кількість учасників, а якість іх знань, досвідченості, їх продуктів та сервісів. Друге завдання на цей рік - це максимальна колаборація з іншими чаптерами. Не раз на рік у межах одноденного саміту. А систематичні івенти, спільні проекти, інтернаціональні команди. Для того, щоб проникнення та обмін досвідом і знаннями був максимально глобалізованим. Ми почали це робити з грудня 2018 року, коли вперше в історії провели одночасно в 4 країнах світу Хакатон з доступу до правосуддя. Більше 60+ команд одночасно створювали сервіси для того, щоб полегшити звичайним людям можливості отримання правової допомоги та захисту своїх прав. Саме в напрямку збільшення охоплення в практичних проектах та заходах я вбачаю наступні успіхи спільноти. Адже на теперішній час - це 10 000+ найіноваційніших юристів у майже 130 країнах світу. Такий потужний юридичний ресурс не може простоювати без користі для людства. Це було б злочином.</p>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramValentyn Pivovarov.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Валентин Півоваров</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Valentyn Pivovarov.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Валентин Півоваров</div></h3> 
 
 <p><strong>Навіщо Україні лігал хакери?</strong></p>
 <p>Україна є країною з великим потенціалом в IT-індустрії, з дуже розумними і талановитими людьми. У нас багато добрих юристів і непогана теоретична юридична освіта. Разом з тим, у нас багато проблем із правосуддям, із доступом до правосуддя. Багато людей не можуть дозволити собі юридичні послуги, а добрі юридичні послугу коштують дуже дорого. </p>
@@ -71,7 +71,7 @@ header-img: "2019-03-08-1.jpg"
 <p>Особисто я хотів би якісно відновитись після моєї участі в проекті PatentBot, тому що це було дуже важко для мене. І почати щось нове. Що саме це буде, поки не можу сказати. Але точно проект буде не для впровадження в Україні або Європі. Або це буде для ринку США, або для ринку Asia-Pacific Region (Гонконг, Сінгапур тощо). У довгостроковій перспективі я би хотів, щоб мій новий проект використовувався багатьма людьми і був ще більшого розмаху, ніж PatentBot, або інші проекти, які я створював до сьогодні. </p>
 <p>Щодо KLH, то у нас на цей рік великі плани. Ми хочемо врости вдвічі, а і то і втричі у кількості учасників. Запустити студентські організації KLH на юридичних факультетах вищих навчальних закладів в різних містах. План по івентах розписаний на цілий рік, будемо їх додатково анонсувати. У планах на довгострокову перспективу - зробити Україну центром юридичних інновацій. Незалежно від того, де українці впроваджують свої проекти - в Європі, Америці чи Гонконзі - усі ми підтримуємо один одного і допомагаємо один одному. Можливо, KLH зможе стати акселератором, який допомагатиме зростати legal tech проектам, інвестуватиме у них. Думаю, у 10-річній перспективі це більш, ніж реально.</p>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramDima Foremny.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Діма Форемний</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Dima Foremny.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Діма Форемний</div></h3> 
 
 <p><strong>Навіщо Україні лігал хакери?</strong></p>
 <p>Kyiv Legal Hackers (KLH) важливі для України тому, що разом українські лігал хакери - це сила, про яку вже знають, без перебільшення, у десятках країн світу. Про нас знають, нами цікавляться, на нас у багатьох випадках рівняються. Крім того, кожен із спільноти KLH може поїхати в 150 міст світу, де вже є відділення Legal Hackers, і там кожного радо приймуть. Це прекрасний шлях для виходу на інші ринки. А поодинці ми просто юристи-диваки, одиночки.</p>
@@ -91,7 +91,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/jur_blog">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramБлог юриста_лого.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/Блог юриста_лого.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -101,7 +101,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramVolodymyr Golub.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Володимир Голуб</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Volodymyr Golub.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Володимир Голуб</div></h3> 
 
 <p>Блог юриста створений 14 жовтня 2017 року.</p>
 <p><strong>Навіщо потрібен Блог юриста?</strong></p>
@@ -122,7 +122,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/advocatprava">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramБлог юриста_лого.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/Блог юриста_лого.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -132,7 +132,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramDenys Golovin.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Денис Головін</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Denys Golovin.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Денис Головін</div></h3> 
 
 <p>«Адвокат права» створений 29 листопада 2018 года.</p>
 <p><strong>Навіщо потрібен «Адвокат права»?</strong></p>
@@ -169,7 +169,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/advocat_ua">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramАдвокат права_лого.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/Адвокат права_лого.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -179,7 +179,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramOlexandr Garbar.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Олександр Гарбар</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Olexandr Garbar.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Олександр Гарбар</div></h3> 
 
 <p>«Адвокат» був створений у жовтні 2017 року.</p>
 <p><strong>Навіщо потрібен «Адвокат»?</strong></p>
@@ -201,7 +201,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/judicial_practice">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramСудова практика.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/Судова практика.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -211,7 +211,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramАндрій_Судова практика.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Андрій Матвійчук</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Андрій_Судова практика.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Андрій Матвійчук</div></h3> 
 
 <p>Канал був створений на початку 2018 року</p>
 <p><strong>Навіщо потрібна «Судова практика»?</strong></p>
@@ -236,7 +236,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/FutureLawSchool">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramFuture Law School.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/Future Law School.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -246,7 +246,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramDenis Ivanov.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Денис Іванов</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Denis Ivanov.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Денис Іванов</div></h3> 
 
 <p>Future Law School створений 29 серпня 2018 року.</p>
 <p><strong>Навіщо потрібен Future Law School?</strong></p>
@@ -288,7 +288,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/Jurnia">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramЮрня, дно і нелогічність.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/Юрня, дно і нелогічність.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -298,7 +298,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramNikita Pidgayny.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Микита Підгайний</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Nikita Pidgayny.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Микита Підгайний</div></h3> 
 
 <p>Перший пост у каналі «Юрня, дно і нелогічність» вийшов 14 грудня 2018 року.</p>
 <p><strong>Навіщо потрібна «Юрня, дно і нелогічність»?</strong></p>
@@ -319,7 +319,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/lawnonsense">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramЮрСюр.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/ЮрСюр.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -329,7 +329,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramStanislav Kuniansky.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Станіслав Кунянський</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Stanislav Kuniansky.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Станіслав Кунянський</div></h3> 
 
 <p>Перший пост у «ЮрСюр» був написаний у жовтні 2018 року.</p>
 <p><strong>Навіщо потрібен «ЮрСюр»?</strong></p>
@@ -351,7 +351,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/legalcode">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramLegal Code_logo.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/Legal Code_logo.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -361,7 +361,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramAndriy Kostenko.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Андрій Костенко</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Andriy Kostenko.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Андрій Костенко</div></h3> 
 
 <p>Legal Code створений 1 березня 2019 року.</p>
 <p><strong>Навіщо потрібен Legal Code?</strong></p>
@@ -385,7 +385,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/AxonPartners">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramОбщество мертвых юристов.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/Общество мертвых юристов.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -395,7 +395,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramDima Gadomsky.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Діма Гадомський</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Dima Gadomsky.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Діма Гадомський</div></h3> 
 
 <p>«Общество мертвых юристов» було створено у 2017 році. Точно вже не згадаю, коли. Це не було видатною подією.</p>
 <p><strong>Навіщо потрібно «Общество мертвых юристов»?</strong></p>
@@ -418,7 +418,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/knpartners">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramLaw firm Kravets & Partners.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/Law firm Kravets & Partners.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -428,7 +428,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramРостислав Кравець.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Ростислав Кравець</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Ростислав Кравець.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Ростислав Кравець</div></h3> 
 
 <p>Канал Law firm Kravets & Partners був створений в березні 2017 року.</p>
 <p><strong>Навіщо потрібен Law firm Kravets & Partners?</strong></p>
@@ -451,7 +451,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/Ukrainian_lawyers">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramЮристы Украины_лого.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/Юристы Украины_лого.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -461,7 +461,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramOlexandr Leventov.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Олександр Лєвєвнтов</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Olexandr Leventov.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Олександр Лєвєвнтов</div></h3> 
 
 <p>«Юристы Украины» створені близько року тому.</p>
 <p><strong>Навіщо потрібні «Юристы Украины»?</strong></p>
@@ -496,7 +496,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/yur_gazeta">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramЮридична газета.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/Юридична газета.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -506,7 +506,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramОлена Осмоловська.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Олена Осмоловська</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Олена Осмоловська.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Олена Осмоловська</div></h3> 
 
 <p>Канал «Юридична газета» створений рік тому.</p>
 <p><strong>Навіщо потрібен канал «Юридична газета»?</strong></p>
@@ -526,7 +526,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/loyer_ua">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramLойер.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/Lойер.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -536,7 +536,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramЯна Собко.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Яна Собко</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Яна Собко.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Яна Собко</div></h3> 
 
 <p>Канал Lойер був створений в кінці серпня 2017 року (якщо бути точними — 29.08). На той час в Україні просування новин через телеграм-канали лише зароджувалось. Для нас це був цікавий експеримент.</p>
 <p><strong>Навіщо потрібен Lойер?</strong></p>
@@ -559,7 +559,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/lawandevents">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramLaw and Events.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/Law and Events.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -569,7 +569,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramAnna Bilotil.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Ганна Білотіл</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Anna Bilotil.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Ганна Білотіл</div></h3> 
 
 <p>Канал був створений 24.02.2018 г. на Global Legal Hackathon – Ukraine.</p>
 <p><strong>Навіщо вам канал у Telegram? Яка його мета?</strong></p>
@@ -591,7 +591,7 @@ header-img: "2019-03-08-1.jpg"
 <div class="telegram-link">
 <div class="telegram-img">
 <a target="_blank"  href="https://t.me/PRforLawyers">
-  <img src="{{ site.baseurl }}/img/posts_img/telegramPR для юристів.jpg" />
+  <img src="{{ site.baseurl }}/img/posts_img/telegram/PR для юристів.jpg" />
 </a>
 </div>
 <div class="telegram-description">
@@ -601,7 +601,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 </div>
 
-<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegramВіка Папарига.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Віка Папарига</div></h3> 
+<h3 class="text-center"><img src="{{ site.baseurl }}/img/posts_img/telegram/Віка Папарига.jpg" style="max-width: 180px; border-radius: 50%;" /><div>Віка Папарига</div></h3> 
 
 <p>Канал «PR для юристів» створила рівно місяць назад, 4 лютого.</p>
 <p><strong>Навіщо потрібен «PR для юристів»?</strong></p>
