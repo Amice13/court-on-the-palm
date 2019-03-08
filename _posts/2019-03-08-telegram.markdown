@@ -642,15 +642,15 @@ header-img: "2019-03-08-1.jpg"
 </ul>
 
 <style>
+.hide:target + .show,
+.hide:target ~ .details {
+  display: block !important;
+}
+
 .details,
 .show,
 .hide:target {
   display: none;
-}
-
-.hide:target + .show,
-.hide:target ~ .details {
-  display: block !important;
 }
 
 .custom-headline {
