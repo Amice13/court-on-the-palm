@@ -19,7 +19,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c1">KYIV LEGAL HACKERS</label>
-<input class="show-check" id="c1" type="checkbox":checked label="KYIV LEGAL HACKERS">
+<input class="show-check" id="c1" type="checkbox":checked label="KYIV LEGAL HACKERS"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -86,7 +86,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c2">Блог юриста</label>
-<input class="show-check" id="c2" type="checkbox":checked label="Блог юриста">
+<input class="show-check" id="c2" type="checkbox":checked label="Блог юриста"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -117,7 +117,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c3">Адвокат права</label>
-<input class="show-check" id="c3" type="checkbox":checked label="Адвокат права">
+<input class="show-check" id="c3" type="checkbox":checked label="Адвокат права"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -164,7 +164,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c4">Адвокат</label>
-<input class="show-check" id="c4" type="checkbox":checked label="Адвокат">
+<input class="show-check" id="c4" type="checkbox":checked label="Адвокат"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -196,7 +196,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c5">Судова практика</label>
-<input class="show-check" id="c5" type="checkbox":checked label="Судова практика">
+<input class="show-check" id="c5" type="checkbox":checked label="Судова практика"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -231,7 +231,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c6">Future Law School</label>
-<input class="show-check" id="c6" type="checkbox":checked label="Future Law School">
+<input class="show-check" id="c6" type="checkbox":checked label="Future Law School"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -283,7 +283,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c8">Юрня, дно і нелогічність</label>
-<input class="show-check" id="c8" type="checkbox":checked label="Юрня, дно і нелогічність">
+<input class="show-check" id="c8" type="checkbox":checked label="Юрня, дно і нелогічність"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -314,7 +314,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c7">ЮрСюр</label>
-<input class="show-check" id="c7" type="checkbox":checked label="ЮрСюр">
+<input class="show-check" id="c7" type="checkbox":checked label="ЮрСюр"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -346,7 +346,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c9">Legal Code</label>
-<input class="show-check" id="c9" type="checkbox":checked label="Legal Code">
+<input class="show-check" id="c9" type="checkbox":checked label="Legal Code"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -380,7 +380,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c10">Общество мертвых юристов</label>
-<input class="show-check" id="c10" type="checkbox":checked label="Общество мертвых юристов">
+<input class="show-check" id="c10" type="checkbox":checked label="Общество мертвых юристов"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -413,7 +413,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c11">Law firm Kravets & Partners</label>
-<input class="show-check" id="c11" type="checkbox":checked label="Law firm Kravets & Partners">
+<input class="show-check" id="c11" type="checkbox":checked label="Law firm Kravets & Partners"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -446,7 +446,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c12">Юристы Украины</label>
-<input class="show-check" id="c12" type="checkbox":checked label="Юристы Украины">
+<input class="show-check" id="c12" type="checkbox":checked label="Юристы Украины"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -491,7 +491,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c13">Юридична газета</label>
-<input class="show-check" id="c13" type="checkbox":checked label="Юридична газета">
+<input class="show-check" id="c13" type="checkbox":checked label="Юридична газета"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -521,7 +521,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c14">Lойер</label>
-<input class="show-check" id="c14" type="checkbox":checked label="Lойер">
+<input class="show-check" id="c14" type="checkbox":checked label="Lойер"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -554,7 +554,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c15">Law and Events</label>
-<input class="show-check" id="c15" type="checkbox":checked label="Law and Events">
+<input class="show-check" id="c15" type="checkbox":checked label="Law and Events"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
@@ -586,7 +586,7 @@ header-img: "2019-03-08-1.jpg"
 
 <div style="margin-bottom: 10px">
 <label class="custom-headline" for="c16">PR для юристів</label>
-<input class="show-check" id="c16" type="checkbox":checked label="PR для юристів">
+<input class="show-check" id="c16" type="checkbox":checked label="PR для юристів"/>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
