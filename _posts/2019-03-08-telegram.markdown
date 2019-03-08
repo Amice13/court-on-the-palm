@@ -650,10 +650,7 @@ header-img: "2019-03-08-1.jpg"
 
 .hide:target + .show,
 .hide:target ~ .details {
-  display: block;
-  height: auto;
-  transition: all 1s ease;
-  overflow: hidden;
+  display: block !important;
 }
 
 .custom-headline {
