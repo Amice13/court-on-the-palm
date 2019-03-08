@@ -18,8 +18,7 @@ header-img: "2019-03-08-1.jpg"
 <h3 style="padding-top:20px">Ком'юніті лігал хакерів</h3>
 
 <div style="margin-bottom: 10px">
-<label class="custom-headline" for="c1">KYIV LEGAL HACKERS</label>
-<input class="show-check" id="c1" type="checkbox":checked label="KYIV LEGAL HACKERS"/>
+<input class="show-check" id="c1" type="checkbox":checked label="KYIV LEGAL HACKERS"/><label class="custom-headline" for="c1">KYIV LEGAL HACKERS</label>
 <div class="details" style="margin-bottom: 40px">
 <div class="telegram-link">
 <div class="telegram-img">
