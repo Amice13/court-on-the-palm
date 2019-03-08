@@ -722,4 +722,8 @@ label {
 .hide, .show {
   text-decoration: none;
 }
+
+.text-center img {
+  margin:auto;
+}
 </style>
