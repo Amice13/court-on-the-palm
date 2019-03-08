@@ -641,6 +641,9 @@ header-img: "2019-03-08-1.jpg"
 <li><a href="https://t.me/arzingerlawfirm" target="_blank">Arzinger Law Firm</a> - 275 підписників</li>
 </ul>
 
+<hr/>
+
+<a href="{{ site.baseurl }}/img/posts_img/telegram/jurist-blog.zip">Завантажити собі код цього блогу</a>
 
 <style>
 .details {
@@ -717,10 +720,6 @@ label {
 
 .text-center {
   text-align: center;
-}
-
-.hide, .show {
-  text-decoration: none;
 }
 
 .text-center img {
