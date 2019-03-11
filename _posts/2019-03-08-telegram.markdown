@@ -564,7 +564,7 @@ header-img: "2019-03-08-1.jpg"
 </div>
 <div class="telegram-description">
 <h4><a target="_blank" href="https://t.me/lawandevents">Law and Events</a></h4>
-<div class="telegram-link-gray"><a target="_blank" href="https://t.me/lawandevents">https://t.me/loyer_ua</a></div>
+<div class="telegram-link-gray"><a target="_blank" href="https://t.me/lawandevents">https://t.me/lawandevents</a></div>
 <div class="telegram-subscribers">1051 підписник</div>
 </div>
 </div>
